@@ -1,0 +1,35 @@
+Item,Qty,Designators,Manufacturer,MPN,LCSC,Description,Footprint,Type,Substitute
+1,1,U1,WCH,CH224A,C42459160,"USB PD sink controller, ESSOP-10",SSOP-10-1EP_3.9x4.9mm_P1mm_EP2.1x3.3mm,SMD,exact part only
+2,1,U2,Texas Instruments,BQ24610RGER,C19384,"battery charge controller, VQFN-24 4x4",VQFN-24-1EP_4x4mm_P0.5mm_EP2.45x2.45mm_ThermalVias,SMD,exact part only
+3,3,Q1 Q2 Q3,Vishay Siliconix,SISS27DN-T1-GE3,,"P-MOSFET -30 V, PowerPAK 1212-8S",Vishay_PowerPAK_1212-8_Single,SMD,exact part only
+4,2,Q4 Q5,Texas Instruments,CSD17578Q3A,C205986,"N-MOSFET 30 V, VSON-CLIP 3.3x3.3",VSON-8_3.3x3.3mm_P0.65mm_NexFET,SMD,exact part only
+5,1,L1,Vishay Dale,IHLP4040DZER6R8M11,,"inductor 6.8 uH, Isat 7.5 A, 10.2 x 10.2 mm",L_Vishay_IHLP-4040,SMD,exact part only
+6,1,D1,Littelfuse,SMAJ24A,,"TVS 24 V standoff, SMA",D_SMA,SMD,exact part only
+7,2,D2 D5,Lite-On,LTST-C191KGKT,,"LED green, 0603",LED_0603_1608Metric,SMD,exact part only
+8,1,D3,Diodes Incorporated,BAT54WS-7-F,,"Schottky 30 V 200 mA, SOD-323",D_SOD-323,SMD,exact part only
+9,1,D4,Lite-On,LTST-C191KRKT,,"LED red, 0603",LED_0603_1608Metric,SMD,exact part only
+10,1,D6,Lite-On,LTST-C191KSKT,,"LED yellow, 0603",LED_0603_1608Metric,SMD,exact part only
+11,1,J1,Korean Hroparts Elec (HRO),TYPE-C-31-M-12,C165948,"USB-C receptacle 16P, 5 A 20 V",USB_C_Receptacle_HRO_TYPE-C-31-M-12,SMD,exact part only
+12,1,J2,Changzhou Amass,XT30UPB-M,C428721,XT30 male PCB vertical (TME also stocks it),AMASS_XT30UPB-M_1x02_P5.0mm_Vertical,THT,exact part only
+13,1,J3,Changzhou Amass,XT30UPB-F,C108769,XT30 female PCB vertical (TME also stocks it),AMASS_XT30UPB-F_1x02_P5.0mm_Vertical,THT,exact part only
+14,1,J4,JST,B2B-PH-K-S(LF)(SN),,JST PH 2-pin vertical header,JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,THT,exact part only
+15,1,C1,TDK,C3225X7R1H225K250AB,,2.2 uF 50 V X7R 1210,C_1210_3225Metric,SMD,equivalent OK
+16,4,C2 C4 C10 C11,Murata,GRM21BR71H105KA12L,,1 uF 50 V X7R 0805,C_0805_2012Metric,SMD,equivalent OK
+17,1,C20,Murata,GRM1885C1H220JA01D,,22 pF 50 V C0G 0603,C_0603_1608Metric,SMD,equivalent OK
+18,9,C3 C5 C6 C9 C12 C15 C16 C17 C21,Murata,GRM188R71H104KA93D,,100 nF 50 V X7R 0603,C_0603_1608Metric,SMD,equivalent OK
+19,7,C7 C8 C13 C14 C18 C19 C22,Murata,GRM32ER71H106KA12L,,10 uF 50 V X7R 1210,C_1210_3225Metric,SMD,equivalent OK
+20,1,R1,Yageo,RC2010FK-072RL,,2 Ohm 1 % 2010,R_2010_5025Metric,SMD,equivalent OK
+21,1,R11,Panasonic,ERA-3AEB6813V,,681 k 0.1 % 25 ppm 0603,R_0603_1608Metric,SMD,exact part only
+22,1,R12,Panasonic,ERA-3AEB104V,,100 k 0.1 % 25 ppm 0603,R_0603_1608Metric,SMD,exact part only
+23,1,R14,Yageo,RC0603FR-0737K4L,,37.4 k 1 % 0603,R_0603_1608Metric,SMD,equivalent OK
+24,1,R18,Yageo,RC0603FR-0721K5L,,21.5 k 1 % 0603,R_0603_1608Metric,SMD,equivalent OK
+25,1,R19,Yageo,RC0603FR-0714K7L,,14.7 k 1 % 0603,R_0603_1608Metric,SMD,equivalent OK
+26,1,R2,Yageo,RC0603FR-07120KL,,120 k 1 % 0603,R_0603_1608Metric,SMD,equivalent OK
+27,1,R20,Yageo,RC0603FR-079K31L,,9.31 k 1 % 0603,R_0603_1608Metric,SMD,equivalent OK
+28,1,R21,Yageo,RC0603FR-07430KL,,430 k 1 % 0603,R_0603_1608Metric,SMD,equivalent OK
+29,1,R22,Yageo,RC0603FR-07100RL,,100 Ohm 1 % 0603,R_0603_1608Metric,SMD,equivalent OK
+30,6,R3 R16 R23 R24 R25 R26,Yageo,RC0603FR-0710KL,,10 k 1 % 0603,R_0603_1608Metric,SMD,equivalent OK
+31,5,R4 R8 R13 R15 R17,Yageo,RC0603FR-07100KL,,100 k 1 % 0603,R_0603_1608Metric,SMD,equivalent OK
+32,2,R5 R9,Yageo,RC0603FR-071KL,,1 k 1 % 0603,R_0603_1608Metric,SMD,equivalent OK
+33,1,R6,Yageo,RC1206FR-0710RL,,10 Ohm 1 % 1206,R_1206_3216Metric,SMD,equivalent OK
+34,2,R7 R10,Vishay Dale,WSL2512R0100FEA,,10 mOhm 1 % 1 W 2512 current sense,R_2512_6332Metric,SMD,exact part only

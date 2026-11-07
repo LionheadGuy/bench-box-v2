@@ -1,0 +1,53 @@
+Section,Part,Qty,For,Link,"Price (USD, approx.)",Notes
+Computer,Hardkernel ODROID-H5,1,the computer,https://www.hardkernel.com/shop/odroid-h5/,$230,no power adapter needed; ships from Korea
+Computer,16 GB DDR5 SODIMM (Corsair CMSX16GX5M1A5600C48),1,RAM,https://www.centralcomputer.com/corsair-cmsx16gx5m1a5600c48-16gb-16gbx1-ddr5-so-dimm-laptop-memory.html,~$220-250,any single DDR5 SODIMM works; runs at 4800
+Computer,M.2 2280 NVMe SSD (SanDisk Optimus 5100 500 GB),1,"storage, slot M2_SSD1",https://www.cdw.com/product/sandisk-optimus-5100-ssd-500-gb-pcie-4.0-x4-nvme/9205163,~$118,any M.2 2280 NVMe
+Computer,Intel AX210NGW WiFi 6E + Bluetooth card,1,WiFi,https://www.amazon.com/dp/B08MJLPZPL,~$20-25,
+Computer,M.2 M-key to A/E-key adapter (HighZer0),1,puts the AX210 in slot M2_SSD4,https://www.amazon.com/dp/B0BGCWQY67,~$12-15,the H5 has only M-key slots
+Computer,Tenmory WiFi 6E antenna kit (2 RP-SMA antennas + 2 MHF4 pigtails),1,WiFi antennas,https://www.amazon.com/dp/B07QDZKH5N,~$15,pigtails go to the back-wall WiFi holes
+Screen and controls,"VIEWMEI 10.1"" 1280 x 800 USB-C touchscreen",1,main screen,https://www.amazon.com/dp/B0GCNXNZ17,check listing,"the frame is sized to this screen: 245.5 x 168.75 x 21.5 mm, 75 mm VESA (M4). Check the size before buying"
+Screen and controls,"12 mm momentary metal push button, 5 V ring LED",1,power button,https://www.amazon.com/s?k=12mm+momentary+metal+push+button+5V+ring+LED,~$5-8,11.75 mm hole; NO contacts + LED
+Screen and controls,"KCD1 rocker switch, 20 A (Dopkiut, 10-pack)",1,master power switch,https://www.amazon.com/dp/B0HCZ5X637,$6,19.2 x 12.7 mm cut-out
+Battery and charging,Liperior Endurance 6600 mAh 4S2P LiPo (LPD66004S150),1,"the pack, ~98 Wh",https://rcbattery.com/liperior-endurance-6600mah-4s2p-150c-14-8v-speed-runs-lipo-battery.html,$69.99,"135 x 54 x 42 mm, bare 7 AWG leads, no protection of its own"
+Battery and charging,"JBD SP04S010A smart BMS, 4S, NMC / Li-ion version, 20 A or 30 A",1,protection and balancing,https://jbdbms.com/products/sp04s010a,~$17.50,pick the NMC (Li-ion) 4S version; add the Bluetooth module for the phone app
+Battery and charging,"LiPo safety bag (DerBlue, 185 x 75 x 60 mm)",1,fire sleeve round the pack,https://www.amazon.com/dp/B01GCHBQJS,~$8-10,
+Battery and charging,"Inline ATC/ATO fuse holder, 14 AWG, + 10 A fuse",1,pack + lead,https://www.amazon.com/s?k=inline+ATC+fuse+holder+14+AWG,~$6,
+Battery and charging,Semitec 103AT-2 10 k NTC thermistor,1,pack temperature for the charger,https://www.digikey.com/en/products/result?keywords=103AT-2,$0.68,tape it to the pack
+Battery and charging,JST PH 2-pin pigtails (pack of 10),1,NTC to charger J4,https://www.amazon.com/s?k=JST+PH+2.0+2+pin+pigtail,~$6,
+Battery and charging,Amass XT30-U connector pairs (5 pairs),1,all power leads,https://www.getfpv.com/amass-xt30-u-lipo-connector-set-5-pairs.html,~$8,
+Battery and charging,100 W USB-C PD charger (Anker Prime 100 W or UGREEN Nexode 100 W),1,charges and runs the box,https://www.amazon.com/dp/B0963HDMJP,~$50-70,any USB-C PD charger with 20 V; 60 W minimum
+Battery and charging,"USB-C cable, 5 A e-marked (Anker 100 W)",1,charger to box,https://www.amazon.com/dp/B072JYDQ7N,~$15-20,needed for the 100 W setting (JP1 cut)
+"Custom boards (PCBWay, assembled)",Charger board (pcb/charger),1,"USB-C in, charging, power path",https://www.pcbway.com/orderonline.aspx,~$70-120 each (est.),quoted by hand; price is per board in a batch of 5
+"Custom boards (PCBWay, assembled)",Converter board (pcb/converter),1,fuses + 12 V for the H5,https://www.pcbway.com/orderonline.aspx,~$150-200 each (est.),most of it is the TRACO TEN 60-2412WIN (~$129) on the board
+"Custom boards (PCBWay, assembled)","Littelfuse 0297010.WXNV MINI blade fuse, 10 A",1+,converter board F2,https://www.digikey.com/en/products/result?keywords=0297010.WXNV,$0.39,buy spares
+"Custom boards (PCBWay, assembled)","Littelfuse 0297005.WXNV MINI blade fuse, 5 A",1+,converter board F1,https://www.digikey.com/en/products/result?keywords=0297005.WXNV,$0.39,buy spares
+USB and cables,Coolgear CG-7PU31HB-PCBA 7-port USB 3.2 hub board,1,USB ports on the back,https://www.digikey.com/en/products/detail/coolgear/CG-7PU31HB-PCBA/16720388,$146.70,
+USB and cables,"HDMI, 1 ft, 90 degree plug",1,H5 to screen,https://www.amazon.com/dp/B06Y69TCTW,~$8-10,
+USB and cables,"USB-A to USB-C, 1 ft, right-angle (2-pack)",1,hub to screen (power + touch),https://www.amazon.com/dp/B0784F9JP2,~$8,
+USB and cables,"USB 3.0 A to B, 1 ft, right-angle",1,H5 to hub,https://www.amazon.com/dp/B07SR71Q67,~$8-10,
+USB and cables,"18 AWG pigtail, 5.5 x 2.1 mm male barrel (3-pack)",1,converter 12 V to the H5,https://www.amazon.com/dp/B0DGQS55NG,$6.99,fit an XT30 male on the free end
+USB and cables,DSD TECH SH-U09C3 isolated USB-serial adapter,1,battery readout (BMS UART),https://www.amazon.com/dp/B07TS3GPQ1,~$15,set its jumper to 3.3 V
+USB and cables,Short USB-A male to female extension,1,cut and crimped to header port P5 for the adapter,https://www.amazon.com/s?k=short+USB+A+extension+cable,~$5,
+Cooling,Noctua NF-A9x14 PWM,1,"intake, back wall",https://www.amazon.com/dp/B009NQM7V2,$18.95,
+Cooling,Noctua NF-A6x15 PWM (12 V version),2,"exhaust, top",https://www.amazon.com/dp/B0DJNX4CX4,$16.95 each,not the 5 V version
+Cooling,Noctua 3-way 4-pin PWM splitter (NA-SC1),1,three fans on the H5 fan header,https://www.amazon.com/dp/B0DJPBXZ89,~$10,
+"Screws, inserts, small parts",ruthex M3 heat-set inserts (100),33 used,all M3 mounts,https://www.amazon.com/dp/B08BCRZZS3,$9.99,4.0 mm holes as printed
+"Screws, inserts, small parts",ruthex M2 heat-set inserts,8 used,BMS + modem,https://www.amazon.com/dp/B088QJG676,~$9-10,
+"Screws, inserts, small parts","M3 button-head screw kit (Besitu, 6-35 mm)",1,"M3 x 6 (8), x 8 (17), x 10 (8)",https://www.amazon.com/dp/B0D1KQCBMT,$21.99,button heads: the holes have no countersinks
+"Screws, inserts, small parts",M4 x 8 button-head screws,4,screen VESA,https://www.amazon.com/dp/B0FGX64FW2,~$21 (kit),check the screen's thread depth first
+"Screws, inserts, small parts",M2 screws: 4 x M2 x 6 + 4 long (length to suit the BMS),8,"modem board, BMS",https://www.amazon.com/s?k=M2+button+head+screw+kit,~$10,"BMS screws go through cover, board and base plate"
+"Screws, inserts, small parts","Hook-and-loop straps, 20 mm wide",2,hold the pack,https://www.amazon.com/s?k=20mm+hook+and+loop+battery+strap,~$7,
+"Screws, inserts, small parts",Stick-on rubber feet,4,under the feet,https://www.amazon.com/dp/B07PWCC6KP,$7.99,
+Wire and connectors,"14 AWG silicone wire, red + black",1,battery path,https://www.amazon.com/s?k=14+awg+silicone+wire+red+black,~$12,
+Wire and connectors,"18 AWG silicone pair, tinned copper (BNTECHGO)",1,hub and 12 V leads,https://www.amazon.com/dp/B0779QRR58,$14.83,
+Wire and connectors,Dupont crimp kit (housings + pins + crimper),1,header connections,https://www.amazon.com/s?k=dupont+crimp+kit,~$25,
+Wire and connectors,Heat-shrink kit,1,every joint,https://www.amazon.com/dp/B0C81FHPHN,$9.99,
+Printing,"ASA or ABS filament, 1 kg",1,all printed parts,https://www.amazon.com/s?k=ASA+filament+1kg,~$25,PETG for a desk-only box
+Optional: Stream Deck dock,Elgato Stream Deck Module 15 Keys (10GBT9901),1,"15 LCD keys, docked on the right wall",https://www.elgato.com/us/en/p/stream-deck-module-15-keys,$129.99,case: print/5-stream-deck-case.3mf + 4 x M3 x 6 and 4 inserts
+Optional: Stream Deck dock,Coiled USB-C to USB-A cable (Cable Matters 4 ft),1,Stream Deck to header port P7,https://cablematters.com/pc-1678-123-coiled-usb-c-to-usb-a-charging-cable-4ft.aspx,~$10-13,USB-A end cut off and crimped
+Optional: LTE,Quectel EM060K-GL LTE Cat 6 M.2 module,1,mobile data,https://www.waveshare.com/product/em060k-gl.htm,$98.99,
+Optional: LTE,Waveshare USB to M.2 B-key board,1,carries the module (USB),https://www.waveshare.com/usb-to-m.2-b-key.htm,~$22,CUT 58 mm from its USB end (removes its SMA jacks) to fit the mount; file the edge and check for shorts
+Optional: LTE,"MHF4 to SMA female bulkhead pigtails, 20 cm (2-pack)",1,module to the back-wall LTE holes,https://www.amazon.com/dp/B0FVW7M3LC,$7.49,
+Optional: LTE,"LTE antennas, SMA male",2,on the LTE holes,https://www.amazon.com/s?k=LTE+antenna+SMA+male,~$15,
+Optional: LTE,Nano SIM with a data plan that allows modems,1,,,,many phone plans do not allow modem use
+Optional: dash screen,"ROADOM 10.25"" 1920 x 720 bar touchscreen",1,second screen for gauge / dashboard layouts,https://www.amazon.com/dp/B0H9RBHD2X,check listing,its printed case and a video pass-through in the box are coming

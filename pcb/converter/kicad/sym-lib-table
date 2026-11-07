@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "camry-converter")(type "KiCad")(uri "${KIPRJMOD}/camry-converter.kicad_sym")(options "")(descr "Bench box converter parts"))
+)

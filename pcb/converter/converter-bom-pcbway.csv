@@ -1,0 +1,10 @@
+Item,Qty,Designators,Manufacturer,MPN,LCSC,Description,Footprint,Type,Substitute
+1,1,U1,TRACO Power,TEN 60-2412WIN,,"DC/DC 9-36 V in, 12 V 5 A, 2 x 1 in THT",TRACO_TEN60WIN_THT,THT,exact part only
+2,2,F1 F2,Keystone Electronics,3568,,"MINI blade fuse holder, THT, 30 A",Fuseholder_Blade_Mini_Keystone_3568,THT,exact part only
+3,1,D1,Littelfuse,SMDJ24A,,"TVS 24 V standoff, 3 kW, DO-214AB",D_SMC,SMD,exact part only
+4,1,D2,Lite-On,LTST-C191KGKT,,"LED green, 0603",LED_0603_1608Metric,SMD,exact part only
+5,1,J1,Changzhou Amass,XT30UPB-M,C428721,XT30 male PCB vertical,AMASS_XT30UPB-M_1x02_P5.0mm_Vertical,THT,exact part only
+6,2,J2 J3,Changzhou Amass,XT30UPB-F,C108769,XT30 female PCB vertical,AMASS_XT30UPB-F_1x02_P5.0mm_Vertical,THT,exact part only
+7,1,C1,Chemi-Con,EKY-350ELL221MJC5S,,"220 uF 35 V aluminium electrolytic, 10 mm, 5 mm pitch",CP_Radial_D10.0mm_P5.00mm,THT,equivalent OK
+8,2,C2 C3,Murata,GRM32ER71H106KA12L,,10 uF 50 V X7R 1210,C_1210_3225Metric,SMD,equivalent OK
+9,1,R1,Yageo,RC0603FR-074K7L,,4.7 k 1 % 0603,R_0603_1608Metric,SMD,equivalent OK
