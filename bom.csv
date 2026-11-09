@@ -31,9 +31,9 @@ USB and cables,Short USB-A male to female extension,1,cut and crimped to header 
 Cooling,Noctua NF-A9x14 PWM,1,"intake, back wall",https://www.amazon.com/dp/B009NQM7V2,$18.95,
 Cooling,Noctua NF-A6x15 PWM (12 V version),2,"exhaust, top",https://www.amazon.com/dp/B0DJNX4CX4,$16.95 each,not the 5 V version
 Cooling,Noctua 3-way 4-pin PWM splitter (NA-SC1),1,three fans on the H5 fan header,https://www.amazon.com/dp/B0DJPBXZ89,~$10,
-"Screws, inserts, small parts",ruthex M3 heat-set inserts (100),33 used,all M3 mounts,https://www.amazon.com/dp/B08BCRZZS3,$9.99,4.0 mm holes as printed
+"Screws, inserts, small parts",ruthex M3 heat-set inserts (100),33 used (37 with the Bluetooth board),all M3 mounts,https://www.amazon.com/dp/B08BCRZZS3,$9.99,4.0 mm holes as printed
 "Screws, inserts, small parts",ruthex M2 heat-set inserts,8 used,BMS + modem,https://www.amazon.com/dp/B088QJG676,~$9-10,
-"Screws, inserts, small parts","M3 button-head screw kit (Besitu, 6-35 mm)",1,"M3 x 6 (8), x 8 (17), x 10 (8)",https://www.amazon.com/dp/B0D1KQCBMT,$21.99,button heads: the holes have no countersinks
+"Screws, inserts, small parts","M3 button-head screw kit (Besitu, 6-35 mm)",1,"M3 x 6 (8), x 8 (17, +4 for the Bluetooth board), x 10 (8)",https://www.amazon.com/dp/B0D1KQCBMT,$21.99,button heads: the holes have no countersinks
 "Screws, inserts, small parts",M4 x 8 button-head screws,4,screen VESA,https://www.amazon.com/dp/B0FGX64FW2,~$21 (kit),check the screen's thread depth first
 "Screws, inserts, small parts",M2 screws: 4 x M2 x 6 + 4 long (length to suit the BMS),8,"modem board, BMS",https://www.amazon.com/s?k=M2+button+head+screw+kit,~$10,"BMS screws go through cover, board and base plate"
 "Screws, inserts, small parts","Hook-and-loop straps, 20 mm wide",2,hold the pack,https://www.amazon.com/s?k=20mm+hook+and+loop+battery+strap,~$7,
@@ -50,4 +50,10 @@ Optional: LTE,Waveshare USB to M.2 B-key board,1,carries the module (USB),https:
 Optional: LTE,"MHF4 to SMA female bulkhead pigtails, 20 cm (2-pack)",1,module to the back-wall LTE holes,https://www.amazon.com/dp/B0FVW7M3LC,$7.49,
 Optional: LTE,"LTE antennas, SMA male",2,on the LTE holes,https://www.amazon.com/s?k=LTE+antenna+SMA+male,~$15,
 Optional: LTE,Nano SIM with a data plan that allows modems,1,,,,many phone plans do not allow modem use
+Optional: Bluetooth,Feasycom FSC-DB200-BT1026C development board,1,"phone calls, phone book and phone music (HFP, PBAP, A2DP, AVRCP), AT commands over a COM port",https://www.feasycom.com/product/fsc-db200-bt1026c/,~$48-63 + shipping,"mounts assume the Arduino UNO outline and holes (check yours)"
+Optional: Bluetooth,"USB-A to USB-C data cable, short",1,cut and crimped to header port P6,https://www.amazon.com/s?k=short+USB+A+to+USB+C+data+cable,~$6,"a data cable, not charge-only"
+Optional: Bluetooth,"3.5 mm stereo panel-mount socket, M6 nut",2,mic in + headphone out on the back wall,https://www.amazon.com/s?k=3.5mm+panel+mount+stereo+jack+socket,~$6,6.5 mm holes as printed
+Optional: Bluetooth,"3.5 mm stereo plug lead, short",1,board headphone jack to its panel socket,https://www.amazon.com/s?k=3.5mm+male+stereo+pigtail,~$6,
+Optional: Bluetooth,"Hands-free car-kit microphone, 3.5 mm plug",1,the call microphone,https://www.amazon.com/s?k=car+hands+free+microphone+3.5mm,~$8-10,
+Optional: Bluetooth,"Shielded 2-core cable, 15 cm",1,board MIC_L pads to the mic socket,,,
 Optional: dash screen,"ROADOM 10.25"" 1920 x 720 bar touchscreen",1,second screen for gauge / dashboard layouts,https://www.amazon.com/dp/B0H9RBHD2X,check listing,its printed case and a video pass-through in the box are coming

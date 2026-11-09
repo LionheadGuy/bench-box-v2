@@ -14,7 +14,7 @@ nothing in it is car-specific: it is a general-purpose Windows or Linux PC.
 | Battery | 14.8 V 6.6 Ah LiPo (~98 Wh) with a smart BMS; ~3 h at a typical 30 W |
 | Charging | USB-C PD (60 W+ charger; 100 W for the fastest charge), runs while charging, no break when unplugged |
 | USB | 7 x USB 3.2 on the back (hub), plus header ports used inside for the Stream Deck and battery readout |
-| Wireless | WiFi 6E + Bluetooth (Intel AX210); optional LTE Cat 6 (Quectel EM060K) |
+| Wireless | WiFi 6E + Bluetooth (Intel AX210); optional LTE Cat 6 (Quectel EM060K); optional Bluetooth hands-free board (calls, phone book, phone audio) |
 | Cooling | 3 Noctua fans (one in, two out), on the H5's own fan control |
 | Size | about 280 x 227 x 116 mm (W x H x D, Stream Deck dock included) + 36 mm handle |
 | Weight | about 2.7 kg (estimate) |
@@ -112,9 +112,9 @@ many the box uses.
 
 | Part | Qty | For | Price | Notes |
 |---|---|---|---|---|
-| [ruthex M3 heat-set inserts (100)](https://www.amazon.com/dp/B08BCRZZS3) | 33 used | all M3 mounts | $9.99 | 4.0 mm holes as printed |
+| [ruthex M3 heat-set inserts (100)](https://www.amazon.com/dp/B08BCRZZS3) | 33 used (37 with the Bluetooth board) | all M3 mounts | $9.99 | 4.0 mm holes as printed |
 | [ruthex M2 heat-set inserts](https://www.amazon.com/dp/B088QJG676) | 8 used | BMS + modem | ~$9-10 |  |
-| [M3 button-head screw kit (Besitu, 6-35 mm)](https://www.amazon.com/dp/B0D1KQCBMT) | 1 | M3 x 6 (8), x 8 (17), x 10 (8) | $21.99 | button heads: the holes have no countersinks |
+| [M3 button-head screw kit (Besitu, 6-35 mm)](https://www.amazon.com/dp/B0D1KQCBMT) | 1 | M3 x 6 (8), x 8 (17, +4 for the Bluetooth board), x 10 (8) | $21.99 | button heads: the holes have no countersinks |
 | [M4 x 8 button-head screws](https://www.amazon.com/dp/B0FGX64FW2) | 4 | screen VESA | ~$21 (kit) | check the screen's thread depth first |
 | [M2 screws: 4 x M2 x 6 + 4 long (length to suit the BMS)](https://www.amazon.com/s?k=M2+button+head+screw+kit) | 8 | modem board, BMS | ~$10 | BMS screws go through cover, board and base plate |
 | [Hook-and-loop straps, 20 mm wide](https://www.amazon.com/s?k=20mm+hook+and+loop+battery+strap) | 2 | hold the pack | ~$7 |  |
@@ -152,6 +152,17 @@ many the box uses.
 | [LTE antennas, SMA male](https://www.amazon.com/s?k=LTE+antenna+SMA+male) | 2 | on the LTE holes | ~$15 |  |
 | Nano SIM with a data plan that allows modems | 1 |  |  | many phone plans do not allow modem use |
 
+### Optional: Bluetooth hands-free board
+
+| Part | Qty | For | Price | Notes |
+|---|---|---|---|---|
+| [Feasycom FSC-DB200-BT1026C development board](https://www.feasycom.com/product/fsc-db200-bt1026c/) | 1 | phone calls, phone book and phone music (HFP, PBAP, A2DP, AVRCP), driven by AT commands over a COM port | ~$48-63 + shipping | Feasycom's own AliExpress store was the cheapest delivered; the mounts assume the Arduino UNO outline and holes (check yours) |
+| [USB-A to USB-C data cable, short](https://www.amazon.com/s?k=short+USB+A+to+USB+C+data+cable) | 1 | cut and crimped to header port P6 | ~$6 | a data cable, not charge-only |
+| [3.5 mm stereo panel-mount socket, M6 nut](https://www.amazon.com/s?k=3.5mm+panel+mount+stereo+jack+socket) | 2 | mic in + headphone out on the back wall | ~$6 | 6.5 mm holes as printed; check the thread before printing |
+| [3.5 mm stereo plug lead, short](https://www.amazon.com/s?k=3.5mm+male+stereo+pigtail) | 1 | board headphone jack to its panel socket | ~$6 | solder the bare end to the socket |
+| [Hands-free car-kit microphone, 3.5 mm plug](https://www.amazon.com/s?k=car+hands+free+microphone+3.5mm) | 1 | the call microphone | ~$8-10 | the board's own mic sits inside the box, where it hears little |
+| Shielded 2-core cable, 15 cm | 1 | board MIC_L pads to the mic socket | | |
+
 ### Optional: dash screen
 
 | Part | Qty | For | Price | Notes |
@@ -184,7 +195,8 @@ Tools: soldering iron with a heat-set insert tip, small screwdrivers / 2 mm hex 
 multimeter.
 
 1. **Heat-set inserts.** M3: front plate (4 on the H5 standoffs, 5 in the screw tabs), shell (4 hub standoffs on the
-   right wall, 4 converter standoffs on the right wall, 4 charger standoffs on the floor), handle (4), feet (2 each).
+   right wall, 4 converter standoffs on the right wall, 4 charger standoffs on the floor; optional: 4 Bluetooth board
+   standoffs on the back wall), handle (4), feet (2 each).
    M2: shell back wall (4 BMS standoffs, 4 modem standoffs).
 2. **Computer.** Fit RAM, the NVMe SSD (slot M2_SSD1) and the AX210 on its adapter (slot M2_SSD4) to the H5. Clip the
    two WiFi pigtails onto the AX210.
@@ -198,6 +210,10 @@ multimeter.
    - Converter board on its right-wall standoffs (M3 x 8), with its two fuses.
    - BMS standing on its long edge on the back-wall standoffs (long M2 screws through cover, board and base).
    - Optional LTE modem board on its back-wall standoffs above the BMS (M2 x 6), plug end up.
+   - Optional Bluetooth board on its back-wall standoffs right of the modem (M3 x 8), parts facing the front, USB-C and
+     jack edge up. First set its slide switches: USB/UART to UART, power to USB. Desolder its on-board mic and solder the
+     shielded mic cable to those two MIC_L pads (+ to +). The two panel sockets go in the holes below it: mic in on the
+     left, headphone out on the right.
    - Charger board on its floor standoffs at the left (M3 x 8), USB-C socket in the left-wall opening.
    - Battery in its pocket on the floor, in its LiPo sleeve, held by two hook-and-loop straps through the floor slots.
 5. **Wire it** (next section), check every power lead's polarity with a meter **before** connecting the pack.
@@ -232,6 +248,8 @@ USB-C charger ──> CHARGER BOARD ── J2 battery ── 10 A fuse ── BM
 | Hub USB-A | screen USB-C | right-angle USB-C: powers the screen and carries touch |
 | H5 USB 3.0 port | hub USB-B (upstream) | short USB 3.0 A to B, right-angle B is easier |
 | H5 USB 2.0 port | LTE modem board | short USB extension (optional) |
+| Bluetooth board MIC_L pads | mic panel socket | shielded 2-core; check the mic plug's + contact (optional) |
+| Bluetooth board headphone jack | headphone panel socket | short 3.5 mm plug lead (optional) |
 | H5 fan header | 3 fans | 3-way 4-pin fan splitter |
 | AX210 pigtails | WiFi bulkheads | from the antenna kit |
 | LTE module MHF4 sockets | LTE bulkheads | MHF4 to SMA pigtails |
@@ -245,7 +263,9 @@ USB-C charger ──> CHARGER BOARD ── J2 battery ── 10 A fuse ── BM
 | 1 GND, 2 +5 V, 3 D+, 5 D- (USB port P7) | Stream Deck: cut the coiled cable's far end, crimp into one 2 x 3 Dupont housing (red 2, black 1, green 3, white 5) |
 | 2 +5 V, 7 D+, 9 D-, 11 GND (USB port P5) | battery readout: a short USB-A extension cut and crimped (1 x 3 housing on 7/9/11; splice its red into the Stream Deck's red for pin 2); the isolated USB-serial adapter plugs into its socket and its 3.3 V TX/RX/GND go to the BMS's UART plug |
 
-Pin 2 is shared by three red wires (button LED, Stream Deck, adapter): splice them before one crimp. Do not use pin
+| 2 +5 V, 19 GND, 21 D+, 23 D- (USB port P6) | optional Bluetooth board: a short USB-A to USB-C cable with the A end cut off (1 x 3 housing on 19/21/23; its red spliced into pin 2) |
+
+Pin 2 is shared by three red wires (button LED, Stream Deck, adapter; four with the Bluetooth board): splice them before one crimp. How much current the header's 5 V can supply is not confirmed. Do not use pin
 24 (standby 5 V: it would drain the pack with the box off).
 
 ## First start
