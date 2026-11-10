@@ -1,6 +1,6 @@
 # Custom boards
 
-Two small boards made for the Bench Box V2. Both are designed to be **made and assembled by PCBWay** (turnkey): every
+Three small boards made for the Bench Box V2 (the Bluetooth board is optional). Both are designed to be **made and assembled by PCBWay** (turnkey): every
 part has an exact manufacturer part number in the BOM, so you upload three files and they build it.
 
 > **Status: designed and checked in KiCad (ERC clean, DRC 0 errors, 0 unconnected), checked against the datasheets,
@@ -70,7 +70,28 @@ Upload `converter-gerbers.zip`, `converter-bom-pcbway.csv`, `converter-positions
 0.3 mm minimum gap, 0.4 mm minimum hole: any standard 2-layer option. Order it together with the charger board to share
 set-up and shipping.
 
-## Both boards
+## Bluetooth board (`bluetooth/`)
+
+Optional. Phone calls, phone book and phone music for the box, on one USB lead to the H5. 60 x 48 mm, 4 layers.
+
+- **Module**: Feasycom **FSC-BT1026C** (Bluetooth 5.1, hands-free, phone book, music), soldered to the board, antenna
+  at the top edge (keep metal away from it).
+- **USB hub** (Microchip USB2514Bi) with three devices behind it: a **COM port** (Microchip MCP2221A, no driver on
+  Windows 10/11) for the module's text commands, a **USB sound card** (TI PCM2900C) whose **input** carries the phone's
+  music and calls into the computer (the H5 has no audio input of its own) and whose output is a spare **line out**
+  (J4), and the module's own USB.
+- **Connectors** (JST PH, vertical): J2 USB lead (1 = +5 V, 2 = D-, 3 = D+, 4 = GND), J3 cabin microphone (electret,
+  1 = +), J4 line out (L, R, GND); J1 USB-C as an alternative to J2 (use one, not both).
+- LEDs: blue blinks while pairing, green when connected.
+
+### Ordering at PCBWay (PCB + assembly)
+
+Upload `bt-gerbers.zip`, `bt-bom-pcbway.csv`, `bt-positions.csv`. 60 x 48 mm, **4 layers**, 1.6 mm, 1 oz, ENIG,
+**5 / 5 mil**, **0.2 mm** minimum hole, tented vias; assembly top side, 111 SMD + 3 through-hole parts (the JSTs).
+Feasycom offers to review a schematic that uses their module (for Bluetooth range): worth sending `bt-schematic.pdf`
+first.
+
+## All three boards
 
 - **XT30 polarity**: + is the **square end** of the housing (pin 2 in KiCad). Check with a meter before the first
   plug-in.

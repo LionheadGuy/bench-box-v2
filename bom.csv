@@ -50,10 +50,8 @@ Optional: LTE,Waveshare USB to M.2 B-key board,1,carries the module (USB),https:
 Optional: LTE,"MHF4 to SMA female bulkhead pigtails, 20 cm (2-pack)",1,module to the back-wall LTE holes,https://www.amazon.com/dp/B0FVW7M3LC,$7.49,
 Optional: LTE,"LTE antennas, SMA male",2,on the LTE holes,https://www.amazon.com/s?k=LTE+antenna+SMA+male,~$15,
 Optional: LTE,Nano SIM with a data plan that allows modems,1,,,,many phone plans do not allow modem use
-Optional: Bluetooth,Feasycom FSC-DB200-BT1026C development board,1,"phone calls, phone book and phone music (HFP, PBAP, A2DP, AVRCP), AT commands over a COM port",https://www.feasycom.com/product/fsc-db200-bt1026c/,~$48-63 + shipping,"mounts assume the Arduino UNO outline and holes (check yours)"
-Optional: Bluetooth,"USB-A to USB-C data cable, short",1,cut and crimped to header port P6,https://www.amazon.com/s?k=short+USB+A+to+USB+C+data+cable,~$6,"a data cable, not charge-only"
-Optional: Bluetooth,"3.5 mm stereo panel-mount socket, M6 nut",2,mic in + headphone out on the back wall,https://www.amazon.com/s?k=3.5mm+panel+mount+stereo+jack+socket,~$6,6.5 mm holes as printed
-Optional: Bluetooth,"3.5 mm stereo plug lead, short",1,board headphone jack to its panel socket,https://www.amazon.com/s?k=3.5mm+male+stereo+pigtail,~$6,
+Optional: Bluetooth,Bluetooth board (pcb/bluetooth),1,"phone calls, phone book and phone music (Feasycom FSC-BT1026C), COM port + USB sound card on one USB lead",pcb/README.md,~$90-150 each (est.),made and assembled by PCBWay from pcb/bluetooth
+Optional: Bluetooth,"JST PH 2.0 pigtails, 2 / 3 / 4-pin (assorted)",1 set,"USB lead to header P6 (4), mic (2), line out (3)",https://www.amazon.com/s?k=JST+PH+2.0+pigtail+assortment,~$8,
+Optional: Bluetooth,"3.5 mm stereo panel-mount socket, M6 nut",2,mic in + line out on the back wall,https://www.amazon.com/s?k=3.5mm+panel+mount+stereo+jack+socket,~$6,6.5 mm holes as printed
 Optional: Bluetooth,"Hands-free car-kit microphone, 3.5 mm plug",1,the call microphone,https://www.amazon.com/s?k=car+hands+free+microphone+3.5mm,~$8-10,
-Optional: Bluetooth,"Shielded 2-core cable, 15 cm",1,board MIC_L pads to the mic socket,,,
 Optional: dash screen,"ROADOM 10.25"" 1920 x 720 bar touchscreen",1,second screen for gauge / dashboard layouts,https://www.amazon.com/dp/B0H9RBHD2X,check listing,its printed case and a video pass-through in the box are coming

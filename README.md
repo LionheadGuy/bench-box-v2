@@ -156,12 +156,10 @@ many the box uses.
 
 | Part | Qty | For | Price | Notes |
 |---|---|---|---|---|
-| [Feasycom FSC-DB200-BT1026C development board](https://www.feasycom.com/product/fsc-db200-bt1026c/) | 1 | phone calls, phone book and phone music (HFP, PBAP, A2DP, AVRCP), driven by AT commands over a COM port | ~$48-63 + shipping | Feasycom's own AliExpress store was the cheapest delivered; the mounts assume the Arduino UNO outline and holes (check yours) |
-| [USB-A to USB-C data cable, short](https://www.amazon.com/s?k=short+USB+A+to+USB+C+data+cable) | 1 | cut and crimped to header port P6 | ~$6 | a data cable, not charge-only |
-| [3.5 mm stereo panel-mount socket, M6 nut](https://www.amazon.com/s?k=3.5mm+panel+mount+stereo+jack+socket) | 2 | mic in + headphone out on the back wall | ~$6 | 6.5 mm holes as printed; check the thread before printing |
-| [3.5 mm stereo plug lead, short](https://www.amazon.com/s?k=3.5mm+male+stereo+pigtail) | 1 | board headphone jack to its panel socket | ~$6 | solder the bare end to the socket |
-| [Hands-free car-kit microphone, 3.5 mm plug](https://www.amazon.com/s?k=car+hands+free+microphone+3.5mm) | 1 | the call microphone | ~$8-10 | the board's own mic sits inside the box, where it hears little |
-| Shielded 2-core cable, 15 cm | 1 | board MIC_L pads to the mic socket | | |
+| [Bluetooth board (pcb/bluetooth)](pcb/README.md#bluetooth-board-bluetooth) | 1 | phone calls, phone book and phone music (Feasycom FSC-BT1026C module), as a COM port + a USB sound card on one USB lead | ~$90-150 each (est.) | made and assembled by PCBWay from the files in `pcb/bluetooth/` |
+| [JST PH 2.0 pigtails, 2 / 3 / 4-pin (assorted)](https://www.amazon.com/s?k=JST+PH+2.0+pigtail+assortment) | 1 set | the board's USB lead (4-pin, to header port P6), mic (2-pin) and line out (3-pin) | ~$8 | |
+| [3.5 mm stereo panel-mount socket, M6 nut](https://www.amazon.com/s?k=3.5mm+panel+mount+stereo+jack+socket) | 2 | mic in + line out on the back wall | ~$6 | 6.5 mm holes as printed; check the thread before printing |
+| [Hands-free car-kit microphone, 3.5 mm plug](https://www.amazon.com/s?k=car+hands+free+microphone+3.5mm) | 1 | the call microphone | ~$8-10 | plugs into the mic socket on the back |
 
 ### Optional: dash screen
 
@@ -210,10 +208,9 @@ multimeter.
    - Converter board on its right-wall standoffs (M3 x 8), with its two fuses.
    - BMS standing on its long edge on the back-wall standoffs (long M2 screws through cover, board and base).
    - Optional LTE modem board on its back-wall standoffs above the BMS (M2 x 6), plug end up.
-   - Optional Bluetooth board on its back-wall standoffs right of the modem (M3 x 8), parts facing the front, USB-C and
-     jack edge up. First set its slide switches: USB/UART to UART, power to USB. Desolder its on-board mic and solder the
-     shielded mic cable to those two MIC_L pads (+ to +). The two panel sockets go in the holes below it: mic in on the
-     left, headphone out on the right.
+   - Optional Bluetooth board on its back-wall standoffs right of the modem (M3 x 8), parts facing the front, the
+     module's antenna end UP and the connectors along the bottom. The two panel sockets go in the holes below it: mic in
+     on the left, line out on the right; solder a JST PH pigtail to each (mic: 2-pin, + to pin 1; line out: 3-pin, L / R / GND).
    - Charger board on its floor standoffs at the left (M3 x 8), USB-C socket in the left-wall opening.
    - Battery in its pocket on the floor, in its LiPo sleeve, held by two hook-and-loop straps through the floor slots.
 5. **Wire it** (next section), check every power lead's polarity with a meter **before** connecting the pack.
@@ -248,8 +245,9 @@ USB-C charger ──> CHARGER BOARD ── J2 battery ── 10 A fuse ── BM
 | Hub USB-A | screen USB-C | right-angle USB-C: powers the screen and carries touch |
 | H5 USB 3.0 port | hub USB-B (upstream) | short USB 3.0 A to B, right-angle B is easier |
 | H5 USB 2.0 port | LTE modem board | short USB extension (optional) |
-| Bluetooth board MIC_L pads | mic panel socket | shielded 2-core; check the mic plug's + contact (optional) |
-| Bluetooth board headphone jack | headphone panel socket | short 3.5 mm plug lead (optional) |
+| Bluetooth board J3 MIC | mic panel socket | JST PH 2 pigtail; check the mic plug's + contact (optional) |
+| Bluetooth board J4 LINE OUT | line-out panel socket | JST PH 3 pigtail: the H5's own sound for headphones (optional) |
+| Bluetooth board J2 USB | H5 header port P6 | JST PH 4 pigtail (below) (optional) |
 | H5 fan header | 3 fans | 3-way 4-pin fan splitter |
 | AX210 pigtails | WiFi bulkheads | from the antenna kit |
 | LTE module MHF4 sockets | LTE bulkheads | MHF4 to SMA pigtails |
@@ -263,7 +261,7 @@ USB-C charger ──> CHARGER BOARD ── J2 battery ── 10 A fuse ── BM
 | 1 GND, 2 +5 V, 3 D+, 5 D- (USB port P7) | Stream Deck: cut the coiled cable's far end, crimp into one 2 x 3 Dupont housing (red 2, black 1, green 3, white 5) |
 | 2 +5 V, 7 D+, 9 D-, 11 GND (USB port P5) | battery readout: a short USB-A extension cut and crimped (1 x 3 housing on 7/9/11; splice its red into the Stream Deck's red for pin 2); the isolated USB-serial adapter plugs into its socket and its 3.3 V TX/RX/GND go to the BMS's UART plug |
 
-| 2 +5 V, 19 GND, 21 D+, 23 D- (USB port P6) | optional Bluetooth board: a short USB-A to USB-C cable with the A end cut off (1 x 3 housing on 19/21/23; its red spliced into pin 2) |
+| 2 +5 V, 19 GND, 21 D+, 23 D- (USB port P6) | optional Bluetooth board: a JST PH 4 pigtail into its J2 (1 = +5 V red, 2 = D- white, 3 = D+ green, 4 = GND black); crimp 19/21/23 into one 1 x 3 housing, splice the red into pin 2 |
 
 Pin 2 is shared by three red wires (button LED, Stream Deck, adapter; four with the Bluetooth board): splice them before one crimp. How much current the header's 5 V can supply is not confirmed. Do not use pin
 24 (standby 5 V: it would drain the pack with the box off).
