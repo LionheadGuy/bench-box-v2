@@ -2,6 +2,8 @@ Section,Part,Qty,For,Link,"Price (USD, approx.)",Notes
 Computer,Hardkernel ODROID-H5,1,the computer,https://www.hardkernel.com/shop/odroid-h5/,$230,no power adapter needed; ships from Korea
 Computer,16 GB DDR5 SODIMM (Corsair CMSX16GX5M1A5600C48),1,RAM,https://www.centralcomputer.com/corsair-cmsx16gx5m1a5600c48-16gb-16gbx1-ddr5-so-dimm-laptop-memory.html,~$220-250,any single DDR5 SODIMM works; runs at 4800
 Computer,M.2 2280 NVMe SSD (SanDisk Optimus 5100 500 GB),1,"storage, slot M2_SSD1",https://www.cdw.com/product/sandisk-optimus-5100-ssd-500-gb-pcie-4.0-x4-nvme/9205163,~$118,any M.2 2280 NVMe
+Computer,"Cat6 UTP punch-down keystone jack (unshielded, any brand)",1,"Ethernet out: the H5's 10GbE port to the back wall, for the link to the dash bench box",https://www.amazon.com/s?k=cat6+utp+punch+down+keystone+jack,~$3-5,"snaps into the back wall's 2 mm keystone panel; try one in a test print first"
+Computer,"Cat6 patch cable, short (0.3-0.5 m)",1,"inside: one plug in the H5, the other end cut and punched down on the keystone jack",https://www.amazon.com/s?k=cat6+patch+cable+1ft,~$3-5,
 Computer,Intel AX210NGW WiFi 6E + Bluetooth card,1,WiFi,https://www.amazon.com/dp/B08MJLPZPL,~$20-25,
 Computer,M.2 M-key to A/E-key adapter (HighZer0),1,puts the AX210 in slot M2_SSD4,https://www.amazon.com/dp/B0BGCWQY67,~$12-15,the H5 has only M-key slots
 Computer,Tenmory WiFi 6E antenna kit (2 RP-SMA antennas + 2 MHF4 pigtails),1,WiFi antennas,https://www.amazon.com/dp/B07QDZKH5N,~$15,pigtails go to the back-wall WiFi holes
