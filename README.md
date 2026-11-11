@@ -4,6 +4,8 @@ A portable, battery-powered workstation built around an **ODROID-H5** and a **10
 case with a carry handle. Think of it as a chunky, repairable laptop: USB-C charging, about 3 hours on its own battery,
 a 7-port USB 3 hub, WiFi 6E, optional LTE, and a dock for an Elgato Stream Deck module.
 
+![Bench Box V2 in CAD: 10.1" screen, power button and rocker under it, Stream Deck dock on the right, carry handle](images/bench-box-v2-front.png)
+
 It was made for developing car infotainment systems on the bench (it runs the same x86 computer the car does), but
 nothing in it is car-specific: it is a general-purpose Windows or Linux PC.
 
@@ -32,6 +34,12 @@ nothing in it is car-specific: it is a general-purpose Windows or Linux PC.
 > it in a fireproof LiPo sleeve, charge it where you can watch it until you trust the build, and test new boards on a
 > current-limited bench supply first.
 
+## Pictures (CAD)
+
+| Back | Inside (shell hidden, from behind) |
+|---|---|
+| ![Back: USB ports, Ethernet jack, intake grille, antenna holes](images/bench-box-v2-back.png) | ![Inside: ODROID-H5 and heatsink, three fans, USB hub, Bluetooth and LTE modem boards, BMS, battery pack, charger and converter boards](images/bench-box-v2-inside.png) |
+
 ## What's here
 
 | Folder | What |
@@ -39,6 +47,7 @@ nothing in it is car-specific: it is a general-purpose Windows or Linux PC.
 | [`print/`](print) | **Slicer-ready `.3mf` files**, one per print job, parts already laid flat |
 | [`stl/`](stl) | the same parts as STL, in their assembled positions (GitHub shows them in 3D) |
 | [`bom.csv`](bom.csv) | the parts list below as a spreadsheet |
+| [`images/`](images) | the pictures on this page |
 
 ## Bill of materials
 
@@ -172,7 +181,12 @@ connected. Keep metal away from the module's antenna at the top edge.
 
 **LTE modem board** (optional, coming). A carrier for the Quectel EM060K: the module plugs into its M.2 socket, a
 nano-SIM holder sits beside it, and USB comes in on a JST PH 4-pin lead (1 = +5 V, 2 = D-, 3 = D+, 4 = GND), so there is
-no USB-A plug or extension in the box. The antennas still clip onto the module itself.
+no USB-A plug or extension in the box. The antennas still clip onto the module itself. Same size (30 x 58 mm) and
+holes as the cut Waveshare board; the SIM holder is on its back.
+
+| Top | Back |
+|---|---|
+| ![LTE modem board, top: USB socket, LEDs, M.2 socket, power converter](images/modem-board-top.png) | ![LTE modem board, back: bulk capacitor, surge diode, nano-SIM holder](images/modem-board-back.png) |
 
 **All boards**: XT30 polarity: + is the **square end** of the housing; check with a meter before the first plug-in.
 Mounting: M3 screws onto heat-set inserts in the printed box (M2 for the modem board).
