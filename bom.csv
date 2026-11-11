@@ -2,7 +2,7 @@ Section,Part,Qty,For,Link,"Price (USD, approx.)",Notes
 Computer,Hardkernel ODROID-H5,1,the computer,https://www.hardkernel.com/shop/odroid-h5/,$230,no power adapter needed; ships from Korea
 Computer,16 GB DDR5 SODIMM (Corsair CMSX16GX5M1A5600C48),1,RAM,https://www.centralcomputer.com/corsair-cmsx16gx5m1a5600c48-16gb-16gbx1-ddr5-so-dimm-laptop-memory.html,~$220-250,any single DDR5 SODIMM works; runs at 4800
 Computer,M.2 2280 NVMe SSD (SanDisk Optimus 5100 500 GB),1,"storage, slot M2_SSD1",https://www.cdw.com/product/sandisk-optimus-5100-ssd-500-gb-pcie-4.0-x4-nvme/9205163,~$118,any M.2 2280 NVMe
-Computer,"Cat6 UTP punch-down keystone jack (unshielded, any brand)",1,"Ethernet out: the H5's 10GbE port to the back wall, for the link to the dash bench box",https://www.amazon.com/s?k=cat6+utp+punch+down+keystone+jack,~$3-5,"snaps into the back wall's 2 mm keystone panel; try one in a test print first"
+Computer,"Cat6 UTP punch-down keystone jack (unshielded, any brand)",1,"Ethernet out: the H5's 10GbE port to the back wall, for the link to the dash bench box",https://www.amazon.com/s?k=cat6+utp+punch+down+keystone+jack,~$3-5,snaps into the back wall's 2 mm keystone panel; try one in a test print first
 Computer,"Cat6 patch cable, short (0.3-0.5 m)",1,"inside: one plug in the H5, the other end cut and punched down on the keystone jack",https://www.amazon.com/s?k=cat6+patch+cable+1ft,~$3-5,
 Computer,Intel AX210NGW WiFi 6E + Bluetooth card,1,WiFi,https://www.amazon.com/dp/B08MJLPZPL,~$20-25,
 Computer,M.2 M-key to A/E-key adapter (HighZer0),1,puts the AX210 in slot M2_SSD4,https://www.amazon.com/dp/B0BGCWQY67,~$12-15,the H5 has only M-key slots
@@ -19,10 +19,10 @@ Battery and charging,JST PH 2-pin pigtails (pack of 10),1,NTC to charger J4,http
 Battery and charging,Amass XT30-U connector pairs (5 pairs),1,all power leads,https://www.getfpv.com/amass-xt30-u-lipo-connector-set-5-pairs.html,~$8,
 Battery and charging,100 W USB-C PD charger (Anker Prime 100 W or UGREEN Nexode 100 W),1,charges and runs the box,https://www.amazon.com/dp/B0963HDMJP,~$50-70,any USB-C PD charger with 20 V; 60 W minimum
 Battery and charging,"USB-C cable, 5 A e-marked (Anker 100 W)",1,charger to box,https://www.amazon.com/dp/B072JYDQ7N,~$15-20,needed for the 100 W setting (JP1 cut)
-"Custom boards (PCBWay, assembled)",Charger board (pcb/charger),1,"USB-C in, charging, power path",https://www.pcbway.com/orderonline.aspx,~$70-120 each (est.),quoted by hand; price is per board in a batch of 5
-"Custom boards (PCBWay, assembled)",Converter board (pcb/converter),1,fuses + 12 V for the H5,https://www.pcbway.com/orderonline.aspx,~$150-200 each (est.),most of it is the TRACO TEN 60-2412WIN (~$129) on the board
-"Custom boards (PCBWay, assembled)","Littelfuse 0297010.WXNV MINI blade fuse, 10 A",1+,converter board F2,https://www.digikey.com/en/products/result?keywords=0297010.WXNV,$0.39,buy spares
-"Custom boards (PCBWay, assembled)","Littelfuse 0297005.WXNV MINI blade fuse, 5 A",1+,converter board F1,https://www.digikey.com/en/products/result?keywords=0297005.WXNV,$0.39,buy spares
+Custom boards (from the builder),Charger board,1,"USB-C in, charging, power path",,TBD,from the builder
+Custom boards (from the builder),Converter board,1,fuses + 12 V for the H5,,TBD,from the builder; fuses not included
+Custom boards (from the builder),"Littelfuse 0297010.WXNV MINI blade fuse, 10 A",1+,converter board F2,https://www.digikey.com/en/products/result?keywords=0297010.WXNV,$0.39,buy spares
+Custom boards (from the builder),"Littelfuse 0297005.WXNV MINI blade fuse, 5 A",1+,converter board F1,https://www.digikey.com/en/products/result?keywords=0297005.WXNV,$0.39,buy spares
 USB and cables,Coolgear CG-7PU31HB-PCBA 7-port USB 3.2 hub board,1,USB ports on the back,https://www.digikey.com/en/products/detail/coolgear/CG-7PU31HB-PCBA/16720388,$146.70,
 USB and cables,"HDMI, 1 ft, 90 degree plug",1,H5 to screen,https://www.amazon.com/dp/B06Y69TCTW,~$8-10,
 USB and cables,"USB-A to USB-C, 1 ft, right-angle (2-pack)",1,hub to screen (power + touch),https://www.amazon.com/dp/B0784F9JP2,~$8,
@@ -49,10 +49,11 @@ Optional: Stream Deck dock,Elgato Stream Deck Module 15 Keys (10GBT9901),1,"15 L
 Optional: Stream Deck dock,Coiled USB-C to USB-A cable (Cable Matters 4 ft),1,Stream Deck to header port P7,https://cablematters.com/pc-1678-123-coiled-usb-c-to-usb-a-charging-cable-4ft.aspx,~$10-13,USB-A end cut off and crimped
 Optional: LTE,Quectel EM060K-GL LTE Cat 6 M.2 module,1,mobile data,https://www.waveshare.com/product/em060k-gl.htm,$98.99,
 Optional: LTE,Waveshare USB to M.2 B-key board,1,carries the module (USB),https://www.waveshare.com/usb-to-m.2-b-key.htm,~$22,CUT 58 mm from its USB end (removes its SMA jacks) to fit the mount; file the edge and check for shorts
+Optional: LTE,LTE modem board (coming),1,"the builder's own carrier for the module, in place of the Waveshare board",,TBD,"from the builder; USB on a JST PH 4-pin lead; the shell mount for it is not drawn yet, so for now use the Waveshare board"
 Optional: LTE,"MHF4 to SMA female bulkhead pigtails, 20 cm (2-pack)",1,module to the back-wall LTE holes,https://www.amazon.com/dp/B0FVW7M3LC,$7.49,
 Optional: LTE,"LTE antennas, SMA male",2,on the LTE holes,https://www.amazon.com/s?k=LTE+antenna+SMA+male,~$15,
 Optional: LTE,Nano SIM with a data plan that allows modems,1,,,,many phone plans do not allow modem use
-Optional: Bluetooth,Bluetooth board (pcb/bluetooth),1,"phone calls, phone book and phone music (Feasycom FSC-BT1026C), COM port + USB sound card on one USB lead",pcb/README.md,~$90-150 each (est.),made and assembled by PCBWay from pcb/bluetooth
+Optional: Bluetooth,Bluetooth board,1,"phone calls, phone book and phone music (Feasycom FSC-BT1026C), COM port + USB sound card on one USB lead",,TBD,from the builder
 Optional: Bluetooth,"JST PH 2.0 pigtails, 2 / 3 / 4-pin (assorted)",1 set,"USB lead to header P6 (4), mic (2), line out (3)",https://www.amazon.com/s?k=JST+PH+2.0+pigtail+assortment,~$8,
 Optional: Bluetooth,"3.5 mm stereo panel-mount socket, M6 nut",2,mic in + line out on the back wall,https://www.amazon.com/s?k=3.5mm+panel+mount+stereo+jack+socket,~$6,6.5 mm holes as printed
 Optional: Bluetooth,"Hands-free car-kit microphone, 3.5 mm plug",1,the call microphone,https://www.amazon.com/s?k=car+hands+free+microphone+3.5mm,~$8-10,

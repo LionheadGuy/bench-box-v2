@@ -1,4 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "camry-charger")(type "KiCad")(uri "${KIPRJMOD}/camry-charger.kicad_sym")(options "")(descr "Bench box charger parts"))
-)
