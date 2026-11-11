@@ -196,7 +196,7 @@ Mounting: M3 screws onto heat-set inserts in the printed box (M2 for the modem b
 |---|---|---|---|---|
 | [Quectel EM060K-GL LTE Cat 6 M.2 module](https://www.waveshare.com/product/em060k-gl.htm) | 1 | mobile data | $98.99 |  |
 | [Waveshare USB to M.2 B-key board](https://www.waveshare.com/usb-to-m.2-b-key.htm) | 1 | carries the module (USB) | ~$22 | CUT 58 mm from its USB end (removes its SMA jacks) to fit the mount; file the edge and check for shorts |
-| LTE modem board (coming) | 1 | the builder's own carrier for the module, in place of the Waveshare board | TBD | from the builder; USB on a JST PH 4-pin lead, no USB-A plug or extension; the shell's mount for it is not drawn yet, so for now use the Waveshare board |
+| LTE modem board (coming) | 1 | the builder's own carrier for the module, in place of the Waveshare board | TBD | from the builder; same size and holes as the cut Waveshare board, so it uses the same four standoffs (JST end up); USB on a JST PH 4-pin lead, no USB-A plug or extension |
 | [MHF4 to SMA female bulkhead pigtails, 20 cm (2-pack)](https://www.amazon.com/dp/B0FVW7M3LC) | 1 | module to the back-wall LTE holes | $7.49 |  |
 | [LTE antennas, SMA male](https://www.amazon.com/s?k=LTE+antenna+SMA+male) | 2 | on the LTE holes | ~$15 |  |
 | Nano SIM with a data plan that allows modems | 1 |  |  | many phone plans do not allow modem use |
@@ -256,7 +256,8 @@ multimeter.
    - USB hub board on its right-wall standoffs, ports through the back wall (M3 x 8).
    - Converter board on its right-wall standoffs (M3 x 8), with its two fuses.
    - BMS standing on its long edge on the back-wall standoffs (long M2 screws through cover, board and base).
-   - Optional LTE modem board on its back-wall standoffs above the BMS (M2 x 6), plug end up.
+   - Optional LTE modem board on its back-wall standoffs above the BMS (M2 x 6): the Waveshare board plug end up, or
+     the builder's modem board JST end up (its SIM holder faces the wall: fit the SIM first).
    - Optional Bluetooth board on its back-wall standoffs right of the modem (M3 x 8), parts facing the front, the
      module's antenna end UP and the connectors along the bottom. The two panel sockets go in the holes below it: mic in
      on the left, line out on the right; solder a JST PH pigtail to each (mic: 2-pin, + to pin 1; line out: 3-pin, L / R / GND).
@@ -293,7 +294,7 @@ USB-C charger ──> CHARGER BOARD ── J2 battery ── 10 A fuse ── BM
 | H5 HDMI | screen HDMI | right-angle HDMI (the screen's ports face sideways in its pocket) |
 | Hub USB-A | screen USB-C | right-angle USB-C: powers the screen and carries touch |
 | H5 USB 3.0 port | hub USB-B (upstream) | short USB 3.0 A to B, right-angle B is easier |
-| H5 USB 2.0 port | LTE modem board | short USB extension (optional) |
+| H5 USB 2.0 port | LTE modem board | Waveshare board: short USB extension; builder's modem board: a USB-A to JST PH 4-pin lead (1 = +5 V, 2 = D-, 3 = D+, 4 = GND) (optional) |
 | Bluetooth board J3 MIC | mic panel socket | JST PH 2 pigtail; check the mic plug's + contact (optional) |
 | Bluetooth board J4 LINE OUT | line-out panel socket | JST PH 3 pigtail: the H5's own sound for headphones (optional) |
 | Bluetooth board J2 USB | H5 header port P6 | JST PH 4 pigtail (below) (optional) |
