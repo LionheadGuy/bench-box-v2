@@ -326,18 +326,34 @@ USB-C charger ──> CHARGER BOARD ── J2 battery ── 10 A fuse ── BM
 **H5 USB ports**: USB 3.0 = hub, USB 2.0 = screen, USB 2.0 = LTE modem (optional), one USB 2.0 spare; the three
 header USB ports below are all used.
 
-**H5 24-pin expansion header** (pin 1 is the square pad):
+**H5 24-pin expansion header** (pin 1 is the square pad): every lead to it is crimped into ONE 2.54 mm 2 x 12 Dupont
+housing that covers the whole header, so it goes on and off as one plug.
 
-| Pins | Use |
-|---|---|
-| 17 PWR_BTN#, 19 GND | power button contacts (C and NO) |
-| 2 +5 V (on only while running), ground at the button | power button ring LED + / - |
-| 1 GND, 2 +5 V, 3 D+, 5 D- (USB port P7) | Stream Deck: cut the coiled cable's far end, crimp into one 2 x 3 Dupont housing (red 2, black 1, green 3, white 5) |
-| 2 +5 V, 7 D+, 9 D-, 11 GND (USB port P5) | battery readout: a short USB-A extension cut and crimped (1 x 3 housing on 7/9/11; splice its red into the Stream Deck's red for pin 2); the isolated USB-serial adapter plugs into its socket and its 3.3 V TX/RX/GND go to the BMS's UART plug |
-| 2 +5 V, 19 GND, 21 D+, 23 D- (USB port P6) | optional Bluetooth board: a JST PH 4 pigtail into its J2 (1 = +5 V red, 2 = D- white, 3 = D+ green, 4 = GND black); crimp 19/21/23 into one 1 x 3 housing, splice the red into pin 2 |
+| Pin | Lead | Pin | Lead |
+|---|---|---|---|
+| 1 GND | power button LED - | 2 +5 V (on only while running) | the 5 V splice (one crimp) |
+| 3 USB P7 D+ | Stream Deck green | 4 +3.3 V | empty |
+| 5 USB P7 D- | Stream Deck white | 6 GND | Stream Deck black |
+| 7 USB P5 D+ | battery readout green | 8 UART RXD | empty |
+| 9 USB P5 D- | battery readout white | 10 UART TXD | empty |
+| 11 GND | battery readout black | 12 UART CTS# | empty |
+| 13 I2C1 SCL | empty | 14 UART RTS# | empty |
+| 15 I2C1 SDA | empty | 16 GND | power button C |
+| 17 PWR_BTN# | power button NO | 18 I2C0 SCL | empty |
+| 19 GND | Bluetooth board black (optional) | 20 I2C0 SDA | empty |
+| 21 USB P6 D+ | Bluetooth board green (optional) | 22 HDMI CEC | empty |
+| 23 USB P6 D- | Bluetooth board white (optional) | 24 +5 V standby | **empty** (it would drain the pack with the box off) |
 
-Pin 2 is shared by three red wires (button LED, Stream Deck, adapter; four with the Bluetooth board): splice them before one crimp. How much current the header's 5 V can supply is not confirmed. Do not use pin
-24 (standby 5 V: it would drain the pack with the box off).
+- **Stream Deck:** cut the coiled cable's far end; red to the 5 V splice, black 6, green 3, white 5.
+- **Battery readout:** a short USB-A extension, cut; its socket takes the isolated USB-serial adapter, whose 3.3 V
+  TX/RX/GND go to the BMS's UART plug. Red to the 5 V splice, green 7, white 9, black 11.
+- **Bluetooth board (optional):** a JST PH 4 pigtail into its J2 (1 = +5 V red, 2 = D- white, 3 = D+ green, 4 = GND
+  black); red to the 5 V splice, black 19, green 21, white 23.
+- **The 5 V splice:** a short red lead crimped into pin 2; solder the reds of the Stream Deck, the battery readout, the
+  Bluetooth board and the button LED + to its other end and heat-shrink it, a few cm from the housing. Every other pin
+  takes one wire, and each device has its own ground pin. How much current the header's 5 V can supply is not confirmed.
+- **The housing fits either way round** (the header has no shroud): mark pin 1 on the housing and beside the header
+  before the first plug-in. Turned round, the 5 V would land on a USB data pin.
 
 ## First start
 

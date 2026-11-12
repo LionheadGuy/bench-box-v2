@@ -20,21 +20,22 @@ D,D-003,ODROID H5,USB 3.0 port,,,Coolgear USB hub,USB-B (right angle),HUB UPSTRE
 D,D-004,ODROID H5,USB 2.0 port,,,LTE modem,JST PH 4,LTE USB (USB-A to JST PH 4),cable,cable,TBD,biggest USB load in the box; the last USB 2.0 port stays free
 D,D-018,ODROID H5,,,,H5 24-pin header,,HEADER (on the board),per maker,cable,TBD,P5 / P6 / P7 are the header's USB 2.0 ports
 D,D-005,Coolgear USB hub,,,,Hub USB-A ports,,HUB PORTS OUT,per maker,cable,TBD,"keyboard, mouse, sticks: from outside"
-D,D-006,H5 24-pin header,pin 2 (spliced),,,Stream Deck Module 15,,P7 STREAM DECK +5V,24,RD,TBD,"coiled USB-C cable, 2 x 3 Dupont"
+D,D-006,H5 24-pin header,pin 2 (5 V splice),,,Stream Deck Module 15,,P7 STREAM DECK +5V,24,RD,TBD,coiled USB-C cable
 D,D-007,H5 24-pin header,pin 3,,,Stream Deck Module 15,,P7 STREAM DECK D+,24,GN,TBD,
 D,D-008,H5 24-pin header,pin 5,,,Stream Deck Module 15,,P7 STREAM DECK D-,24,WH,TBD,
-D,D-009,H5 24-pin header,pin 1,,,Stream Deck Module 15,,P7 STREAM DECK GND,24,BK,TBD,
-D,D-010,H5 24-pin header,pin 2 (spliced),,,Isolated USB-serial,,P5 BMS ADAPTER +5V,24,RD,TBD,"cut USB-A extension, 1 x 3 Dupont"
+D,D-009,H5 24-pin header,pin 6,,,Stream Deck Module 15,,P7 STREAM DECK GND,24,BK,TBD,
+D,D-010,H5 24-pin header,pin 2 (5 V splice),,,Isolated USB-serial,,P5 BMS ADAPTER +5V,24,RD,TBD,cut USB-A extension; these four drop out when the hub board takes the BMS serial
 D,D-011,H5 24-pin header,pin 7,,,Isolated USB-serial,,P5 BMS ADAPTER D+,24,GN,TBD,
 D,D-012,H5 24-pin header,pin 9,,,Isolated USB-serial,,P5 BMS ADAPTER D-,24,WH,TBD,
 D,D-013,H5 24-pin header,pin 11,,,Isolated USB-serial,,P5 BMS ADAPTER GND,24,BK,TBD,
-D,D-014,H5 24-pin header,pin 2 (spliced),,,Bluetooth board (ours),J2 JST PH4 pin 1,P6 BLUETOOTH +5V,24,RD,TBD,
-D,D-015,H5 24-pin header,pin 21 (CHECK),,,Bluetooth board (ours),J2 pin 3,P6 BLUETOOTH D+,24,GN,TBD,
-D,D-016,H5 24-pin header,pin 23 (CHECK),,,Bluetooth board (ours),J2 pin 2,P6 BLUETOOTH D-,24,WH,TBD,
+D,D-014,H5 24-pin header,pin 2 (5 V splice),,,Bluetooth board (ours),J2 JST PH4 pin 1,P6 BLUETOOTH +5V,24,RD,TBD,
+D,D-015,H5 24-pin header,pin 21,,,Bluetooth board (ours),J2 pin 3,P6 BLUETOOTH D+,24,GN,TBD,
+D,D-016,H5 24-pin header,pin 23,,,Bluetooth board (ours),J2 pin 2,P6 BLUETOOTH D-,24,WH,TBD,
 D,D-017,H5 24-pin header,pin 19,,,Bluetooth board (ours),J2 pin 4,P6 BLUETOOTH GND,24,BK,TBD,
+D,D-019,H5 24-pin header,pin 2,,,H5 24-pin header,5 V splice,+5V PIGTAIL (pin 2) TO THE 5 V SPLICE,22,RD,TBD,"ONE crimp in pin 2; the Stream Deck, BMS adapter, BT board and button LED reds soldered to it, heat-shrunk"
 C,C-001,H5 24-pin header,pin 17 PWR_BTN#,,,Power button + ring LED,,POWER BUTTON,24,YE,TBD,momentary to ground = Windows power button
-C,C-002,H5 24-pin header,pin 19,,,Power button + ring LED,,POWER BUTTON GND,24,BK/WH,TBD,
-C,C-003,H5 24-pin header,pin 2 (spliced),,,Power button + ring LED,,BUTTON LED +5V,24,RD,TBD,
+C,C-002,H5 24-pin header,pin 16,,,Power button + ring LED,,POWER BUTTON GND,24,BK/WH,TBD,own ground pin (19 is the BT board's)
+C,C-003,H5 24-pin header,pin 2 (5 V splice),,,Power button + ring LED,,BUTTON LED +5V,24,RD,TBD,
 C,C-004,H5 24-pin header,pin 1,,,Power button + ring LED,,BUTTON LED GND,24,BK,TBD,
 C,C-005,ODROID H5,CPU fan header,,,3-way fan splitter,,FAN HEADER (4-pin PWM),per maker,cable,TBD,~0.2 A for three Noctuas: CHECK
 C,C-006,3-way fan splitter,,,,Intake fan NF-A9x14,,INTAKE FAN,per maker,cable,TBD,
