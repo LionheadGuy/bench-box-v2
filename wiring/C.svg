@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1338 846" width="1338" height="846" font-family="Segoe UI, Arial, sans-serif">
+<rect width="1338" height="846" fill="#ffffff"/>
+<text x="24.0" y="36.0" font-size="24" text-anchor="start" font-weight="bold" fill="#222">C  Controls, fans, antennas, audio: rough wiring diagram</text>
+<text x="24.0" y="60.0" font-size="12.5" text-anchor="start" font-weight="normal" fill="#333">Front panel, cooling, the four antenna leads and the two audio jacks.</text>
+<rect x="24" y="72" width="1290" height="26" rx="4" fill="#fff4d6" stroke="#e0b44c"/>
+<text x="34.0" y="90.0" font-size="12" text-anchor="start" font-weight="normal" fill="#7a5a00">ROUGH: lengths TBD. Wire count, gauges (AWG) and colours are PROPOSED and will change before the build-ready drawing. 14 wires. Generated 2026-11-11 from wiring.py.</text>
+<text x="24.0" y="142.0" font-size="11" text-anchor="start" font-weight="bold" fill="#666">FROM</text>
+<text x="824.0" y="142.0" font-size="11" text-anchor="start" font-weight="bold" fill="#666">TO</text>
+<text x="549.0" y="156.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#999" font-style="italic">bundle length TBD</text>
+<rect x="24" y="168" width="250" height="88" rx="6" fill="#dfe9f7" stroke="#2c3e50" stroke-width="1.5"/>
+<text x="32.0" y="183.0" font-size="12.5" text-anchor="start" font-weight="bold" fill="#222">H5 24-pin header</text>
+<text x="32.0" y="197.0" font-size="10.5" text-anchor="start" font-weight="normal" fill="#555" font-style="italic">expansion header on the H5</text>
+<rect x="24" y="272" width="250" height="44" rx="6" fill="#dfe9f7" stroke="#2c3e50" stroke-width="1.5"/>
+<text x="32.0" y="287.0" font-size="12.5" text-anchor="start" font-weight="bold" fill="#222">ODROID H5</text>
+<text x="32.0" y="301.0" font-size="10.5" text-anchor="start" font-weight="normal" fill="#555" font-style="italic">front plate standoffs</text>
+<rect x="24" y="332" width="250" height="140" rx="6" fill="#e4f3e4" stroke="#2c3e50" stroke-width="1.5"/>
+<text x="32.0" y="347.0" font-size="12.5" text-anchor="start" font-weight="bold" fill="#222">3-way fan splitter</text>
+<text x="32.0" y="361.0" font-size="10.5" text-anchor="start" font-weight="normal" fill="#555" font-style="italic">on the H5 fan header</text>
+<rect x="24" y="488" width="250" height="44" rx="6" fill="#e4f3e4" stroke="#2c3e50" stroke-width="1.5"/>
+<text x="32.0" y="503.0" font-size="12.5" text-anchor="start" font-weight="bold" fill="#222">AX210 WiFi card</text>
+<text x="32.0" y="517.0" font-size="10.5" text-anchor="start" font-weight="normal" fill="#555" font-style="italic">M.2 under the H5</text>
+<rect x="24" y="548" width="250" height="44" rx="6" fill="#e4f3e4" stroke="#2c3e50" stroke-width="1.5"/>
+<text x="32.0" y="563.0" font-size="12.5" text-anchor="start" font-weight="bold" fill="#222">LTE modem</text>
+<text x="32.0" y="577.0" font-size="10.5" text-anchor="start" font-weight="normal" fill="#555" font-style="italic">our carrier board (bench-box/modem) + Quectel EM060K, back wall</text>
+<rect x="24" y="608" width="250" height="92" rx="6" fill="#dfe9f7" stroke="#2c3e50" stroke-width="1.5"/>
+<text x="32.0" y="623.0" font-size="12.5" text-anchor="start" font-weight="bold" fill="#222">Bluetooth board (ours)</text>
+<text x="32.0" y="637.0" font-size="10.5" text-anchor="start" font-weight="normal" fill="#555" font-style="italic">electronics/bluetooth, back wall</text>
+<rect x="824" y="168" width="270" height="88" rx="6" fill="#e4f3e4" stroke="#2c3e50" stroke-width="1.5"/>
+<text x="832.0" y="183.0" font-size="12.5" text-anchor="start" font-weight="bold" fill="#222">Power button + ring LED</text>
+<text x="832.0" y="197.0" font-size="10.5" text-anchor="start" font-weight="normal" fill="#555" font-style="italic">12 mm, front strip</text>
+<rect x="824" y="272" width="270" height="44" rx="6" fill="#e4f3e4" stroke="#2c3e50" stroke-width="1.5"/>
+<text x="832.0" y="287.0" font-size="12.5" text-anchor="start" font-weight="bold" fill="#222">3-way fan splitter</text>
+<text x="832.0" y="301.0" font-size="10.5" text-anchor="start" font-weight="normal" fill="#555" font-style="italic">on the H5 fan header</text>
+<rect x="824" y="332" width="270" height="44" rx="6" fill="#e4f3e4" stroke="#2c3e50" stroke-width="1.5"/>
+<text x="832.0" y="347.0" font-size="12.5" text-anchor="start" font-weight="bold" fill="#222">Intake fan NF-A9x14</text>
+<text x="832.0" y="361.0" font-size="10.5" text-anchor="start" font-weight="normal" fill="#555" font-style="italic">back wall over the heatsink</text>
+<rect x="824" y="380" width="270" height="44" rx="6" fill="#e4f3e4" stroke="#2c3e50" stroke-width="1.5"/>
+<text x="832.0" y="395.0" font-size="12.5" text-anchor="start" font-weight="bold" fill="#222">Exhaust fan NF-A6x15 (1)</text>
+<text x="832.0" y="409.0" font-size="10.5" text-anchor="start" font-weight="normal" fill="#555" font-style="italic">top</text>
+<rect x="824" y="428" width="270" height="44" rx="6" fill="#e4f3e4" stroke="#2c3e50" stroke-width="1.5"/>
+<text x="832.0" y="443.0" font-size="12.5" text-anchor="start" font-weight="bold" fill="#222">Exhaust fan NF-A6x15 (2)</text>
+<text x="832.0" y="457.0" font-size="10.5" text-anchor="start" font-weight="normal" fill="#555" font-style="italic">top, right half</text>
+<rect x="824" y="488" width="270" height="44" rx="6" fill="#e4f3e4" stroke="#2c3e50" stroke-width="1.5"/>
+<text x="832.0" y="503.0" font-size="12.5" text-anchor="start" font-weight="bold" fill="#222">Antenna bulkheads</text>
+<text x="832.0" y="517.0" font-size="10.5" text-anchor="start" font-weight="normal" fill="#555" font-style="italic">back wall row: WiFi RP-SMA x2, LTE SMA x2</text>
+<rect x="824" y="548" width="270" height="44" rx="6" fill="#e4f3e4" stroke="#2c3e50" stroke-width="1.5"/>
+<text x="832.0" y="563.0" font-size="12.5" text-anchor="start" font-weight="bold" fill="#222">Antenna bulkheads</text>
+<text x="832.0" y="577.0" font-size="10.5" text-anchor="start" font-weight="normal" fill="#555" font-style="italic">back wall row: WiFi RP-SMA x2, LTE SMA x2</text>
+<rect x="824" y="608" width="270" height="44" rx="6" fill="#e4f3e4" stroke="#2c3e50" stroke-width="1.5"/>
+<text x="832.0" y="623.0" font-size="12.5" text-anchor="start" font-weight="bold" fill="#222">Mic in jack (3.5 mm)</text>
+<text x="832.0" y="637.0" font-size="10.5" text-anchor="start" font-weight="normal" fill="#555" font-style="italic">back wall, under the BT board</text>
+<rect x="824" y="656" width="270" height="44" rx="6" fill="#e4f3e4" stroke="#2c3e50" stroke-width="1.5"/>
+<text x="832.0" y="671.0" font-size="12.5" text-anchor="start" font-weight="bold" fill="#222">Line out jack (3.5 mm)</text>
+<text x="832.0" y="685.0" font-size="10.5" text-anchor="start" font-weight="normal" fill="#555" font-style="italic">back wall, under the BT board</text>
+<line x1="274" y1="179.0" x2="824" y2="179.0" stroke="#333" stroke-width="5.5"/><line x1="274" y1="179.0" x2="824" y2="179.0" stroke="#f4d03f" stroke-width="4"/>
+<text x="282.0" y="174.0" font-size="10.5" text-anchor="start" font-weight="normal" fill="#222">C-001  POWER BUTTON   24 AWG   YE</text>
+<text x="816.0" y="174.0" font-size="10" text-anchor="end" font-weight="normal" fill="#666" font-style="italic">momentary to ground = Windows power button</text>
+<text x="268.0" y="183.0" font-size="10" text-anchor="end" font-weight="normal" fill="#1f3a5f">pin 17 PWR_BTN#</text>
+<line x1="274" y1="201.0" x2="824" y2="201.0" stroke="#333" stroke-width="5.5"/><line x1="274" y1="201.0" x2="824" y2="201.0" stroke="#1b1b1b" stroke-width="4"/><line x1="274" y1="201.0" x2="824" y2="201.0" stroke="#f2f2f2" stroke-width="2" stroke-dasharray="6 6"/>
+<text x="282.0" y="196.0" font-size="10.5" text-anchor="start" font-weight="normal" fill="#222">C-002  POWER BUTTON GND   24 AWG   BK/WH</text>
+<text x="268.0" y="205.0" font-size="10" text-anchor="end" font-weight="normal" fill="#1f3a5f">pin 19</text>
+<line x1="274" y1="223.0" x2="824" y2="223.0" stroke="#333" stroke-width="5.5"/><line x1="274" y1="223.0" x2="824" y2="223.0" stroke="#d32f2f" stroke-width="4"/>
+<text x="282.0" y="218.0" font-size="10.5" text-anchor="start" font-weight="normal" fill="#222">C-003  BUTTON LED +5V   24 AWG   RD</text>
+<text x="268.0" y="227.0" font-size="10" text-anchor="end" font-weight="normal" fill="#1f3a5f">pin 2 (spliced)</text>
+<line x1="274" y1="245.0" x2="824" y2="245.0" stroke="#333" stroke-width="5.5"/><line x1="274" y1="245.0" x2="824" y2="245.0" stroke="#1b1b1b" stroke-width="4"/>
+<text x="282.0" y="240.0" font-size="10.5" text-anchor="start" font-weight="normal" fill="#222">C-004  BUTTON LED GND   24 AWG   BK</text>
+<text x="268.0" y="249.0" font-size="10" text-anchor="end" font-weight="normal" fill="#1f3a5f">pin 1</text>
+<line x1="274" y1="283.0" x2="824" y2="283.0" stroke="#666" stroke-width="5" stroke-dasharray="10 4" stroke-linecap="round"/>
+<text x="282.0" y="278.0" font-size="10.5" text-anchor="start" font-weight="normal" fill="#222">C-005  FAN HEADER (4-pin PWM)   per maker   cable</text>
+<text x="816.0" y="278.0" font-size="10" text-anchor="end" font-weight="normal" fill="#666" font-style="italic">~0.2 A for three Noctuas: CHECK</text>
+<text x="268.0" y="287.0" font-size="10" text-anchor="end" font-weight="normal" fill="#1f3a5f">CPU fan header</text>
+<line x1="274" y1="343.0" x2="824" y2="343.0" stroke="#666" stroke-width="5" stroke-dasharray="10 4" stroke-linecap="round"/>
+<text x="282.0" y="338.0" font-size="10.5" text-anchor="start" font-weight="normal" fill="#222">C-006  INTAKE FAN   per maker   cable</text>
+<line x1="274" y1="391.0" x2="824" y2="391.0" stroke="#666" stroke-width="5" stroke-dasharray="10 4" stroke-linecap="round"/>
+<text x="282.0" y="386.0" font-size="10.5" text-anchor="start" font-weight="normal" fill="#222">C-007  EXHAUST FAN 1   per maker   cable</text>
+<line x1="274" y1="439.0" x2="824" y2="439.0" stroke="#666" stroke-width="5" stroke-dasharray="10 4" stroke-linecap="round"/>
+<text x="282.0" y="434.0" font-size="10.5" text-anchor="start" font-weight="normal" fill="#222">C-008  EXHAUST FAN 2   per maker   cable</text>
+<text x="816.0" y="434.0" font-size="10" text-anchor="end" font-weight="normal" fill="#666" font-style="italic">off while charging with the H5 off</text>
+<line x1="274" y1="499.0" x2="824" y2="499.0" stroke="#666" stroke-width="5" stroke-dasharray="10 4" stroke-linecap="round"/>
+<text x="282.0" y="494.0" font-size="10.5" text-anchor="start" font-weight="normal" fill="#222">C-009  WIFI MAIN (MHF4 to RP-SMA)   cable</text>
+<text x="816.0" y="494.0" font-size="10" text-anchor="end" font-weight="normal" fill="#666" font-style="italic">check the pigtails reach the back wall</text>
+<text x="1088.0" y="503.0" font-size="10" text-anchor="end" font-weight="normal" fill="#1f3a5f">x 85</text>
+<line x1="274" y1="521.0" x2="824" y2="521.0" stroke="#666" stroke-width="5" stroke-dasharray="10 4" stroke-linecap="round"/>
+<text x="282.0" y="516.0" font-size="10.5" text-anchor="start" font-weight="normal" fill="#222">C-010  WIFI AUX (MHF4 to RP-SMA)   cable</text>
+<text x="1088.0" y="525.0" font-size="10" text-anchor="end" font-weight="normal" fill="#1f3a5f">x 115</text>
+<line x1="274" y1="559.0" x2="824" y2="559.0" stroke="#666" stroke-width="5" stroke-dasharray="10 4" stroke-linecap="round"/>
+<text x="282.0" y="554.0" font-size="10.5" text-anchor="start" font-weight="normal" fill="#222">C-011  LTE MAIN (MHF4 to SMA)   cable</text>
+<text x="816.0" y="554.0" font-size="10" text-anchor="end" font-weight="normal" fill="#666" font-style="italic">~150 mm run, 200 mm pigtail</text>
+<text x="1088.0" y="563.0" font-size="10" text-anchor="end" font-weight="normal" fill="#1f3a5f">x 145</text>
+<line x1="274" y1="581.0" x2="824" y2="581.0" stroke="#666" stroke-width="5" stroke-dasharray="10 4" stroke-linecap="round"/>
+<text x="282.0" y="576.0" font-size="10.5" text-anchor="start" font-weight="normal" fill="#222">C-012  LTE DIV (MHF4 to SMA)   cable</text>
+<text x="1088.0" y="585.0" font-size="10" text-anchor="end" font-weight="normal" fill="#1f3a5f">x 175</text>
+<line x1="274" y1="619.0" x2="824" y2="619.0" stroke="#666" stroke-width="5" stroke-dasharray="10 4" stroke-linecap="round"/>
+<text x="282.0" y="614.0" font-size="10.5" text-anchor="start" font-weight="normal" fill="#222">C-013  MIC IN   cable</text>
+<text x="816.0" y="614.0" font-size="10" text-anchor="end" font-weight="normal" fill="#666" font-style="italic">electret mic on the module&#x27;s MIC_L</text>
+<text x="268.0" y="623.0" font-size="10" text-anchor="end" font-weight="normal" fill="#1f3a5f">J3 JST PH2</text>
+<line x1="274" y1="667.0" x2="824" y2="667.0" stroke="#666" stroke-width="5" stroke-dasharray="10 4" stroke-linecap="round"/>
+<text x="282.0" y="662.0" font-size="10.5" text-anchor="start" font-weight="normal" fill="#222">C-014  LINE OUT (H5 sound)   cable</text>
+<text x="816.0" y="662.0" font-size="10" text-anchor="end" font-weight="normal" fill="#666" font-style="italic">the H5 has no analog audio of its own</text>
+<text x="268.0" y="671.0" font-size="10" text-anchor="end" font-weight="normal" fill="#1f3a5f">J4</text>
+<text x="24.0" y="707.0" font-size="13" text-anchor="start" font-weight="bold" fill="#222">Notes</text>
+<text x="34.0" y="725.0" font-size="11" text-anchor="start" font-weight="normal" fill="#333">- The H5 is the only feed into the car&#x27;s stereo; in the box, LINE OUT is for bench headphones.</text>
+<text x="34.0" y="743.0" font-size="11" text-anchor="start" font-weight="normal" fill="#333">- Panel socket holes (6.5 mm) are placeholders until the sockets are bought.</text>
+<text x="34.0" y="761.0" font-size="11" text-anchor="start" font-weight="normal" fill="#333">- Pins in the boxes: module / connector pin where known (TBD = not assigned). Join pins (S5-3, D-FL-12 ...) are the same number on both harnesses.</text>
+<text x="34.0" y="779.0" font-size="11" text-anchor="start" font-weight="normal" fill="#333">- Colour codes: base/stripe (BK black, RD red, OR orange, YE yellow, GN green, BU blue, VT violet, GY grey, WH white, BN brown sensor ground, PK pink, TN tan, LB / LG light blue / green). Dashed grey = off-the-shelf cable.</text>
+</svg>

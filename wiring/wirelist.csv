@@ -1,0 +1,48 @@
+harness,wire,from,from pin,through,through pin,to,to pin,circuit,gauge (AWG),colour,length,note
+P,P-001,USB-C laptop charger,,,,Charger board (ours),J1 USB-C,USB-C IN (20 V),cable,cable,TBD,left wall; 2.92 A input limit (4.38 A with JP1 cut)
+P,P-002,Battery pack,7 AWG lead,,,Pack fuse,,PACK +,7,RD,TBD,pack has NO protection board: the BMS is it
+P,P-004,Battery pack,7 AWG lead,,,JBD BMS SP04S010A,B- pad,PACK - (B-),7,BK,TBD,
+P,P-006,Battery pack,,,,JBD BMS SP04S010A,BC0-BC4,BALANCE LEAD (JST-XH 5),per maker,cable,TBD,CHECK the 4S board's plug layout
+P,P-003,Pack fuse,,,,Charger board (ours),J2 XT30 pin 2 (+),BATTERY + (BAT),12,RD,TBD,
+P,P-005,JBD BMS SP04S010A,P- pad,,,Charger board (ours),J2 XT30 pin 1 (-),BATTERY - (P-),12,BK,TBD,BMS cut-off MOSFETs sit here
+P,P-015,JBD BMS SP04S010A,UART plug (pins: CHECK),,,Isolated USB-serial,,BMS UART TX / RX / GND,24,VT,TBD,"isolated: BMS ground is B-, not P-"
+P,P-007,Pack NTC 10 k (103AT),,,,Charger board (ours),J4 JST PH,PACK TEMP (NTC),26,WH,TBD,no charging with J4 empty (or close JP2)
+P,P-008,Charger board (ours),J3 XT30 pin 2 (+),,,Rocker switch (KCD1),,SYS OUT +,14,RD/WH,TBD,"pack or USB-C, whichever is live"
+P,P-010,Charger board (ours),J3 XT30 pin 1 (-),,,Converter board (ours),J1 XT30 pin 1 (-),RAIL -,14,BK/WH,TBD,negative bypasses the rocker
+P,P-009,Rocker switch (KCD1),,,,Converter board (ours),J1 XT30 pin 2 (+),RAIL + (switched),14,RD/YE,TBD,rocker off = nothing draws from the pack
+P,P-011,Converter board (ours),J2 XT30 (5 A fuse),,,Coolgear USB hub,barrel 5.5/2.5 or terminal: CHECK,HUB FEED + (12-20.5 V),16,RD/BU,TBD,
+P,P-012,Converter board (ours),J2 XT30,,,Coolgear USB hub,,HUB FEED -,16,BK/BU,TBD,
+P,P-013,Converter board (ours),J3 XT30 (10 A fuse),,,ODROID H5,DC jack 5.5/2.1,H5 FEED +12 (TRACO),16,RD/GN,TBD,
+P,P-014,Converter board (ours),J3 XT30,,,ODROID H5,,H5 FEED -,16,BK/GN,TBD,
+D,D-001,ODROID H5,HDMI,,,VIEWMEI screen,right-angle plug,SCREEN HDMI,cable,cable,TBD,
+D,D-002,ODROID H5,USB 2.0 port (above the 3.0),,,VIEWMEI screen,right-angle plug,SCREEN USB-C (touch + power),cable,cable,TBD,USB 2.0 is enough for its power and touch
+D,D-003,ODROID H5,USB 3.0 port,,,Coolgear USB hub,USB-B (right angle),HUB UPSTREAM USB,cable,cable,TBD,the H5's only USB 3.0 port: full speed for what plugs into the hub
+D,D-004,ODROID H5,USB 2.0 port,,,LTE modem,JST PH 4,LTE USB (USB-A to JST PH 4),cable,cable,TBD,biggest USB load in the box; the last USB 2.0 port stays free
+D,D-018,ODROID H5,,,,H5 24-pin header,,HEADER (on the board),per maker,cable,TBD,P5 / P6 / P7 are the header's USB 2.0 ports
+D,D-005,Coolgear USB hub,,,,Hub USB-A ports,,HUB PORTS OUT,per maker,cable,TBD,"keyboard, mouse, sticks: from outside"
+D,D-006,H5 24-pin header,pin 2 (spliced),,,Stream Deck Module 15,,P7 STREAM DECK +5V,24,RD,TBD,"coiled USB-C cable, 2 x 3 Dupont"
+D,D-007,H5 24-pin header,pin 3,,,Stream Deck Module 15,,P7 STREAM DECK D+,24,GN,TBD,
+D,D-008,H5 24-pin header,pin 5,,,Stream Deck Module 15,,P7 STREAM DECK D-,24,WH,TBD,
+D,D-009,H5 24-pin header,pin 1,,,Stream Deck Module 15,,P7 STREAM DECK GND,24,BK,TBD,
+D,D-010,H5 24-pin header,pin 2 (spliced),,,Isolated USB-serial,,P5 BMS ADAPTER +5V,24,RD,TBD,"cut USB-A extension, 1 x 3 Dupont"
+D,D-011,H5 24-pin header,pin 7,,,Isolated USB-serial,,P5 BMS ADAPTER D+,24,GN,TBD,
+D,D-012,H5 24-pin header,pin 9,,,Isolated USB-serial,,P5 BMS ADAPTER D-,24,WH,TBD,
+D,D-013,H5 24-pin header,pin 11,,,Isolated USB-serial,,P5 BMS ADAPTER GND,24,BK,TBD,
+D,D-014,H5 24-pin header,pin 2 (spliced),,,Bluetooth board (ours),J2 JST PH4 pin 1,P6 BLUETOOTH +5V,24,RD,TBD,
+D,D-015,H5 24-pin header,pin 21 (CHECK),,,Bluetooth board (ours),J2 pin 3,P6 BLUETOOTH D+,24,GN,TBD,
+D,D-016,H5 24-pin header,pin 23 (CHECK),,,Bluetooth board (ours),J2 pin 2,P6 BLUETOOTH D-,24,WH,TBD,
+D,D-017,H5 24-pin header,pin 19,,,Bluetooth board (ours),J2 pin 4,P6 BLUETOOTH GND,24,BK,TBD,
+C,C-001,H5 24-pin header,pin 17 PWR_BTN#,,,Power button + ring LED,,POWER BUTTON,24,YE,TBD,momentary to ground = Windows power button
+C,C-002,H5 24-pin header,pin 19,,,Power button + ring LED,,POWER BUTTON GND,24,BK/WH,TBD,
+C,C-003,H5 24-pin header,pin 2 (spliced),,,Power button + ring LED,,BUTTON LED +5V,24,RD,TBD,
+C,C-004,H5 24-pin header,pin 1,,,Power button + ring LED,,BUTTON LED GND,24,BK,TBD,
+C,C-005,ODROID H5,CPU fan header,,,3-way fan splitter,,FAN HEADER (4-pin PWM),per maker,cable,TBD,~0.2 A for three Noctuas: CHECK
+C,C-006,3-way fan splitter,,,,Intake fan NF-A9x14,,INTAKE FAN,per maker,cable,TBD,
+C,C-007,3-way fan splitter,,,,Exhaust fan NF-A6x15 (1),,EXHAUST FAN 1,per maker,cable,TBD,
+C,C-008,3-way fan splitter,,,,Exhaust fan NF-A6x15 (2),,EXHAUST FAN 2,per maker,cable,TBD,off while charging with the H5 off
+C,C-009,AX210 WiFi card,,,,Antenna bulkheads,x 85,WIFI MAIN (MHF4 to RP-SMA),cable,cable,TBD,check the pigtails reach the back wall
+C,C-010,AX210 WiFi card,,,,Antenna bulkheads,x 115,WIFI AUX (MHF4 to RP-SMA),cable,cable,TBD,
+C,C-011,LTE modem,,,,Antenna bulkheads,x 145,LTE MAIN (MHF4 to SMA),cable,cable,TBD,"~150 mm run, 200 mm pigtail"
+C,C-012,LTE modem,,,,Antenna bulkheads,x 175,LTE DIV (MHF4 to SMA),cable,cable,TBD,
+C,C-013,Bluetooth board (ours),J3 JST PH2,,,Mic in jack (3.5 mm),,MIC IN,cable,cable,TBD,electret mic on the module's MIC_L
+C,C-014,Bluetooth board (ours),J4,,,Line out jack (3.5 mm),,LINE OUT (H5 sound),cable,cable,TBD,the H5 has no analog audio of its own

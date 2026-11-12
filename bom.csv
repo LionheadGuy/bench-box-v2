@@ -25,10 +25,12 @@ Custom boards (from the builder),"Littelfuse 0297010.WXNV MINI blade fuse, 10 A"
 Custom boards (from the builder),"Littelfuse 0297005.WXNV MINI blade fuse, 5 A",1+,converter board F1,https://www.digikey.com/en/products/result?keywords=0297005.WXNV,$0.39,buy spares
 USB and cables,Coolgear CG-7PU31HB-PCBA 7-port USB 3.2 hub board,1,USB ports on the back,https://www.digikey.com/en/products/detail/coolgear/CG-7PU31HB-PCBA/16720388,$146.70,
 USB and cables,"HDMI, 1 ft, 90 degree plug",1,H5 to screen,https://www.amazon.com/dp/B06Y69TCTW,~$8-10,
-USB and cables,"USB-A to USB-C, 1 ft, right-angle (2-pack)",1,hub to screen (power + touch),https://www.amazon.com/dp/B0784F9JP2,~$8,
+USB and cables,"USB-A to USB-C, 1 ft, right-angle (2-pack)",1,H5 USB 2.0 port to screen (power + touch),https://www.amazon.com/dp/B0784F9JP2,~$8,
 USB and cables,"USB 3.0 A to B, 1 ft, right-angle",1,H5 to hub,https://www.amazon.com/dp/B07SR71Q67,~$8-10,
 USB and cables,"18 AWG pigtail, 5.5 x 2.1 mm male barrel (3-pack)",1,converter 12 V to the H5,https://www.amazon.com/dp/B0DGQS55NG,$6.99,fit an XT30 male on the free end
 USB and cables,DSD TECH SH-U09C3 isolated USB-serial adapter,1,battery readout (BMS UART),https://www.amazon.com/dp/B07TS3GPQ1,~$15,set its jumper to 3.3 V
+USB and cables,Cat6 UTP punch-down keystone jack,1,Ethernet port in the back wall,https://www.amazon.com/s?k=cat6+utp+punch+down+keystone+jack,~$5,standard keystone (14.9 x 19.4 mm opening); unshielded
+USB and cables,"Cat6 patch cable, 1 ft",1,H5 to the keystone jack,https://www.amazon.com/s?k=cat6+patch+cable+1+ft,~$5,far end cut off and punched down on the jack
 USB and cables,Short USB-A male to female extension,1,cut and crimped to header port P5 for the adapter,https://www.amazon.com/s?k=short+USB+A+extension+cable,~$5,
 Cooling,Noctua NF-A9x14 PWM,1,"intake, back wall",https://www.amazon.com/dp/B009NQM7V2,$18.95,
 Cooling,Noctua NF-A6x15 PWM (12 V version),2,"exhaust, top",https://www.amazon.com/dp/B0DJNX4CX4,$16.95 each,not the 5 V version

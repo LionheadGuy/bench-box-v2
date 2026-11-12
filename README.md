@@ -16,6 +16,7 @@ nothing in it is car-specific: it is a general-purpose Windows or Linux PC.
 | Battery | 14.8 V 6.6 Ah LiPo (~98 Wh) with a smart BMS; ~3 h at a typical 30 W |
 | Charging | USB-C PD (60 W+ charger; 100 W for the fastest charge), runs while charging, no break when unplugged |
 | USB | 7 x USB 3.2 on the back (hub), plus header ports used inside for the Stream Deck and battery readout |
+| Network | Ethernet on a keystone jack in the back wall |
 | Wireless | WiFi 6E + Bluetooth (Intel AX210); optional LTE Cat 6 (Quectel EM060K); optional Bluetooth hands-free board (calls, phone book, phone audio) |
 | Cooling | 3 Noctua fans (one in, two out), on the H5's own fan control |
 | Size | about 280 x 227 x 116 mm (W x H x D, Stream Deck dock included) + 36 mm handle |
@@ -47,6 +48,7 @@ nothing in it is car-specific: it is a general-purpose Windows or Linux PC.
 | [`print/`](print) | **Slicer-ready `.3mf` files**, one per print job, parts already laid flat |
 | [`stl/`](stl) | the same parts as STL, in their assembled positions (GitHub shows them in 3D) |
 | [`bom.csv`](bom.csv) | the parts list below as a spreadsheet |
+| [`wiring/`](wiring) | wiring poster (`bench-box-v2-poster.png` / `.pdf`) and wire-by-wire sheets (open `index.html`; `wirelist.csv` lists every lead) |
 | [`images/`](images) | the pictures on this page |
 
 ## Bill of materials
@@ -106,10 +108,12 @@ connects: [Custom boards](#custom-boards) below.
 |---|---|---|---|---|
 | [Coolgear CG-7PU31HB-PCBA 7-port USB 3.2 hub board](https://www.digikey.com/en/products/detail/coolgear/CG-7PU31HB-PCBA/16720388) | 1 | USB ports on the back | $146.70 |  |
 | [HDMI, 1 ft, 90 degree plug](https://www.amazon.com/dp/B06Y69TCTW) | 1 | H5 to screen | ~$8-10 |  |
-| [USB-A to USB-C, 1 ft, right-angle (2-pack)](https://www.amazon.com/dp/B0784F9JP2) | 1 | hub to screen (power + touch) | ~$8 |  |
+| [USB-A to USB-C, 1 ft, right-angle (2-pack)](https://www.amazon.com/dp/B0784F9JP2) | 1 | H5 USB 2.0 port to screen (power + touch) | ~$8 |  |
 | [USB 3.0 A to B, 1 ft, right-angle](https://www.amazon.com/dp/B07SR71Q67) | 1 | H5 to hub | ~$8-10 |  |
 | [18 AWG pigtail, 5.5 x 2.1 mm male barrel (3-pack)](https://www.amazon.com/dp/B0DGQS55NG) | 1 | converter 12 V to the H5 | $6.99 | fit an XT30 male on the free end |
 | [DSD TECH SH-U09C3 isolated USB-serial adapter](https://www.amazon.com/dp/B07TS3GPQ1) | 1 | battery readout (BMS UART) | ~$15 | set its jumper to 3.3 V |
+| [Cat6 UTP punch-down keystone jack](https://www.amazon.com/s?k=cat6+utp+punch+down+keystone+jack) | 1 | Ethernet port in the back wall | ~$5 | standard keystone (14.9 x 19.4 mm opening); unshielded |
+| [Cat6 patch cable, 1 ft](https://www.amazon.com/s?k=cat6+patch+cable+1+ft) | 1 | H5 to the keystone jack | ~$5 | far end cut off and punched down on the jack |
 | [Short USB-A male to female extension](https://www.amazon.com/s?k=short+USB+A+extension+cable) | 1 | cut and crimped to header port P5 for the adapter | ~$5 |  |
 
 ### Cooling
@@ -141,7 +145,46 @@ connects: [Custom boards](#custom-boards) below.
 | [Dupont crimp kit (housings + pins + crimper)](https://www.amazon.com/s?k=dupont+crimp+kit) | 1 | header connections | ~$25 |  |
 | [Heat-shrink kit](https://www.amazon.com/dp/B0C81FHPHN) | 1 | every joint | $9.99 |  |
 
-### Custom boards
+### Printing
+
+| Part | Qty | For | Price | Notes |
+|---|---|---|---|---|
+| [ASA or ABS filament, 1 kg](https://www.amazon.com/s?k=ASA+filament+1kg) | 1 | all printed parts | ~$25 | PETG for a desk-only box |
+
+### Optional: Stream Deck dock
+
+| Part | Qty | For | Price | Notes |
+|---|---|---|---|---|
+| [Elgato Stream Deck Module 15 Keys (10GBT9901)](https://www.elgato.com/us/en/p/stream-deck-module-15-keys) | 1 | 15 LCD keys, docked on the right wall | $129.99 | case: print/5-stream-deck-case.3mf + 4 x M3 x 6 and 4 inserts |
+| [Coiled USB-C to USB-A cable (Cable Matters 4 ft)](https://cablematters.com/pc-1678-123-coiled-usb-c-to-usb-a-charging-cable-4ft.aspx) | 1 | Stream Deck to header port P7 | ~$10-13 | USB-A end cut off and crimped |
+
+### Optional: LTE
+
+| Part | Qty | For | Price | Notes |
+|---|---|---|---|---|
+| [Quectel EM060K-GL LTE Cat 6 M.2 module](https://www.waveshare.com/product/em060k-gl.htm) | 1 | mobile data | $98.99 |  |
+| [Waveshare USB to M.2 B-key board](https://www.waveshare.com/usb-to-m.2-b-key.htm) | 1 | carries the module (USB) | ~$22 | CUT 58 mm from its USB end (removes its SMA jacks) to fit the mount; file the edge and check for shorts |
+| LTE modem board (coming) | 1 | the builder's own carrier for the module, in place of the Waveshare board | TBD | from the builder; same size and holes as the cut Waveshare board, so it uses the same four standoffs (JST end up); USB on a JST PH 4-pin lead, no USB-A plug or extension |
+| [MHF4 to SMA female bulkhead pigtails, 20 cm (2-pack)](https://www.amazon.com/dp/B0FVW7M3LC) | 1 | module to the back-wall LTE holes | $7.49 |  |
+| [LTE antennas, SMA male](https://www.amazon.com/s?k=LTE+antenna+SMA+male) | 2 | on the LTE holes | ~$15 |  |
+| Nano SIM with a data plan that allows modems | 1 |  |  | many phone plans do not allow modem use |
+
+### Optional: Bluetooth hands-free board
+
+| Part | Qty | For | Price | Notes |
+|---|---|---|---|---|
+| Bluetooth board | 1 | phone calls, phone book and phone music (Feasycom FSC-BT1026C module), as a COM port + a USB sound card on one USB lead | TBD | from the builder |
+| [JST PH 2.0 pigtails, 2 / 3 / 4-pin (assorted)](https://www.amazon.com/s?k=JST+PH+2.0+pigtail+assortment) | 1 set | the board's USB lead (4-pin, to header port P6), mic (2-pin) and line out (3-pin) | ~$8 | |
+| [3.5 mm stereo panel-mount socket, M6 nut](https://www.amazon.com/s?k=3.5mm+panel+mount+stereo+jack+socket) | 2 | mic in + line out on the back wall | ~$6 | 6.5 mm holes as printed; check the thread before printing |
+| [Hands-free car-kit microphone, 3.5 mm plug](https://www.amazon.com/s?k=car+hands+free+microphone+3.5mm) | 1 | the call microphone | ~$8-10 | plugs into the mic socket on the back |
+
+### Optional: dash screen
+
+| Part | Qty | For | Price | Notes |
+|---|---|---|---|---|
+| [ROADOM 10.25" 1920 x 720 bar touchscreen](https://www.amazon.com/dp/B0H9RBHD2X) | 1 | second screen for gauge / dashboard layouts | check listing | its printed case and a video pass-through in the box are coming |
+
+## Custom boards
 
 Sold assembled by the builder (prices to be announced). They are designed and checked, **not yet built or tested**:
 test the first ones on a current-limited bench supply, without the pack, before they go in a box.
@@ -193,45 +236,6 @@ Mounting: M3 screws onto heat-set inserts in the printed box (M2 for the modem b
 
 ## Printing
 
-| Part | Qty | For | Price | Notes |
-|---|---|---|---|---|
-| [ASA or ABS filament, 1 kg](https://www.amazon.com/s?k=ASA+filament+1kg) | 1 | all printed parts | ~$25 | PETG for a desk-only box |
-
-### Optional: Stream Deck dock
-
-| Part | Qty | For | Price | Notes |
-|---|---|---|---|---|
-| [Elgato Stream Deck Module 15 Keys (10GBT9901)](https://www.elgato.com/us/en/p/stream-deck-module-15-keys) | 1 | 15 LCD keys, docked on the right wall | $129.99 | case: print/5-stream-deck-case.3mf + 4 x M3 x 6 and 4 inserts |
-| [Coiled USB-C to USB-A cable (Cable Matters 4 ft)](https://cablematters.com/pc-1678-123-coiled-usb-c-to-usb-a-charging-cable-4ft.aspx) | 1 | Stream Deck to header port P7 | ~$10-13 | USB-A end cut off and crimped |
-
-### Optional: LTE
-
-| Part | Qty | For | Price | Notes |
-|---|---|---|---|---|
-| [Quectel EM060K-GL LTE Cat 6 M.2 module](https://www.waveshare.com/product/em060k-gl.htm) | 1 | mobile data | $98.99 |  |
-| [Waveshare USB to M.2 B-key board](https://www.waveshare.com/usb-to-m.2-b-key.htm) | 1 | carries the module (USB) | ~$22 | CUT 58 mm from its USB end (removes its SMA jacks) to fit the mount; file the edge and check for shorts |
-| LTE modem board (coming) | 1 | the builder's own carrier for the module, in place of the Waveshare board | TBD | from the builder; same size and holes as the cut Waveshare board, so it uses the same four standoffs (JST end up); USB on a JST PH 4-pin lead, no USB-A plug or extension |
-| [MHF4 to SMA female bulkhead pigtails, 20 cm (2-pack)](https://www.amazon.com/dp/B0FVW7M3LC) | 1 | module to the back-wall LTE holes | $7.49 |  |
-| [LTE antennas, SMA male](https://www.amazon.com/s?k=LTE+antenna+SMA+male) | 2 | on the LTE holes | ~$15 |  |
-| Nano SIM with a data plan that allows modems | 1 |  |  | many phone plans do not allow modem use |
-
-### Optional: Bluetooth hands-free board
-
-| Part | Qty | For | Price | Notes |
-|---|---|---|---|---|
-| Bluetooth board | 1 | phone calls, phone book and phone music (Feasycom FSC-BT1026C module), as a COM port + a USB sound card on one USB lead | TBD | from the builder |
-| [JST PH 2.0 pigtails, 2 / 3 / 4-pin (assorted)](https://www.amazon.com/s?k=JST+PH+2.0+pigtail+assortment) | 1 set | the board's USB lead (4-pin, to header port P6), mic (2-pin) and line out (3-pin) | ~$8 | |
-| [3.5 mm stereo panel-mount socket, M6 nut](https://www.amazon.com/s?k=3.5mm+panel+mount+stereo+jack+socket) | 2 | mic in + line out on the back wall | ~$6 | 6.5 mm holes as printed; check the thread before printing |
-| [Hands-free car-kit microphone, 3.5 mm plug](https://www.amazon.com/s?k=car+hands+free+microphone+3.5mm) | 1 | the call microphone | ~$8-10 | plugs into the mic socket on the back |
-
-### Optional: dash screen
-
-| Part | Qty | For | Price | Notes |
-|---|---|---|---|---|
-| [ROADOM 10.25" 1920 x 720 bar touchscreen](https://www.amazon.com/dp/B0H9RBHD2X) | 1 | second screen for gauge / dashboard layouts | check listing | its printed case and a video pass-through in the box are coming |
-
-## Printing
-
 Any FDM printer. **The shell needs a bed of at least 285 x 230 mm** (a 300 mm class printer such as a Bambu H2D,
 Prusa XL or a large Voron); everything else fits a 256 x 256 mm bed.
 
@@ -270,6 +274,8 @@ multimeter.
    - USB hub board on its right-wall standoffs, ports through the back wall (M3 x 8).
    - Converter board on its right-wall standoffs (M3 x 8), with its two fuses.
    - BMS standing on its long edge on the back-wall standoffs (long M2 screws through cover, board and base).
+   - Ethernet keystone jack: punch the patch cable's cut end down on it (T568B), feed the cable in through its opening
+     in the back wall and snap the jack in from outside (this snap fit has not been test-printed yet).
    - Optional LTE modem board on its back-wall standoffs above the BMS (M2 x 6): the Waveshare board plug end up, or
      the builder's modem board JST end up (its SIM holder faces the wall: fit the SIM first).
    - Optional Bluetooth board on its back-wall standoffs right of the modem (M3 x 8), parts facing the front, the
@@ -306,15 +312,19 @@ USB-C charger ──> CHARGER BOARD ── J2 battery ── 10 A fuse ── BM
 | Converter HUB (XT30 female) | hub's 2-pin power terminal | 18 AWG, XT30 male on the converter end |
 | Converter 12 V OUT (XT30 female) | H5 power jack | 18 AWG pigtail with a 5.5 x 2.1 mm barrel plug, XT30 male on the other end |
 | H5 HDMI | screen HDMI | right-angle HDMI (the screen's ports face sideways in its pocket) |
-| Hub USB-A | screen USB-C | right-angle USB-C: powers the screen and carries touch |
-| H5 USB 3.0 port | hub USB-B (upstream) | short USB 3.0 A to B, right-angle B is easier |
-| H5 USB 2.0 port | LTE modem board | Waveshare board: short USB extension; builder's modem board: a USB-A to JST PH 4-pin lead (1 = +5 V, 2 = D-, 3 = D+, 4 = GND) (optional) |
+| H5 USB 2.0 port (the one above the USB 3.0) | screen USB-C | right-angle USB-C: powers the screen and carries touch; USB 2.0 is plenty for both |
+| H5 USB 3.0 port | hub USB-B (upstream) | short USB 3.0 A to B, right-angle B is easier. The H5's only USB 3.0 port goes to the hub, so everything plugged into the hub gets full speed |
+| H5's other USB 2.0 port | LTE modem board | Waveshare board: short USB extension; builder's modem board: a USB-A to JST PH 4-pin lead (1 = +5 V, 2 = D-, 3 = D+, 4 = GND) (optional) |
 | Bluetooth board J3 MIC | mic panel socket | JST PH 2 pigtail; check the mic plug's + contact (optional) |
 | Bluetooth board J4 LINE OUT | line-out panel socket | JST PH 3 pigtail: the H5's own sound for headphones (optional) |
 | Bluetooth board J2 USB | H5 header port P6 | JST PH 4 pigtail (below) (optional) |
+| H5 Ethernet | keystone jack | the 1 ft Cat6 patch cable, far end punched down |
 | H5 fan header | 3 fans | 3-way 4-pin fan splitter |
 | AX210 pigtails | WiFi bulkheads | from the antenna kit |
 | LTE module MHF4 sockets | LTE bulkheads | MHF4 to SMA pigtails |
+
+**H5 USB ports**: USB 3.0 = hub, USB 2.0 = screen, USB 2.0 = LTE modem (optional), one USB 2.0 spare; the three
+header USB ports below are all used.
 
 **H5 24-pin expansion header** (pin 1 is the square pad):
 
@@ -324,7 +334,6 @@ USB-C charger ──> CHARGER BOARD ── J2 battery ── 10 A fuse ── BM
 | 2 +5 V (on only while running), ground at the button | power button ring LED + / - |
 | 1 GND, 2 +5 V, 3 D+, 5 D- (USB port P7) | Stream Deck: cut the coiled cable's far end, crimp into one 2 x 3 Dupont housing (red 2, black 1, green 3, white 5) |
 | 2 +5 V, 7 D+, 9 D-, 11 GND (USB port P5) | battery readout: a short USB-A extension cut and crimped (1 x 3 housing on 7/9/11; splice its red into the Stream Deck's red for pin 2); the isolated USB-serial adapter plugs into its socket and its 3.3 V TX/RX/GND go to the BMS's UART plug |
-
 | 2 +5 V, 19 GND, 21 D+, 23 D- (USB port P6) | optional Bluetooth board: a JST PH 4 pigtail into its J2 (1 = +5 V red, 2 = D- white, 3 = D+ green, 4 = GND black); crimp 19/21/23 into one 1 x 3 housing, splice the red into pin 2 |
 
 Pin 2 is shared by three red wires (button LED, Stream Deck, adapter; four with the Bluetooth board): splice them before one crimp. How much current the header's 5 V can supply is not confirmed. Do not use pin
