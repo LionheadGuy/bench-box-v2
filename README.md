@@ -156,6 +156,7 @@ connects: [Custom boards](#custom-boards) below.
 |---|---|---|---|---|
 | [Elgato Stream Deck Module 15 Keys (10GBT9901)](https://www.elgato.com/us/en/p/stream-deck-module-15-keys) | 1 | 15 LCD keys, docked on the right wall | $129.99 | case (122 x 83 x 24 mm): print/5-stream-deck-case.3mf + 4 x M3 x 6 and 4 inserts |
 | [Coiled USB-C to USB-A cable (Cable Matters 4 ft)](https://cablematters.com/pc-1678-123-coiled-usb-c-to-usb-a-charging-cable-4ft.aspx) | 1 | Stream Deck to header port P7 | ~$10-13 | USB-A end cut off; thread the bare wires through the case and the shell before crimping them, as both holes are printed small |
+| [Neodymium disc magnet, 10 x 3 mm](https://www.amazon.com/s?k=10x3mm+neodymium+disc+magnet) | 2 | holds the case down in its cradle | ~$1 | one in the pocket in the case's bottom end block, one in the pocket in the cradle floor; both pockets are modelled for a 10 x 3 mm disc. Glue them in with OPPOSITE poles facing and check they attract before the glue sets |
 
 ### Optional: LTE
 
@@ -211,8 +212,9 @@ separate 4S charger and two ideal-diode modules.
 - **Battery temperature**: a 10 k NTC (103AT) taped to the pack, into J4, gives a 0-45 °C charge window. **It will not
   charge with nothing in J4.** For a bench test without the NTC, close JP2 (fixed 10 k; removes the temperature cut-out).
 - **LEDs**: green = 20 V agreed, yellow = input OK, red = charging, green = full (all dark when running on the pack).
-- **Connectors** (plugs from above): J1 USB-C (through the left wall), J2 XT30 male = battery (through the BMS and the
-  pack fuse), J3 XT30 female = SYS out to the rocker switch, J4 NTC (JST PH 2-pin).
+- **Connectors**: J1 USB-C faces out through the **back wall**; the other three point sideways across the box, so
+  their plugs go in **from the right** (the board stands on the left wall). J2 XT30 male = battery (through the BMS
+  and the pack fuse), J3 XT30 female = SYS out to the rocker switch, J4 NTC (JST PH 2-pin).
 - Charge time, 6.6 Ah pack: about 1.5 h with the box off (JP1 cut, 100 W charger) or 2.5 h (as supplied).
 
 **Converter board** (70 x 60 mm). Splits the power rail and makes the computer's 12 V.
@@ -271,8 +273,8 @@ Tools: soldering iron with a heat-set insert tip, small screwdrivers / 2 mm hex 
 multimeter.
 
 1. **Heat-set inserts.** M3: front plate (4 on the H5 standoffs, 5 in the screw tabs), shell (4 hub standoffs on the
-   right wall, 4 converter standoffs on the right wall, 4 charger standoffs on the floor; optional: 4 Bluetooth board
-   standoffs on the back wall), handle (4), feet (2 each).
+   right wall, 4 converter standoffs on the right wall, 4 charger standoffs on the LEFT wall; optional: 4 Bluetooth
+   board standoffs on the back wall), handle (4), feet (2 each).
    M2: shell back wall (4 BMS standoffs, 4 modem standoffs).
 2. **Computer.** Fit RAM, the NVMe SSD (slot M2_SSD1) and the AX210 on its adapter (slot M2_SSD4) to the H5. Clip the
    two WiFi pigtails onto the AX210.
@@ -292,7 +294,9 @@ multimeter.
    - Optional Bluetooth board on its back-wall standoffs right of the modem (M3 x 8), parts facing the front, the
      module's antenna end UP and the connectors along the bottom. The two panel sockets go in the holes below it: mic in
      on the left, line out on the right; solder a JST PH pigtail to each (mic: 2-pin, + to pin 1; line out: 3-pin, L / R / GND).
-   - Charger board on its floor standoffs at the left (M3 x 8), USB-C socket in the left-wall opening.
+   - Charger board on its **left-wall** standoffs (M3 x 8), standing on edge with its parts facing into the box and
+     its USB-C socket in the **back-wall** opening. Fit it before the battery, and leave its three plugs until the
+     pack and BMS are in: they face right, across the box.
    - Battery in its pocket on the floor, in its LiPo sleeve, held by two hook-and-loop straps through the floor slots.
 5. **Wire it** (next section), check every power lead's polarity with a meter **before** connecting the pack.
 6. **Close it.** Slide the front plate (screen + H5) into the shell, 5 x M3 x 8 through the top (3) and bottom (2)
