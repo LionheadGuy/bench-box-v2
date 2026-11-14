@@ -2,7 +2,7 @@
 
 A portable, battery-powered workstation built around an **ODROID-H5** and a **10.1" touchscreen** in a 3D-printed
 case with a carry handle. Think of it as a chunky, repairable laptop: USB-C charging, about 3 hours on its own battery,
-a 7-port USB 3 hub, WiFi 6E, optional LTE, and a dock for an Elgato Stream Deck module.
+its own USB 3 hub, WiFi 6E, optional LTE, and a dock for an Elgato Stream Deck module.
 
 ![Bench Box V2 in CAD: 10.1" screen, power button and rocker under it, Stream Deck dock on the right, carry handle](images/bench-box-v2-front.png)
 
@@ -15,11 +15,11 @@ nothing in it is car-specific: it is a general-purpose Windows or Linux PC.
 | Screen | 10.1" 1280 x 800 IPS touchscreen, flush in the front frame |
 | Battery | 14.8 V 6.6 Ah LiPo (~98 Wh) with a smart BMS; ~3 h at a typical 30 W |
 | Charging | USB-C PD (60 W+ charger; 100 W for the fastest charge), runs while charging, no break when unplugged |
-| USB | 7 x USB 3.2 on the back (hub), plus header ports used inside for the Stream Deck and battery readout |
+| USB | 4 x USB-A on the back: three on the box's own hub board, one wired straight through to a spare port on the computer; plus header ports used inside for the Stream Deck |
 | Network | Ethernet on a keystone jack in the back wall |
 | Wireless | WiFi 6E + Bluetooth (Intel AX210); optional LTE Cat 6 (Quectel EM060K); optional Bluetooth hands-free board (calls, phone book, phone audio) |
 | Cooling | 3 Noctua fans (one in, two out), on the H5's own fan control |
-| Size | about 280 x 227 x 116 mm (W x H x D, Stream Deck dock included) + 36 mm handle |
+| Size | about 280 x 227 x 116 mm (W x H x D, Stream Deck dock included) + 44 mm handle |
 | Weight | about 2.7 kg (estimate) |
 
 > ## Status: read this first
@@ -97,6 +97,7 @@ connects: [Custom boards](#custom-boards) below.
 
 | Part | Qty | For | Price | Notes |
 |---|---|---|---|---|
+| Hub board | 1 | the USB ports on the back, and the battery readout | TBD | from the builder |
 | Charger board | 1 | USB-C in, charging, power path | TBD | from the builder |
 | Converter board | 1 | fuses + 12 V for the H5 | TBD | from the builder; fuses not included (below) |
 | [Littelfuse 0297010.WXNV MINI blade fuse, 10 A](https://www.digikey.com/en/products/result?keywords=0297010.WXNV) | 1+ | converter board F2 | $0.39 | buy spares |
@@ -106,15 +107,13 @@ connects: [Custom boards](#custom-boards) below.
 
 | Part | Qty | For | Price | Notes |
 |---|---|---|---|---|
-| [Coolgear CG-7PU31HB-PCBA 7-port USB 3.2 hub board](https://www.digikey.com/en/products/detail/coolgear/CG-7PU31HB-PCBA/16720388) | 1 | USB ports on the back | $146.70 |  |
 | [HDMI, 1 ft, 90 degree plug](https://www.amazon.com/dp/B06Y69TCTW) | 1 | H5 to screen | ~$8-10 |  |
-| [USB-A to USB-C, 1 ft, right-angle (2-pack)](https://www.amazon.com/dp/B0784F9JP2) | 1 | H5 USB 2.0 port to screen (power + touch) | ~$8 |  |
-| [USB 3.0 A to B, 1 ft, right-angle](https://www.amazon.com/dp/B07SR71Q67) | 1 | H5 to hub | ~$8-10 |  |
+| [USB-A to USB-C, 1 ft, right-angle (2-pack)](https://www.amazon.com/dp/B0784F9JP2) | 1 | H5 USB 2.0 to the screen (power + touch), and H5 USB 3.0 to the hub board | ~$8 | the 2-pack covers both |
+| [USB-A to JST PH 4-pin lead](https://www.amazon.com/s?k=usb+a+to+jst+ph+4+pin+cable) | 1 | the back's pass-through port to a spare H5 USB 2.0 port | ~$5 | check the lead's pin order against the board before plugging it in |
 | [18 AWG pigtail, 5.5 x 2.1 mm male barrel (3-pack)](https://www.amazon.com/dp/B0DGQS55NG) | 1 | converter 12 V to the H5 | $6.99 | fit an XT30 male on the free end |
-| [DSD TECH SH-U09C3 isolated USB-serial adapter](https://www.amazon.com/dp/B07TS3GPQ1) | 1 | battery readout (BMS UART) | ~$15 | set its jumper to 3.3 V |
 | [Cat6 UTP punch-down keystone jack](https://www.amazon.com/s?k=cat6+utp+punch+down+keystone+jack) | 1 | Ethernet port in the back wall | ~$5 | standard keystone (14.9 x 19.4 mm opening); unshielded |
 | [Cat6 patch cable, 1 ft](https://www.amazon.com/s?k=cat6+patch+cable+1+ft) | 1 | H5 to the keystone jack | ~$5 | far end cut off and punched down on the jack |
-| [Short USB-A male to female extension](https://www.amazon.com/s?k=short+USB+A+extension+cable) | 1 | cut and crimped to header port P5 for the adapter | ~$5 |  |
+| [JST PH 4-pin lead, 200 mm](https://www.amazon.com/s?k=jst+ph+2.0+4+pin+cable) | 1 | hub board to the BMS's UART plug (battery readout) | ~$5 | check the BMS's pin order before plugging it in |
 
 ### Cooling
 
@@ -155,8 +154,8 @@ connects: [Custom boards](#custom-boards) below.
 
 | Part | Qty | For | Price | Notes |
 |---|---|---|---|---|
-| [Elgato Stream Deck Module 15 Keys (10GBT9901)](https://www.elgato.com/us/en/p/stream-deck-module-15-keys) | 1 | 15 LCD keys, docked on the right wall | $129.99 | case: print/5-stream-deck-case.3mf + 4 x M3 x 6 and 4 inserts |
-| [Coiled USB-C to USB-A cable (Cable Matters 4 ft)](https://cablematters.com/pc-1678-123-coiled-usb-c-to-usb-a-charging-cable-4ft.aspx) | 1 | Stream Deck to header port P7 | ~$10-13 | USB-A end cut off and crimped |
+| [Elgato Stream Deck Module 15 Keys (10GBT9901)](https://www.elgato.com/us/en/p/stream-deck-module-15-keys) | 1 | 15 LCD keys, docked on the right wall | $129.99 | case (122 x 83 x 24 mm): print/5-stream-deck-case.3mf + 4 x M3 x 6 and 4 inserts |
+| [Coiled USB-C to USB-A cable (Cable Matters 4 ft)](https://cablematters.com/pc-1678-123-coiled-usb-c-to-usb-a-charging-cable-4ft.aspx) | 1 | Stream Deck to header port P7 | ~$10-13 | USB-A end cut off; thread the bare wires through the case and the shell before crimping them, as both holes are printed small |
 
 ### Optional: LTE
 
@@ -188,6 +187,17 @@ connects: [Custom boards](#custom-boards) below.
 
 Sold assembled by the builder (prices to be announced). They are designed and checked, **not yet built or tested**:
 test the first ones on a current-limited bench supply, without the pack, before they go in a box.
+
+**Hub board** (75.5 x 68 mm). The box's USB ports and the battery readout on one board, in place of an
+off-the-shelf hub.
+
+- **Three USB-A ports** on the back, from a 4-port USB 3.2 hub chip, each with its own current limit.
+- **Upstream on USB-C**, to the computer's USB 3.0 port.
+- **A fourth USB-A on the back is a pass-through**: it is not on the hub at all, only wired to a 4-pin plug inside, so
+  one device (an audio interface, say) can run straight to a spare port on the computer instead of sharing the hub.
+- **The battery readout is on the board**: an isolated USB-serial port with a 4-pin plug for the BMS's UART, so there
+  is no dongle and no cut extension lead inside the box.
+- **5 V for the ports is made on the board** from the box's 12-20.5 V rail.
 
 **Charger board** (52 x 68 mm). USB-C in, battery charging and the box's power path, in place of a USB-C PD trigger, a
 separate 4S charger and two ideal-diode modules.
@@ -250,9 +260,10 @@ recommended (softens around 55 °C). 0.2 mm layers, 4 walls, 15-25 % infill. Abo
 | `4-screen-button-caps.3mf` | 5 screen button caps | try without; tree supports if the small lugs droop | tiny parts: brim helps |
 | `5-stream-deck-case.3mf` | Stream Deck case tray + front frame | no | optional (only with the Stream Deck) |
 | `6-stream-deck-cradle-test.3mf` | a piece of the shell's right wall with the Stream Deck cradle | yes | optional: print it first to check your Stream Deck case slides in before printing the whole shell |
+| `7-keystone-test.3mf` | a piece of the shell's back wall with the Ethernet keystone frame | no | optional: print it first to check your keystone jack clips in, as makes differ slightly |
 
-After printing: ream the Stream Deck case's cable hole to your cable (it is printed small on purpose), and clean up
-the screen button holes so the caps turn freely.
+After printing: ream the Stream Deck cable holes to your cable - both the one in the case and the 4 mm one in the
+shell's right wall are printed small on purpose - and clean up the screen button holes so the caps turn freely.
 
 ## Assembly
 

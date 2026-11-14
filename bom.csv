@@ -19,19 +19,18 @@ Battery and charging,JST PH 2-pin pigtails (pack of 10),1,NTC to charger J4,http
 Battery and charging,Amass XT30-U connector pairs (5 pairs),1,all power leads,https://www.getfpv.com/amass-xt30-u-lipo-connector-set-5-pairs.html,~$8,
 Battery and charging,100 W USB-C PD charger (Anker Prime 100 W or UGREEN Nexode 100 W),1,charges and runs the box,https://www.amazon.com/dp/B0963HDMJP,~$50-70,any USB-C PD charger with 20 V; 60 W minimum
 Battery and charging,"USB-C cable, 5 A e-marked (Anker 100 W)",1,charger to box,https://www.amazon.com/dp/B072JYDQ7N,~$15-20,needed for the 100 W setting (JP1 cut)
+Custom boards (from the builder),Hub board,1,"the USB ports on the back, and the battery readout",,TBD,from the builder
 Custom boards (from the builder),Charger board,1,"USB-C in, charging, power path",,TBD,from the builder
 Custom boards (from the builder),Converter board,1,fuses + 12 V for the H5,,TBD,from the builder; fuses not included
 Custom boards (from the builder),"Littelfuse 0297010.WXNV MINI blade fuse, 10 A",1+,converter board F2,https://www.digikey.com/en/products/result?keywords=0297010.WXNV,$0.39,buy spares
 Custom boards (from the builder),"Littelfuse 0297005.WXNV MINI blade fuse, 5 A",1+,converter board F1,https://www.digikey.com/en/products/result?keywords=0297005.WXNV,$0.39,buy spares
-USB and cables,Coolgear CG-7PU31HB-PCBA 7-port USB 3.2 hub board,1,USB ports on the back,https://www.digikey.com/en/products/detail/coolgear/CG-7PU31HB-PCBA/16720388,$146.70,
 USB and cables,"HDMI, 1 ft, 90 degree plug",1,H5 to screen,https://www.amazon.com/dp/B06Y69TCTW,~$8-10,
-USB and cables,"USB-A to USB-C, 1 ft, right-angle (2-pack)",1,H5 USB 2.0 port to screen (power + touch),https://www.amazon.com/dp/B0784F9JP2,~$8,
-USB and cables,"USB 3.0 A to B, 1 ft, right-angle",1,H5 to hub,https://www.amazon.com/dp/B07SR71Q67,~$8-10,
+USB and cables,"USB-A to USB-C, 1 ft, right-angle (2-pack)",1,"H5 USB 2.0 to the screen (power + touch), and H5 USB 3.0 to the hub board",https://www.amazon.com/dp/B0784F9JP2,the 2-pack covers both,
+USB and cables,USB-A to JST PH 4-pin lead,1,the back's pass-through port to a spare H5 USB 2.0 port,https://www.amazon.com/s?k=usb+a+to+jst+ph+4+pin+cable,~$5,check the lead's pin order against the board before plugging it in
+USB and cables,"JST PH 4-pin lead, 200 mm",1,hub board to the BMS's UART plug (battery readout),https://www.amazon.com/s?k=jst+ph+2.0+4+pin+cable,~$5,check the BMS's pin order before plugging it in
 USB and cables,"18 AWG pigtail, 5.5 x 2.1 mm male barrel (3-pack)",1,converter 12 V to the H5,https://www.amazon.com/dp/B0DGQS55NG,$6.99,fit an XT30 male on the free end
-USB and cables,DSD TECH SH-U09C3 isolated USB-serial adapter,1,battery readout (BMS UART),https://www.amazon.com/dp/B07TS3GPQ1,~$15,set its jumper to 3.3 V
 USB and cables,Cat6 UTP punch-down keystone jack,1,Ethernet port in the back wall,https://www.amazon.com/s?k=cat6+utp+punch+down+keystone+jack,~$5,standard keystone (14.9 x 19.4 mm opening); unshielded
 USB and cables,"Cat6 patch cable, 1 ft",1,H5 to the keystone jack,https://www.amazon.com/s?k=cat6+patch+cable+1+ft,~$5,far end cut off and punched down on the jack
-USB and cables,Short USB-A male to female extension,1,cut and crimped to header port P5 for the adapter,https://www.amazon.com/s?k=short+USB+A+extension+cable,~$5,
 Cooling,Noctua NF-A9x14 PWM,1,"intake, back wall",https://www.amazon.com/dp/B009NQM7V2,$18.95,
 Cooling,Noctua NF-A6x15 PWM (12 V version),2,"exhaust, top",https://www.amazon.com/dp/B0DJNX4CX4,$16.95 each,not the 5 V version
 Cooling,Noctua 3-way 4-pin PWM splitter (NA-SC1),1,three fans on the H5 fan header,https://www.amazon.com/dp/B0DJPBXZ89,~$10,
