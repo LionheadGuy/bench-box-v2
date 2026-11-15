@@ -178,12 +178,6 @@ connects: [Custom boards](#custom-boards) below.
 | [3.5 mm stereo panel-mount socket, M6 nut](https://www.amazon.com/s?k=3.5mm+panel+mount+stereo+jack+socket) | 2 | mic in + line out on the back wall | ~$6 | 6.5 mm holes as printed; check the thread before printing |
 | [Hands-free car-kit microphone, 3.5 mm plug](https://www.amazon.com/s?k=car+hands+free+microphone+3.5mm) | 1 | the call microphone | ~$8-10 | plugs into the mic socket on the back |
 
-### Optional: dash screen
-
-| Part | Qty | For | Price | Notes |
-|---|---|---|---|---|
-| [ROADOM 10.25" 1920 x 720 bar touchscreen](https://www.amazon.com/dp/B0H9RBHD2X) | 1 | second screen for gauge / dashboard layouts | check listing | its printed case and a video pass-through in the box are coming |
-
 ## Custom boards
 
 Sold assembled by the builder (prices to be announced). They are designed and checked, **not yet built or tested**:
@@ -385,9 +379,6 @@ housing that covers the whole header, so it goes on and off as one plug.
 ## Accessories
 
 - **Elgato Stream Deck Module 15** in the printed case, docked on the right wall (listed in the BOM).
-- **Dash screen: ROADOM 10.25" 1920 x 720 bar display** (listed in the BOM as optional), a second screen for gauge
-  and dashboard layouts. **Its printed case is coming** (designed once the screen is in hand and measured), and the
-  box has no outside video port yet: a pass-through for it is part of that work.
 
 ## Licence
 
