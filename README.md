@@ -64,9 +64,10 @@ many the box uses.
 | [Hardkernel ODROID-H5](https://www.hardkernel.com/shop/odroid-h5/) | 1 | the computer | $230 | no power adapter needed; ships from Korea |
 | [16 GB DDR5 SODIMM (Corsair CMSX16GX5M1A5600C48)](https://www.amazon.com/dp/B0CV1DDFHC) | 1 | RAM | $249.99 | any single DDR5 SODIMM works; runs at 4800 |
 | [M.2 2280 NVMe SSD (SanDisk Optimus 5100 500 GB)](https://www.amazon.com/dp/B0GJSFFLXZ) | 1 | storage, slot M2_SSD1 | $108.89 | any M.2 2280 NVMe; the 1 TB of the same drive is $187.99, amazon.com/dp/B0GJS98B1Q |
-| [Intel AX210NGW WiFi 6E + Bluetooth card](https://www.amazon.com/dp/B08MJLPZPL) | 1 | WiFi | ~$20-25 |  |
+| [Intel AX210NGW WiFi 6E + Bluetooth card](https://www.amazon.com/dp/B08MJLPZPL) | 1 | WiFi | ~$20-25 | the card is 6E but **the 6 GHz band is not used** (owner, 2026-11-14): the antennas are one wideband type so all four match, and 6 GHz is of little use to a box that moves around. 2.4 and 5 GHz work normally |
 | [M.2 M-key to A/E-key adapter (HighZer0)](https://www.amazon.com/dp/B0BGCWQY67) | 1 | puts the AX210 in slot M2_SSD4 | ~$12-15 | the H5 has only M-key slots |
-| [Futheda MHF4 to RP-SMA female bulkhead pigtails, 30 cm (2-pack)](https://www.amazon.com/dp/B0CTC5GP9B) | 1 | WiFi antennas | $6.99 | pigtails go to the back-wall WiFi holes; the ANTENNAS themselves are still to be chosen |
+| [Futheda MHF4 to SMA female bulkhead pigtails, 30 cm (2-pack)](https://www.amazon.com/dp/B0CTC5BQZK) | 1 | WiFi antennas | $6.99 | **the same part as the LTE pair below**, so all four bulkheads are SMA female and all four antennas are one part number (owner, 2026-11-14). RP-SMA is only a convention to stop people fitting big antennas to routers; electrically it is the same connector with the pin and socket swapped, and nothing in this box cares |
+| [Antenna, SMA male, 600-6000 MHz](https://www.amazon.com/s?k=600-6000MHz+SMA+male+antenna) | 4 | two WiFi, two LTE - **four identical antennas** | ~$15-30 | owner's choice, 2026-11-14: ONE wideband type for both jobs so the back of the box looks right, instead of a WiFi pair and an LTE pair that do not match. 600-6000 MHz covers LTE and WiFi 2.4 and 5 GHz. It does NOT cover WiFi 6E's 6 GHz band, which runs to 7.125 GHz - that band is deliberately given up (see the AX210 row) |
 
 ### Screen and controls
 
@@ -166,7 +167,7 @@ connects: [Custom boards](#custom-boards) below.
 | [Waveshare USB to M.2 B-key board](https://www.waveshare.com/usb-to-m.2-b-key.htm) | 1 | carries the module (USB) | ~$22 | CUT 58 mm from its USB end (removes its SMA jacks) to fit the mount; file the edge and check for shorts |
 | LTE modem board (coming) | 1 | the builder's own carrier for the module, in place of the Waveshare board | TBD | from the builder; same size and holes as the cut Waveshare board, so it uses the same four standoffs (JST end up); USB on a JST PH 4-pin lead, no USB-A plug or extension |
 | [Futheda MHF4 to SMA female bulkhead pigtails, 30 cm (2-pack)](https://www.amazon.com/dp/B0CTC5BQZK) | 1 | module to the back-wall LTE holes | $6.99 |  |
-| [LTE antennas, SMA male](https://www.amazon.com/s?k=LTE+antenna+SMA+male) | 2 | on the LTE holes | ~$15 |  |
+| Antennas for the LTE holes | - | - | - | **not a separate part**: the four identical SMA antennas in the Computer section cover both WiFi and LTE |
 | Nano SIM with a data plan that allows modems | 1 |  |  | many phone plans do not allow modem use |
 
 ### Optional: Bluetooth hands-free board
@@ -277,7 +278,9 @@ multimeter.
 4. **Shell, from the inside:**
    - Power button (with its nut) and rocker switch into the strip under the screen, **before** the front plate goes in.
    - Intake fan on the back wall, both exhaust fans in the top (Noctua's screws), blowing out.
-   - Four antenna bulkheads in the back wall: WiFi (RP-SMA) on the left pair, LTE (SMA) on the right pair.
+   - Four antenna bulkheads in the back wall, ALL SMA and all the same: the left pair goes to the WiFi card,
+     the right pair to the LTE module. The four antennas are identical, so only the pigtail each one is on
+     decides what it serves - label them inside before you close the box.
    - USB hub board on its right-wall standoffs, ports through the back wall (M3 x 8).
    - Converter board on its right-wall standoffs (M3 x 8), with its two fuses.
    - BMS standing on its long edge on the back-wall standoffs (long M2 screws through cover, board and base).

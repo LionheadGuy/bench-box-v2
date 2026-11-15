@@ -6,7 +6,8 @@ Computer,"Cat6 UTP punch-down keystone jack (unshielded, any brand)",1,"Ethernet
 Computer,"Cat6 patch cable, short (0.3-0.5 m)",1,"inside: one plug in the H5, the other end cut and punched down on the keystone jack",https://www.amazon.com/s?k=cat6+patch+cable+1ft,~$3-5,
 Computer,Intel AX210NGW WiFi 6E + Bluetooth card,1,WiFi,https://www.amazon.com/dp/B08MJLPZPL,~$20-25,
 Computer,M.2 M-key to A/E-key adapter (HighZer0),1,puts the AX210 in slot M2_SSD4,https://www.amazon.com/dp/B0BGCWQY67,~$12-15,the H5 has only M-key slots
-Computer,Futheda MHF4 to RP-SMA female bulkhead pigtails, 30 cm (2-pack),1,WiFi antennas,https://www.amazon.com/dp/B0CTC5GP9B,~$15,pigtails go to the back-wall WiFi holes; the ANTENNAS themselves are still to be chosen
+Computer,"Futheda MHF4 to SMA female bulkhead pigtails, 30 cm (2-pack)",1,WiFi antennas,https://www.amazon.com/dp/B0CTC5BQZK,$6.99,"the same part as the LTE pair, so all four bulkheads are SMA female and all four antennas are one part number"
+Computer,"Antenna, SMA male, 600-6000 MHz",4,"two WiFi, two LTE - four identical antennas",https://www.amazon.com/s?k=600-6000MHz+SMA+male+antenna,"~$15-30","one wideband type for both jobs; covers LTE and WiFi 2.4 and 5 GHz, NOT WiFi 6E's 6 GHz band, which is deliberately given up"
 Screen and controls,"VIEWMEI 10.1"" 1280 x 800 USB-C touchscreen",1,main screen,https://www.amazon.com/dp/B0GCNXNZ17,$89.90,"the frame is sized to this screen: 245.5 x 168.75 x 21.5 mm, 75 mm VESA (M4). Check the size before buying"
 Screen and controls,"12 mm momentary metal push button, 5 V ring LED",1,power button,https://www.amazon.com/s?k=12mm+momentary+metal+push+button+5V+ring+LED,~$5-8,11.75 mm hole; NO contacts + LED
 Screen and controls,"KCD1 rocker switch, 20 A (Dopkiut, 10-pack)",1,master power switch,https://www.amazon.com/dp/B0HCZ5X637,$6,19.2 x 12.7 mm cut-out
@@ -53,7 +54,7 @@ Optional: LTE,Quectel EM060K-GL LTE Cat 6 M.2 module,1,mobile data,https://www.a
 Optional: LTE,Waveshare USB to M.2 B-key board,1,carries the module (USB),https://www.waveshare.com/usb-to-m.2-b-key.htm,~$22,CUT 58 mm from its USB end (removes its SMA jacks) to fit the mount; file the edge and check for shorts
 Optional: LTE,LTE modem board (coming),1,"the builder's own carrier for the module, in place of the Waveshare board",,TBD,"from the builder; same size and holes as the cut Waveshare board (same four standoffs, JST end up); USB on a JST PH 4-pin lead"
 Optional: LTE,"Futheda MHF4 to SMA female bulkhead pigtails, 30 cm (2-pack)",1,module to the back-wall LTE holes,https://www.amazon.com/dp/B0CTC5BQZK,$6.99,
-Optional: LTE,"LTE antennas, SMA male",2,on the LTE holes,https://www.amazon.com/s?k=LTE+antenna+SMA+male,~$15,
+Optional: LTE,Antennas for the LTE holes,,,,,"not a separate part: the four identical SMA antennas in the Computer section cover both WiFi and LTE"
 Optional: LTE,Nano SIM with a data plan that allows modems,1,,,,many phone plans do not allow modem use
 Optional: Bluetooth,Bluetooth board,1,"phone calls, phone book and phone music (Feasycom FSC-BT1026C), COM port + USB sound card on one USB lead",,TBD,from the builder
 Optional: Bluetooth,"JST PH 2.0 pigtails, 2 / 3 / 4-pin (assorted)",1 set,"USB lead to header P6 (4), mic (2), line out (3)",https://www.amazon.com/s?k=JST+PH+2.0+pigtail+assortment,~$8,
