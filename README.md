@@ -62,17 +62,17 @@ many the box uses.
 | Part | Qty | For | Price | Notes |
 |---|---|---|---|---|
 | [Hardkernel ODROID-H5](https://www.hardkernel.com/shop/odroid-h5/) | 1 | the computer | $230 | no power adapter needed; ships from Korea |
-| [16 GB DDR5 SODIMM (Corsair CMSX16GX5M1A5600C48)](https://www.centralcomputer.com/corsair-cmsx16gx5m1a5600c48-16gb-16gbx1-ddr5-so-dimm-laptop-memory.html) | 1 | RAM | ~$220-250 | any single DDR5 SODIMM works; runs at 4800 |
-| [M.2 2280 NVMe SSD (SanDisk Optimus 5100 500 GB)](https://www.cdw.com/product/sandisk-optimus-5100-ssd-500-gb-pcie-4.0-x4-nvme/9205163) | 1 | storage, slot M2_SSD1 | ~$118 | any M.2 2280 NVMe |
+| [16 GB DDR5 SODIMM (Corsair CMSX16GX5M1A5600C48)](https://www.amazon.com/dp/B0CV1DDFHC) | 1 | RAM | $249.99 | any single DDR5 SODIMM works; runs at 4800 |
+| [M.2 2280 NVMe SSD (SanDisk Optimus 5100 500 GB)](https://www.amazon.com/dp/B0GJSFFLXZ) | 1 | storage, slot M2_SSD1 | $108.89 | any M.2 2280 NVMe; the 1 TB of the same drive is $187.99, amazon.com/dp/B0GJS98B1Q |
 | [Intel AX210NGW WiFi 6E + Bluetooth card](https://www.amazon.com/dp/B08MJLPZPL) | 1 | WiFi | ~$20-25 |  |
 | [M.2 M-key to A/E-key adapter (HighZer0)](https://www.amazon.com/dp/B0BGCWQY67) | 1 | puts the AX210 in slot M2_SSD4 | ~$12-15 | the H5 has only M-key slots |
-| [Tenmory WiFi 6E antenna kit (2 RP-SMA antennas + 2 MHF4 pigtails)](https://www.amazon.com/dp/B07QDZKH5N) | 1 | WiFi antennas | ~$15 | pigtails go to the back-wall WiFi holes |
+| [Futheda MHF4 to RP-SMA female bulkhead pigtails, 30 cm (2-pack)](https://www.amazon.com/dp/B0CTC5GP9B) | 1 | WiFi antennas | $6.99 | pigtails go to the back-wall WiFi holes; the ANTENNAS themselves are still to be chosen |
 
 ### Screen and controls
 
 | Part | Qty | For | Price | Notes |
 |---|---|---|---|---|
-| [VIEWMEI 10.1" 1280 x 800 USB-C touchscreen](https://www.amazon.com/dp/B0GCNXNZ17) | 1 | main screen | check listing | the frame is sized to this screen: 245.5 x 168.75 x 21.5 mm, 75 mm VESA (M4). Check the size before buying |
+| [VIEWMEI 10.1" 1280 x 800 USB-C touchscreen](https://www.amazon.com/dp/B0GCNXNZ17) | 1 | main screen | $89.90 | the frame is sized to this screen: 245.5 x 168.75 x 21.5 mm, 75 mm VESA (M4). Check the size before buying |
 | [12 mm momentary metal push button, 5 V ring LED](https://www.amazon.com/s?k=12mm+momentary+metal+push+button+5V+ring+LED) | 1 | power button | ~$5-8 | 11.75 mm hole; NO contacts + LED |
 | [KCD1 rocker switch, 20 A (Dopkiut, 10-pack)](https://www.amazon.com/dp/B0HCZ5X637) | 1 | master power switch | $6 | 19.2 x 12.7 mm cut-out |
 
@@ -86,7 +86,7 @@ many the box uses.
 | [Inline ATC/ATO fuse holder, 14 AWG, + 10 A fuse](https://www.amazon.com/s?k=inline+ATC+fuse+holder+14+AWG) | 1 | pack + lead | ~$6 |  |
 | [Semitec 103AT-2 10 k NTC thermistor](https://www.digikey.com/en/products/result?keywords=103AT-2) | 1 | pack temperature for the charger | $0.68 | tape it to the pack |
 | [JST PH 2-pin pigtails (pack of 10)](https://www.amazon.com/s?k=JST+PH+2.0+2+pin+pigtail) | 1 | NTC to charger J4 | ~$6 |  |
-| [Amass XT30-U connector pairs (5 pairs)](https://www.getfpv.com/amass-xt30-u-lipo-connector-set-5-pairs.html) | 1 | all power leads | ~$8 |  |
+| [XT30 connector pairs (20 pairs, with heat shrink)](https://www.amazon.com/dp/B0G3GZK3HJ) | 1 | all power leads | $8.99 |  |
 | [100 W USB-C PD charger (Anker Prime 100 W or UGREEN Nexode 100 W)](https://www.amazon.com/dp/B0963HDMJP) | 1 | charges and runs the box | ~$50-70 | any USB-C PD charger with 20 V; 60 W minimum |
 | [USB-C cable, 5 A e-marked (Anker 100 W)](https://www.amazon.com/dp/B072JYDQ7N) | 1 | charger to box | ~$15-20 | needed for the 100 W setting (JP1 cut) |
 
@@ -107,8 +107,8 @@ connects: [Custom boards](#custom-boards) below.
 
 | Part | Qty | For | Price | Notes |
 |---|---|---|---|---|
-| [HDMI, 1 ft, 90 degree plug](https://www.amazon.com/dp/B06Y69TCTW) | 1 | H5 to screen | ~$8-10 |  |
-| [USB-A to USB-C, 1 ft, right-angle (2-pack)](https://www.amazon.com/dp/B0784F9JP2) | 1 | H5 USB 2.0 to the screen (power + touch), and H5 USB 3.0 to the hub board | ~$8 | the 2-pack covers both |
+| [ADTLINK shielded HDMI flat ribbon, 15 cm, male-male](https://www.amazon.com/dp/B0BXSFLM9F) | 1 | H5 to screen | $12.00 |  |
+| [ADTLINK USB 3.1 A male to C male, 15 cm, up/down angle](https://www.amazon.com/dp/B0BXD2RPB3) | 1 | H5 USB 2.0 to the screen (power + touch), and H5 USB 3.0 to the hub board | ~$8 | ONE PER RUN, so two are needed - the Amazon list has qty 1 |
 | [USB-A to JST PH 4-pin lead](https://www.amazon.com/s?k=usb+a+to+jst+ph+4+pin+cable) | 1 | the back's pass-through port to a spare H5 USB 2.0 port | ~$5 | check the lead's pin order against the board before plugging it in |
 | [18 AWG pigtail, 5.5 x 2.1 mm male barrel (3-pack)](https://www.amazon.com/dp/B0DGQS55NG) | 1 | converter 12 V to the H5 | $6.99 | fit an XT30 male on the free end |
 | [Cat6 UTP punch-down keystone jack](https://www.amazon.com/s?k=cat6+utp+punch+down+keystone+jack) | 1 | Ethernet port in the back wall | ~$5 | standard keystone (14.9 x 19.4 mm opening); unshielded |
@@ -119,8 +119,8 @@ connects: [Custom boards](#custom-boards) below.
 
 | Part | Qty | For | Price | Notes |
 |---|---|---|---|---|
-| [Noctua NF-A9x14 PWM](https://www.amazon.com/dp/B009NQM7V2) | 1 | intake, back wall | $18.95 |  |
-| [Noctua NF-A6x15 PWM (12 V version)](https://www.amazon.com/dp/B0DJNX4CX4) | 2 | exhaust, top | $16.95 each | not the 5 V version |
+| [Noctua NF-A9x14 PWM](https://www.amazon.com/dp/B009NQM7V2) | 1 | intake, back wall | $18.36 |  |
+| [Noctua NF-A6x15 PWM (12 V version)](https://www.amazon.com/dp/B0DJNX4CX4) | 2 | exhaust, top | $16.42 each | not the 5 V version |
 | [Noctua 3-way 4-pin PWM splitter (NA-SC1)](https://www.amazon.com/dp/B0DJPBXZ89) | 1 | three fans on the H5 fan header | ~$10 |  |
 
 ### Screws, inserts, small parts
@@ -155,17 +155,17 @@ connects: [Custom boards](#custom-boards) below.
 | Part | Qty | For | Price | Notes |
 |---|---|---|---|---|
 | [Elgato Stream Deck Module 15 Keys (10GBT9901)](https://www.elgato.com/us/en/p/stream-deck-module-15-keys) | 1 | 15 LCD keys, docked on the right wall | $129.99 | case (122 x 83 x 24 mm): print/5-stream-deck-case.3mf + 4 x M3 x 6 and 4 inserts |
-| [Coiled USB-C to USB-A cable (Cable Matters 4 ft)](https://cablematters.com/pc-1678-123-coiled-usb-c-to-usb-a-charging-cable-4ft.aspx) | 1 | Stream Deck to header port P7 | ~$10-13 | USB-A end cut off; thread the bare wires through the case and the shell before crimping them, as both holes are printed small |
-| [Neodymium disc magnet, 10 x 3 mm](https://www.amazon.com/s?k=10x3mm+neodymium+disc+magnet) | 2 | holds the case down in its cradle | ~$1 | one in the pocket in the case's bottom end block, one in the pocket in the cradle floor; both pockets are modelled for a 10 x 3 mm disc. Glue them in with OPPOSITE poles facing and check they attract before the glue sets |
+| [Coiled USB-A to USB-C cable, 6 ft (2-pack)](https://www.amazon.com/dp/B0CLCXWJWZ) | 1 | Stream Deck to header port P7 | $17.09 | USB-A end cut off; thread the bare wires through the case and the shell before crimping them, as both holes are printed small |
+| [Neodymium disc magnets, 10 x 3 mm (100 pack)](https://www.amazon.com/dp/B0FDQJ3WR6) | 2 | holds the case down in its cradle | $11.39 | one in the pocket in the case's bottom end block, one in the pocket in the cradle floor; both pockets are modelled for a 10 x 3 mm disc. Glue them in with OPPOSITE poles facing and check they attract before the glue sets |
 
 ### Optional: LTE
 
 | Part | Qty | For | Price | Notes |
 |---|---|---|---|---|
-| [Quectel EM060K-GL LTE Cat 6 M.2 module](https://www.waveshare.com/product/em060k-gl.htm) | 1 | mobile data | $98.99 |  |
+| [Quectel EM060K-GL LTE Cat 6 M.2 module](https://www.amazon.com/dp/B0C3G833X1) | 1 | mobile data | $118.99 |  |
 | [Waveshare USB to M.2 B-key board](https://www.waveshare.com/usb-to-m.2-b-key.htm) | 1 | carries the module (USB) | ~$22 | CUT 58 mm from its USB end (removes its SMA jacks) to fit the mount; file the edge and check for shorts |
 | LTE modem board (coming) | 1 | the builder's own carrier for the module, in place of the Waveshare board | TBD | from the builder; same size and holes as the cut Waveshare board, so it uses the same four standoffs (JST end up); USB on a JST PH 4-pin lead, no USB-A plug or extension |
-| [MHF4 to SMA female bulkhead pigtails, 20 cm (2-pack)](https://www.amazon.com/dp/B0FVW7M3LC) | 1 | module to the back-wall LTE holes | $7.49 |  |
+| [Futheda MHF4 to SMA female bulkhead pigtails, 30 cm (2-pack)](https://www.amazon.com/dp/B0CTC5BQZK) | 1 | module to the back-wall LTE holes | $6.99 |  |
 | [LTE antennas, SMA male](https://www.amazon.com/s?k=LTE+antenna+SMA+male) | 2 | on the LTE holes | ~$15 |  |
 | Nano SIM with a data plan that allows modems | 1 |  |  | many phone plans do not allow modem use |
 
