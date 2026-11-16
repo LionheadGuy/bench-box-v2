@@ -53,8 +53,7 @@ Optional: Stream Deck dock,Elgato Stream Deck Module 15 Keys (10GBT9901),1,"15 L
 Optional: Stream Deck dock,"Neodymium disc magnets, 10 x 3 mm (100 pack)",2,holds the case down in its cradle,https://www.amazon.com/dp/B0FDQJ3WR6,~$1,"one in the case's bottom end block and one in the cradle floor; glue them in with opposite poles facing and check they attract before the glue sets"
 Optional: Stream Deck dock,Coiled USB-A to USB-C cable, 6 ft (2-pack),1,Stream Deck to header port P7,https://www.amazon.com/dp/B0CLCXWJWZ,$17.09,USB-A end cut off and crimped
 Optional: LTE,Quectel EM060K-GL LTE Cat 6 M.2 module,1,mobile data,https://www.amazon.com/dp/B0C3G833X1,$118.99,
-Optional: LTE,Waveshare USB to M.2 B-key board,1,carries the module (USB),https://www.waveshare.com/usb-to-m.2-b-key.htm,~$22,CUT 58 mm from its USB end (removes its SMA jacks) to fit the mount; file the edge and check for shorts
-Optional: LTE,LTE modem board (coming),1,"the builder's own carrier for the module, in place of the Waveshare board",,TBD,"from the builder; same size and holes as the cut Waveshare board (same four standoffs, JST end up); USB on a JST PH 4-pin lead"
+Optional: LTE,LTE modem board (coming),1,"carries the module, made for this box",,TBD,"from the builder; on four back-wall standoffs (JST end up); USB on a JST PH 4-pin lead"
 Optional: LTE,"Futheda MHF4 to SMA female bulkhead pigtails, 30 cm (2-pack)",1,module to the back-wall LTE holes,https://www.amazon.com/dp/B0CTC5BQZK,$6.99,
 Optional: LTE,Antennas for the LTE holes,,,,,"not a separate part: the four identical SMA antennas in the Computer section cover both WiFi and LTE"
 Optional: LTE,Nano SIM with a data plan that allows modems,1,,,,many phone plans do not allow modem use

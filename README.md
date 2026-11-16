@@ -166,8 +166,7 @@ connects: [Custom boards](#custom-boards) below.
 | Part | Qty | For | Price | Notes |
 |---|---|---|---|---|
 | [Quectel EM060K-GL LTE Cat 6 M.2 module](https://www.amazon.com/dp/B0C3G833X1) | 1 | mobile data | $118.99 |  |
-| [Waveshare USB to M.2 B-key board](https://www.waveshare.com/usb-to-m.2-b-key.htm) | 1 | carries the module (USB) | ~$22 | CUT 58 mm from its USB end (removes its SMA jacks) to fit the mount; file the edge and check for shorts |
-| LTE modem board (coming) | 1 | the builder's own carrier for the module, in place of the Waveshare board | TBD | from the builder; same size and holes as the cut Waveshare board, so it uses the same four standoffs (JST end up); USB on a JST PH 4-pin lead, no USB-A plug or extension |
+| LTE modem board (coming) | 1 | carries the module, made for this box | TBD | from the builder; on four back-wall standoffs (JST end up); USB on a JST PH 4-pin lead, no USB-A plug or extension |
 | [Futheda MHF4 to SMA female bulkhead pigtails, 30 cm (2-pack)](https://www.amazon.com/dp/B0CTC5BQZK) | 1 | module to the back-wall LTE holes | $6.99 |  |
 | Antennas for the LTE holes | - | - | - | **not a separate part**: the four identical SMA antennas in the Computer section cover both WiFi and LTE |
 | Nano SIM with a data plan that allows modems | 1 |  |  | many phone plans do not allow modem use |
@@ -246,8 +245,7 @@ connected. Keep metal away from the module's antenna at the top edge.
 
 **LTE modem board** (optional, coming). A carrier for the Quectel EM060K: the module plugs into its M.2 socket, a
 nano-SIM holder sits beside it, and USB comes in on a JST PH 4-pin lead (1 = +5 V, 2 = D-, 3 = D+, 4 = GND), so there is
-no USB-A plug or extension in the box. The antennas still clip onto the module itself. Same size (30 x 58 mm) and
-holes as the cut Waveshare board; the SIM holder is on its back.
+no USB-A plug or extension in the box. The antennas clip onto the module itself. 30 x 58 mm on four M2 holes; the SIM holder is on its back.
 
 | Top | Back |
 |---|---|
@@ -310,8 +308,7 @@ multimeter.
    - BMS standing on its long edge on the back-wall standoffs (long M2 screws through cover, board and base).
    - Ethernet keystone jack: punch the patch cable's cut end down on it (T568B), feed the cable in through its opening
      in the back wall and snap the jack in from outside (this snap fit has not been test-printed yet).
-   - Optional LTE modem board on its back-wall standoffs above the BMS (M2 x 6): the Waveshare board plug end up, or
-     the builder's modem board JST end up (its SIM holder faces the wall: fit the SIM first).
+   - Optional LTE modem board on its back-wall standoffs above the BMS (M2 x 6), JST end up (its SIM holder faces the wall: fit the SIM first).
    - Optional Bluetooth board on its back-wall standoffs right of the modem (M3 x 8), parts facing the front, the
      module's antenna end UP and the connectors along the bottom. The two panel sockets go in the holes below it: mic in
      on the left, line out on the right; solder a JST PH pigtail to each (mic: 2-pin, + to pin 1; line out: 3-pin, L / R / GND).
@@ -350,7 +347,7 @@ USB-C charger ──> CHARGER BOARD ── J2 battery ── 10 A fuse ── BM
 | H5 HDMI | screen HDMI | right-angle HDMI (the screen's ports face sideways in its pocket) |
 | H5 USB 2.0 port (the one above the USB 3.0) | screen USB-C | right-angle USB-C: powers the screen and carries touch; USB 2.0 is plenty for both |
 | H5 USB 3.0 port | hub USB-B (upstream) | short USB 3.0 A to B, right-angle B is easier. The H5's only USB 3.0 port goes to the hub, so everything plugged into the hub gets full speed |
-| H5's other USB 2.0 port | LTE modem board | Waveshare board: short USB extension; builder's modem board: a USB-A to JST PH 4-pin lead (1 = +5 V, 2 = D-, 3 = D+, 4 = GND) (optional) |
+| H5's other USB 2.0 port | LTE modem board | a USB-A to JST PH 4-pin lead (1 = +5 V, 2 = D-, 3 = D+, 4 = GND) (optional) |
 | Bluetooth board J3 MIC | mic panel socket | JST PH 2 pigtail; check the mic plug's + contact (optional) |
 | Bluetooth board J4 LINE OUT | line-out panel socket | JST PH 3 pigtail: the H5's own sound for headphones (optional) |
 | Bluetooth board J2 USB | H5 header port P6 | JST PH 4 pigtail (below) (optional) |
