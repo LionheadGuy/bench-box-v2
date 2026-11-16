@@ -1,7 +1,7 @@
 # Bench Box V2
 
 A portable, battery-powered workstation built around an **ODROID-H5** and a **10.1" touchscreen** in a 3D-printed
-case with a carry handle. Think of it as a chunky, repairable laptop: USB-C charging, about 3 hours on its own battery,
+case with a carry handle. Think of it as a chunky, repairable laptop: USB-C charging, about 4 hours on its own battery,
 its own USB 3 hub, WiFi 6E, optional LTE, and a dock for an Elgato Stream Deck module.
 
 ![Bench Box V2 in CAD: 10.1" screen, power button and rocker under it, Stream Deck dock on the right, carry handle](images/bench-box-v2-front.png)
@@ -13,7 +13,7 @@ nothing in it is car-specific: it is a general-purpose Windows or Linux PC.
 |---|---|
 | Computer | ODROID-H5 (Intel Core i3-N300, 8 cores), 16 GB DDR5, NVMe SSD |
 | Screen | 10.1" 1280 x 800 IPS touchscreen, flush in the front frame |
-| Battery | 14.8 V 6.6 Ah LiPo (~98 Wh) with a smart BMS; ~3 h at a typical 30 W |
+| Battery | 14.8 V 8.4 Ah LiPo (~124 Wh) with a smart BMS; ~4 h at a typical 30 W |
 | Charging | USB-C PD (60 W+ charger; 100 W for the fastest charge), runs while charging, no break when unplugged |
 | USB | 4 x USB-A on the back: three on the box's own hub board, one wired straight through to a spare port on the computer; plus header ports used inside for the Stream Deck |
 | Network | Ethernet on a keystone jack in the back wall |
@@ -64,10 +64,10 @@ many the box uses.
 | [Hardkernel ODROID-H5](https://www.hardkernel.com/shop/odroid-h5/) | 1 | the computer | $230 | no power adapter needed; ships from Korea |
 | [16 GB DDR5 SODIMM (Corsair CMSX16GX5M1A5600C48)](https://www.amazon.com/dp/B0CV1DDFHC) | 1 | RAM | $249.99 | any single DDR5 SODIMM works; runs at 4800 |
 | [M.2 2280 NVMe SSD (SanDisk Optimus 5100 500 GB)](https://www.amazon.com/dp/B0GJSFFLXZ) | 1 | storage, slot M2_SSD1 | $108.89 | any M.2 2280 NVMe; the 1 TB of the same drive is $187.99, amazon.com/dp/B0GJS98B1Q |
-| [Intel AX210NGW WiFi 6E + Bluetooth card](https://www.amazon.com/dp/B08MJLPZPL) | 1 | WiFi | ~$20-25 | the card is 6E but **the 6 GHz band is not used** (owner, 2026-11-14): the antennas are one wideband type so all four match, and 6 GHz is of little use to a box that moves around. 2.4 and 5 GHz work normally |
+| [Intel AX210NGW WiFi 6E + Bluetooth card](https://www.amazon.com/dp/B08MJLPZPL) | 1 | WiFi | ~$20-25 | the card is 6E but **the 6 GHz band is not used**: the antennas are one wideband type so all four match, and 6 GHz is of little use to a box that moves around. 2.4 and 5 GHz work normally |
 | [M.2 M-key to A/E-key adapter (HighZer0)](https://www.amazon.com/dp/B0BGCWQY67) | 1 | puts the AX210 in slot M2_SSD4 | ~$12-15 | the H5 has only M-key slots |
-| [Futheda MHF4 to SMA female bulkhead pigtails, 30 cm (2-pack)](https://www.amazon.com/dp/B0CTC5BQZK) | 1 | WiFi antennas | $6.99 | **the same part as the LTE pair below**, so all four bulkheads are SMA female and all four antennas are one part number (owner, 2026-11-14). RP-SMA is only a convention to stop people fitting big antennas to routers; electrically it is the same connector with the pin and socket swapped, and nothing in this box cares |
-| [Antenna, SMA male, 600-6000 MHz](https://www.amazon.com/s?k=600-6000MHz+SMA+male+antenna) | 4 | two WiFi, two LTE - **four identical antennas** | ~$15-30 | owner's choice, 2026-11-14: ONE wideband type for both jobs so the back of the box looks right, instead of a WiFi pair and an LTE pair that do not match. 600-6000 MHz covers LTE and WiFi 2.4 and 5 GHz. It does NOT cover WiFi 6E's 6 GHz band, which runs to 7.125 GHz - that band is deliberately given up (see the AX210 row) |
+| [Futheda MHF4 to SMA female bulkhead pigtails, 30 cm (2-pack)](https://www.amazon.com/dp/B0CTC5BQZK) | 1 | WiFi antennas | $6.99 | **the same part as the LTE pair below**, so all four bulkheads are SMA female and all four antennas are one part number. RP-SMA is only a convention to stop people fitting big antennas to routers; electrically it is the same connector with the pin and socket swapped, and nothing in this box cares |
+| [Antenna, SMA male, 600-6000 MHz](https://www.amazon.com/s?k=600-6000MHz+SMA+male+antenna) | 4 | two WiFi, two LTE - **four identical antennas** | ~$15-30 | ONE wideband type for both jobs so the back of the box looks right, instead of a WiFi pair and an LTE pair that do not match. 600-6000 MHz covers LTE and WiFi 2.4 and 5 GHz. It does NOT cover WiFi 6E's 6 GHz band, which runs to 7.125 GHz - that band is deliberately given up (see the AX210 row) |
 | [Futheda MHF4 to RP-SMA female bulkhead pigtails, 30 cm (2-pack)](https://www.amazon.com/dp/B0CTC5GP9B) | 1 | **OPTIONAL - only if you want WiFi 6E** | $6.99 | **not needed for the box to work.** The build above runs WiFi 2.4 and 5 GHz on the four matching SMA antennas. To use the AX210's 6 GHz band you need antennas rated past 6000 MHz, and those are sold on RP-SMA (the WiFi convention), so the WiFi pair's pigtails change to RP-SMA with them. Fit these two in place of two of the SMA pigtails, on the LEFT pair of bulkheads |
 | [WiFi 6E antenna, RP-SMA male, 2.4-7.2 GHz](https://www.amazon.com/s?k=WiFi+6E+antenna+RP-SMA+male+2.4-7.2GHz) | 2 | **OPTIONAL - only if you want WiFi 6E** | ~$20-30 | goes with the RP-SMA pigtails above. The trade is cosmetic as well as electrical: these two will not match the two LTE antennas, which is exactly why the standard build uses one type for all four |
 
@@ -83,7 +83,7 @@ many the box uses.
 
 | Part | Qty | For | Price | Notes |
 |---|---|---|---|---|
-| [Liperior Endurance 6600 mAh 4S2P LiPo (LPD66004S150)](https://rcbattery.com/liperior-endurance-6600mah-4s2p-150c-14-8v-speed-runs-lipo-battery.html) | 1 | the pack, ~98 Wh | $69.99 | 135 x 54 x 42 mm, bare 7 AWG leads, no protection of its own |
+| [Exalt X-Rated 4S 135C Stick Hardcase LiPo, 14.8 V 8400 mAh (EXA3403)](https://teamexalt.com/exalt-x-rated-4s-135c-stick-hardcase-lipo-battery-14-8v-8400mah-w-5mm-bullet-connectors-exa3403/) | 1 | the pack, ~124 Wh | check the seller | 139 x 47 x 48 mm, 751 g, **5 mm bullet connectors on the pack** (the + and - leads go to different places, so each can be made to length), no protection of its own. The printed pocket is sized for this pack |
 | [JBD SP04S010A smart BMS, 4S, NMC / Li-ion version, 20 A or 30 A](https://jbdbms.com/products/sp04s010a) | 1 | protection and balancing | ~$17.50 | pick the NMC (Li-ion) 4S version; add the Bluetooth module for the phone app |
 | [LiPo safety bag (DerBlue, 185 x 75 x 60 mm)](https://www.amazon.com/dp/B01GCHBQJS) | 1 | fire sleeve round the pack | ~$8-10 |  |
 | [Inline ATC/ATO fuse holder, 14 AWG, + 10 A fuse](https://www.amazon.com/s?k=inline+ATC+fuse+holder+14+AWG) | 1 | pack + lead | ~$6 |  |
@@ -130,7 +130,7 @@ connects: [Custom boards](#custom-boards) below.
 
 | Part | Qty | For | Price | Notes |
 |---|---|---|---|---|
-| [ruthex M3 heat-set inserts (100)](https://www.amazon.com/dp/B08BCRZZS3) | 33 used (37 with the Bluetooth board) | all M3 mounts | $9.99 | 4.0 mm holes as printed |
+| [ruthex M3 heat-set inserts (100)](https://www.amazon.com/dp/B08BCRZZS3) | 33 used (+4 with the Bluetooth board, +4 with the GPS board) | all M3 mounts | $9.99 | 4.0 mm holes as printed |
 | [ruthex M2 heat-set inserts](https://www.amazon.com/dp/B088QJG676) | 8 used | BMS + modem | ~$9-10 |  |
 | [M3 button-head screw kit (Besitu, 6-35 mm)](https://www.amazon.com/dp/B0D1KQCBMT) | 1 | M3 x 6 (8), x 8 (17, +4 for the Bluetooth board), x 10 (8) | $21.99 | button heads: the holes have no countersinks |
 | [M4 x 8 button-head screws](https://www.amazon.com/dp/B0FGX64FW2) | 4 | screen VESA | ~$21 (kit) | check the screen's thread depth first |
@@ -172,6 +172,19 @@ connects: [Custom boards](#custom-boards) below.
 | Antennas for the LTE holes | - | - | - | **not a separate part**: the four identical SMA antennas in the Computer section cover both WiFi and LTE |
 | Nano SIM with a data plan that allows modems | 1 |  |  | many phone plans do not allow modem use |
 
+### Optional: GPS
+
+The box's own GPS receiver, inside the box, with its antenna on the fifth (right-hand) bulkhead of the antenna row. In
+place of a USB GPS puck on one of the back USB ports: no lead hanging out of the box, 25 position fixes a second (a
+puck usually gives 1), and a backup cell so it finds its position again in seconds after being switched off.
+
+| Part | Qty | For | Price | Notes |
+|---|---|---|---|---|
+| GPS board | 1 | u-blox NEO-M9N receiver, 42 x 32 mm | TBD | from the builder; on four standoffs on the back wall (4 inserts, 4 x M3 x 8) |
+| [Futheda MHF4 to SMA female bulkhead pigtails, 30 cm (2-pack)](https://www.amazon.com/dp/B0CTC5BQZK) | 1 | board to the fifth antenna hole | $6.99 | one of the pair is a spare |
+| [Active GPS antenna, L1, 3-5 V, SMA male, magnetic base](https://www.amazon.com/s?k=active+gps+antenna+sma+male+magnetic) | 1 | the GPS antenna | ~$10-20 | the board powers it. It must see the sky: put it in a window or outside, never under metal |
+| [JST PH 2.0 pigtails, 4-pin](https://www.amazon.com/s?k=JST+PH+2.0+4+pin+pigtail) | 1 | the board's USB lead (J1), to header port P5 | ~$6 | P5 is free when the hub board carries the battery readout |
+
 ### Optional: Bluetooth hands-free board
 
 | Part | Qty | For | Price | Notes |
@@ -212,7 +225,7 @@ separate 4S charger and two ideal-diode modules.
 - **Connectors**: J1 USB-C faces out through the **back wall**; the other three point sideways across the box, so
   their plugs go in **from the right** (the board stands on the left wall). J2 XT30 male = battery (through the BMS
   and the pack fuse), J3 XT30 female = SYS out to the rocker switch, J4 NTC (JST PH 2-pin).
-- Charge time, 6.6 Ah pack: about 1.5 h with the box off (JP1 cut, 100 W charger) or 2.5 h (as supplied).
+- Charge time, 8.4 Ah pack: about 2 h with the box off (JP1 cut, 100 W charger) or 3 h (as supplied).
 
 **Converter board** (70 x 60 mm). Splits the power rail and makes the computer's 12 V.
 
@@ -240,6 +253,12 @@ holes as the cut Waveshare board; the SIM holder is on its back.
 |---|---|
 | ![LTE modem board, top: USB socket, LEDs, M.2 socket, power converter](images/modem-board-top.png) | ![LTE modem board, back: bulk capacitor, surge diode, nano-SIM holder](images/modem-board-back.png) |
 
+**GPS board** (optional, 42 x 32 mm). A u-blox NEO-M9N receiver on one USB lead to the computer, where it shows up
+as a plain serial port (no driver): up to 25 position fixes a second, four satellite systems at once. J1 USB lead (JST
+PH 4: 1 = +5 V, 2 = D-, 3 = D+, 4 = GND), J2 antenna (MHF4; it powers an active antenna at 3.3 V), a rechargeable
+backup cell that keeps the clock and satellite data, a green power LED, and test pads for recovery (SAFEBOOT, RESET,
+TX, RX, PPS, GND). Linux: `gpsd` reads it, and `chrony` can set the computer's clock from it when there is no internet.
+
 **All boards**: XT30 polarity: + is the **square end** of the housing; check with a meter before the first plug-in.
 Mounting: M3 screws onto heat-set inserts in the printed box (M2 for the modem board).
 
@@ -256,6 +275,7 @@ recommended (softens around 55 °C). 0.2 mm layers, 4 walls, 15-25 % infill. Abo
 | `1-shell.3mf` | the shell (frame, walls, battery bay, mounts) | **yes, on build plate only** | prints on its back; the biggest print, roughly 7-9 h |
 | `2-front-plate.3mf` | front plate (holds the screen and the H5) | no | face down |
 | `3-handle-and-feet.3mf` | handle + 2 feet | no | on their sides |
+| `3b-handle-only.3mf` | the handle alone | no | optional: for reprinting just the handle |
 | `4-screen-button-caps.3mf` | 5 screen button caps | try without; tree supports if the small lugs droop | tiny parts: brim helps |
 | `5-stream-deck-case.3mf` | Stream Deck case tray + front frame | no | optional (only with the Stream Deck) |
 | `6-stream-deck-cradle-test.3mf` | a piece of the shell's right wall with the Stream Deck cradle | yes | optional: print it first to check your Stream Deck case slides in before printing the whole shell |
@@ -280,6 +300,8 @@ multimeter.
 4. **Shell, from the inside:**
    - Power button (with its nut) and rocker switch into the strip under the screen, **before** the front plate goes in.
    - Intake fan on the back wall, both exhaust fans in the top (Noctua's screws), blowing out.
+   - The GPS board (optional) on its four standoffs on the back wall, and its pigtail to the fifth, right-hand
+     antenna hole.
    - Four antenna bulkheads in the back wall, ALL SMA and all the same: the left pair goes to the WiFi card,
      the right pair to the LTE module. The four antennas are identical, so only the pigtail each one is on
      decides what it serves - label them inside before you close the box.
@@ -320,7 +342,7 @@ USB-C charger ──> CHARGER BOARD ── J2 battery ── 10 A fuse ── BM
 
 | From | To | How |
 |---|---|---|
-| Pack (bare 7 AWG leads) | BMS B- and pack +, then BMS P-/C- and + (via a 10 A inline fuse) to an XT30 female | 14 AWG silicone; follow the BMS's own wiring sheet; balance lead plugs into the BMS |
+| Pack (5 mm bullet leads) | BMS B- and pack +, then BMS P-/C- and + (via a 10 A inline fuse) to an XT30 female | 14 AWG silicone; follow the BMS's own wiring sheet; balance lead plugs into the BMS |
 | BMS output (XT30 female) | charger J2 (XT30 male) | |
 | Charger J3 (XT30 female) | rocker switch, then converter IN (XT30 male) | 14 AWG; rocker in the + lead |
 | Converter HUB (XT30 female) | hub's 2-pin power terminal | 18 AWG, XT30 male on the converter end |
@@ -336,6 +358,8 @@ USB-C charger ──> CHARGER BOARD ── J2 battery ── 10 A fuse ── BM
 | H5 fan header | 3 fans | 3-way 4-pin fan splitter |
 | AX210 pigtails | WiFi bulkheads | from the antenna kit |
 | LTE module MHF4 sockets | LTE bulkheads | MHF4 to SMA pigtails |
+| GPS board J1 USB | H5 header port P5 | JST PH 4 pigtail (below) (optional) |
+| GPS board J2 antenna | the fifth (right-hand) bulkhead | MHF4 to SMA pigtail (optional) |
 
 **H5 USB ports**: USB 3.0 = hub, USB 2.0 = screen, USB 2.0 = LTE modem (optional), one USB 2.0 spare; the three
 header USB ports below are all used.
@@ -348,9 +372,9 @@ housing that covers the whole header, so it goes on and off as one plug.
 | 1 GND | power button LED - | 2 +5 V (on only while running) | the 5 V splice (one crimp) |
 | 3 USB P7 D+ | Stream Deck green | 4 +3.3 V | empty |
 | 5 USB P7 D- | Stream Deck white | 6 GND | Stream Deck black |
-| 7 USB P5 D+ | battery readout green | 8 UART RXD | empty |
-| 9 USB P5 D- | battery readout white | 10 UART TXD | empty |
-| 11 GND | battery readout black | 12 UART CTS# | empty |
+| 7 USB P5 D+ | GPS board green (optional) | 8 UART RXD | empty |
+| 9 USB P5 D- | GPS board white (optional) | 10 UART TXD | empty |
+| 11 GND | GPS board black (optional) | 12 UART CTS# | empty |
 | 13 I2C1 SCL | empty | 14 UART RTS# | empty |
 | 15 I2C1 SDA | empty | 16 GND | power button C |
 | 17 PWR_BTN# | power button NO | 18 I2C0 SCL | empty |
@@ -359,8 +383,12 @@ housing that covers the whole header, so it goes on and off as one plug.
 | 23 USB P6 D- | Bluetooth board white (optional) | 24 +5 V standby | **empty** (it would drain the pack with the box off) |
 
 - **Stream Deck:** cut the coiled cable's far end; red to the 5 V splice, black 6, green 3, white 5.
-- **Battery readout:** a short USB-A extension, cut; its socket takes the isolated USB-serial adapter, whose 3.3 V
-  TX/RX/GND go to the BMS's UART plug. Red to the 5 V splice, green 7, white 9, black 11.
+- **Battery readout without the hub board:** a short USB-A extension, cut; its socket takes the isolated USB-serial adapter, whose 3.3 V
+  TX/RX/GND go to the BMS's UART plug. Red to the 5 V splice, green 7, white 9, black 11 (P5). With the
+  hub board the readout is on the hub board and P5 is free for the GPS board.
+- **GPS board (optional):** a JST PH 4 pigtail into its J1 (1 = +5 V red, 2 = D- white, 3 = D+ green, 4 = GND black);
+  red to the 5 V splice, black 11, green 7, white 9. This takes P5, so the battery readout has to be the hub board's
+  (not a USB-serial dongle on P5).
 - **Bluetooth board (optional):** a JST PH 4 pigtail into its J2 (1 = +5 V red, 2 = D- white, 3 = D+ green, 4 = GND
   black); red to the 5 V splice, black 19, green 21, white 23.
 - **The 5 V splice:** a short red lead crimped into pin 2; solder the reds of the Stream Deck, the battery readout, the

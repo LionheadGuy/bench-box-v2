@@ -13,7 +13,7 @@ Computer,"WiFi 6E antenna, RP-SMA male, 2.4-7.2 GHz",2,OPTIONAL - only if you wa
 Screen and controls,"VIEWMEI 10.1"" 1280 x 800 USB-C touchscreen",1,main screen,https://www.amazon.com/dp/B0GCNXNZ17,$89.90,"the frame is sized to this screen: 245.5 x 168.75 x 21.5 mm, 75 mm VESA (M4). Check the size before buying"
 Screen and controls,"12 mm momentary metal push button, 5 V ring LED",1,power button,https://www.amazon.com/s?k=12mm+momentary+metal+push+button+5V+ring+LED,~$5-8,11.75 mm hole; NO contacts + LED
 Screen and controls,"KCD1 rocker switch, 20 A (Dopkiut, 10-pack)",1,master power switch,https://www.amazon.com/dp/B0HCZ5X637,$6,19.2 x 12.7 mm cut-out
-Battery and charging,Liperior Endurance 6600 mAh 4S2P LiPo (LPD66004S150),1,"the pack, ~98 Wh",https://rcbattery.com/liperior-endurance-6600mah-4s2p-150c-14-8v-speed-runs-lipo-battery.html,$69.99,"135 x 54 x 42 mm, bare 7 AWG leads, no protection of its own"
+Battery and charging,"Exalt X-Rated 4S 135C Stick Hardcase LiPo, 14.8 V 8400 mAh (EXA3403)",1,"the pack, ~124 Wh",https://teamexalt.com/exalt-x-rated-4s-135c-stick-hardcase-lipo-battery-14-8v-8400mah-w-5mm-bullet-connectors-exa3403/,check the seller,"139 x 47 x 48 mm, 751 g, 5 mm bullet connectors on the pack, no protection of its own; the printed pocket is sized for this pack"
 Battery and charging,"JBD SP04S010A smart BMS, 4S, NMC / Li-ion version, 20 A or 30 A",1,protection and balancing,https://jbdbms.com/products/sp04s010a,~$17.50,pick the NMC (Li-ion) 4S version; add the Bluetooth module for the phone app
 Battery and charging,"LiPo safety bag (DerBlue, 185 x 75 x 60 mm)",1,fire sleeve round the pack,https://www.amazon.com/dp/B01GCHBQJS,~$8-10,
 Battery and charging,"Inline ATC/ATO fuse holder, 14 AWG, + 10 A fuse",1,pack + lead,https://www.amazon.com/s?k=inline+ATC+fuse+holder+14+AWG,~$6,
@@ -37,7 +37,7 @@ USB and cables,"Cat6 patch cable, 1 ft",1,H5 to the keystone jack,https://www.am
 Cooling,Noctua NF-A9x14 PWM,1,"intake, back wall",https://www.amazon.com/dp/B009NQM7V2,$18.36,
 Cooling,Noctua NF-A6x15 PWM (12 V version),2,"exhaust, top",https://www.amazon.com/dp/B0DJNX4CX4,$16.42 each,not the 5 V version
 Cooling,Noctua 3-way 4-pin PWM splitter (NA-SC1),1,three fans on the H5 fan header,https://www.amazon.com/dp/B0DJPBXZ89,~$10,
-"Screws, inserts, small parts",ruthex M3 heat-set inserts (100),33 used (37 with the Bluetooth board),all M3 mounts,https://www.amazon.com/dp/B08BCRZZS3,$9.99,4.0 mm holes as printed
+"Screws, inserts, small parts",ruthex M3 heat-set inserts (100),33 used (+4 with the Bluetooth board, +4 with the GPS board),all M3 mounts,https://www.amazon.com/dp/B08BCRZZS3,$9.99,4.0 mm holes as printed
 "Screws, inserts, small parts",ruthex M2 heat-set inserts,8 used,BMS + modem,https://www.amazon.com/dp/B088QJG676,~$9-10,
 "Screws, inserts, small parts","M3 button-head screw kit (Besitu, 6-35 mm)",1,"M3 x 6 (8), x 8 (17, +4 for the Bluetooth board), x 10 (8)",https://www.amazon.com/dp/B0D1KQCBMT,$21.99,button heads: the holes have no countersinks
 "Screws, inserts, small parts",M4 x 8 button-head screws,4,screen VESA,https://www.amazon.com/dp/B0FGX64FW2,~$21 (kit),check the screen's thread depth first
@@ -58,6 +58,10 @@ Optional: LTE,LTE modem board (coming),1,"the builder's own carrier for the modu
 Optional: LTE,"Futheda MHF4 to SMA female bulkhead pigtails, 30 cm (2-pack)",1,module to the back-wall LTE holes,https://www.amazon.com/dp/B0CTC5BQZK,$6.99,
 Optional: LTE,Antennas for the LTE holes,,,,,"not a separate part: the four identical SMA antennas in the Computer section cover both WiFi and LTE"
 Optional: LTE,Nano SIM with a data plan that allows modems,1,,,,many phone plans do not allow modem use
+Optional: GPS,GPS board,1,"u-blox NEO-M9N receiver, 42 x 32 mm",,TBD,"from the builder; on four standoffs on the back wall (4 inserts, 4 x M3 x 8)"
+Optional: GPS,"Futheda MHF4 to SMA female bulkhead pigtails, 30 cm (2-pack)",1,board to the fifth antenna hole,https://www.amazon.com/dp/B0CTC5BQZK,$6.99,one of the pair is a spare
+Optional: GPS,"Active GPS antenna, L1, 3-5 V, SMA male, magnetic base",1,the GPS antenna,https://www.amazon.com/s?k=active+gps+antenna+sma+male+magnetic,~$10-20,the board powers it; it must see the sky
+Optional: GPS,"JST PH 2.0 pigtails, 4-pin",1,"the board's USB lead (J1), to header port P5",https://www.amazon.com/s?k=JST+PH+2.0+4+pin+pigtail,~$6,P5 is free when the hub board carries the battery readout
 Optional: Bluetooth,Bluetooth board,1,"phone calls, phone book and phone music (Feasycom FSC-BT1026C), COM port + USB sound card on one USB lead",,TBD,from the builder
 Optional: Bluetooth,"JST PH 2.0 pigtails, 2 / 3 / 4-pin (assorted)",1 set,"USB lead to header P6 (4), mic (2), line out (3)",https://www.amazon.com/s?k=JST+PH+2.0+pigtail+assortment,~$8,
 Optional: Bluetooth,"3.5 mm stereo panel-mount socket, M6 nut",2,mic in + line out on the back wall,https://www.amazon.com/s?k=3.5mm+panel+mount+stereo+jack+socket,~$6,6.5 mm holes as printed
