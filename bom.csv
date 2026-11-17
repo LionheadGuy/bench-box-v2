@@ -18,7 +18,7 @@ Battery and charging,"JBD SP04S010A smart BMS, 4S, NMC / Li-ion version, 20 A or
 Battery and charging,"LiPo safety bag (DerBlue, 185 x 75 x 60 mm)",1,fire sleeve round the pack,https://www.amazon.com/dp/B01GCHBQJS,~$8-10,
 Battery and charging,"Inline ATC/ATO fuse holder, 14 AWG, + 10 A fuse",1,pack + lead,https://www.amazon.com/s?k=inline+ATC+fuse+holder+14+AWG,~$6,
 Battery and charging,Semitec 103AT-2 10 k NTC thermistor,1,pack temperature for the charger,https://www.digikey.com/en/products/result?keywords=103AT-2,$0.68,tape it to the pack
-Battery and charging,JST PH 2-pin pigtails (pack of 10),1,NTC to charger J4,https://www.amazon.com/s?k=JST+PH+2.0+2+pin+pigtail,~$6,
+Battery and charging,JST PH pigtail,,,,,"not a separate part: from the three pigtail packs under USB and cables"
 Battery and charging,XT30 connector pairs (20 pairs, with heat shrink),1,all power leads,https://www.amazon.com/dp/B0G3GZK3HJ,~$8,
 Battery and charging,100 W USB-C PD charger (Anker Prime 100 W or UGREEN Nexode 100 W),1,charges and runs the box,https://www.amazon.com/dp/B0963HDMJP,~$50-70,any USB-C PD charger with 20 V; 60 W minimum
 Battery and charging,"USB-C cable, 5 A e-marked (Anker 100 W)",1,charger to box,https://www.amazon.com/dp/B072JYDQ7N,~$15-20,needed for the 100 W setting (JP1 cut)
@@ -30,7 +30,9 @@ Custom boards (from the builder),"Littelfuse 0297005.WXNV MINI blade fuse, 5 A",
 USB and cables,"ADTLINK shielded HDMI flat ribbon, 15 cm, male-male",1,"H5 to screen, PICTURE only",https://www.amazon.com/dp/B0BXSFLM9F,$12.00,
 USB and cables,"ADTLINK USB 3.1 A male to C male, 15 cm, up/down angle",2,"H5 USB 2.0 to the screen (power + touch), and H5 USB 3.0 to the hub board",https://www.amazon.com/dp/B0BXD2RPB3,TWO RUNS, so two cables: the SCREEN's power and touch on a USB 2.0 port, and the HUB BOARD's upstream on the USB 3.0 port. The screen's PICTURE comes over the HDMI above, not over this cable - the H5 has no USB-C port, so a single cable cannot carry picture, power and touch together. The Amazon list has qty 1,
 USB and cables,USB-A to JST PH 4-pin lead,1,the back's pass-through port to a spare H5 USB 2.0 port,https://www.amazon.com/s?k=usb+a+to+jst+ph+4+pin+cable,~$5,check the lead's pin order against the board before plugging it in
-USB and cables,"JST PH 4-pin lead, 200 mm",1,hub board to the BMS's UART plug (battery readout),https://www.amazon.com/s?k=jst+ph+2.0+4+pin+cable,~$5,check the BMS's pin order before plugging it in
+USB and cables,"JST PH 2-pin pigtails, 300 mm (pack)",1 pack,"charger J4 pack temp, Bluetooth mic in",https://www.amazon.com/s?k=JST+PH+2.0+2+pin+pigtail+300mm,~$6,one pack covers every 2-pin lead in the box
+USB and cables,"JST PH 3-pin pigtails, 300 mm (pack)",1 pack,Bluetooth line out (L / R / GND),https://www.amazon.com/s?k=JST+PH+2.0+3+pin+pigtail+300mm,~$6,
+USB and cables,"JST PH 4-pin pigtails, 300 mm (pack)",1 pack,"hub board to the BMS UART, Bluetooth USB to header P6, GPS USB to P5",https://www.amazon.com/s?k=JST+PH+2.0+4+pin+pigtail+300mm,~$6,"300 mm not 150: the hub-to-BMS run is about 200 mm routed. Buy the three sizes as separate packs, not an assortment box"
 USB and cables,"18 AWG pigtail, 5.5 x 2.1 mm male barrel (3-pack)",1,converter 12 V to the H5,https://www.amazon.com/dp/B0DGQS55NG,$6.99,fit an XT30 male on the free end
 USB and cables,Cat6 UTP punch-down keystone jack,1,Ethernet port in the back wall,https://www.amazon.com/s?k=cat6+utp+punch+down+keystone+jack,~$5,standard keystone (14.9 x 19.4 mm opening); unshielded
 USB and cables,"Cat6 patch cable, 1 ft",1,H5 to the keystone jack,https://www.amazon.com/s?k=cat6+patch+cable+1+ft,~$5,far end cut off and punched down on the jack
@@ -60,8 +62,8 @@ Optional: LTE,Nano SIM with a data plan that allows modems,1,,,,many phone plans
 Optional: GPS,GPS board,1,"u-blox NEO-M9N receiver, 42 x 32 mm",,TBD,"from the builder; on four standoffs on the back wall (4 inserts, 4 x M3 x 8)"
 Optional: GPS,"Futheda MHF4 to SMA female bulkhead pigtails, 30 cm (2-pack)",1,board to the fifth antenna hole,https://www.amazon.com/dp/B0CTC5BQZK,$6.99,one of the pair is a spare
 Optional: GPS,"Active GPS antenna, L1, 3-5 V, SMA male, magnetic base",1,the GPS antenna,https://www.amazon.com/s?k=active+gps+antenna+sma+male+magnetic,~$10-20,the board powers it; it must see the sky
-Optional: GPS,"JST PH 2.0 pigtails, 4-pin",1,"the board's USB lead (J1), to header port P5",https://www.amazon.com/s?k=JST+PH+2.0+4+pin+pigtail,~$6,P5 is free when the hub board carries the battery readout
+Optional: GPS,JST PH pigtail,,,,,"not a separate part: from the three pigtail packs under USB and cables"
 Optional: Bluetooth,Bluetooth board,1,"phone calls, phone book and phone music (Feasycom FSC-BT1026C), COM port + USB sound card on one USB lead",,TBD,from the builder
-Optional: Bluetooth,"JST PH 2.0 pigtails, 2 / 3 / 4-pin (assorted)",1 set,"USB lead to header P6 (4), mic (2), line out (3)",https://www.amazon.com/s?k=JST+PH+2.0+pigtail+assortment,~$8,
+Optional: Bluetooth,JST PH pigtail,,,,,"not a separate part: from the three pigtail packs under USB and cables"
 Optional: Bluetooth,"3.5 mm stereo panel-mount socket, M6 nut",2,mic in + line out on the back wall,https://www.amazon.com/s?k=3.5mm+panel+mount+stereo+jack+socket,~$6,6.5 mm holes as printed
 Optional: Bluetooth,"Hands-free car-kit microphone, 3.5 mm plug",1,the call microphone,https://www.amazon.com/s?k=car+hands+free+microphone+3.5mm,~$8-10,

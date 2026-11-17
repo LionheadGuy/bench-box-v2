@@ -88,7 +88,7 @@ many the box uses.
 | [LiPo safety bag (DerBlue, 185 x 75 x 60 mm)](https://www.amazon.com/dp/B01GCHBQJS) | 1 | fire sleeve round the pack | ~$8-10 |  |
 | [Inline ATC/ATO fuse holder, 14 AWG, + 10 A fuse](https://www.amazon.com/s?k=inline+ATC+fuse+holder+14+AWG) | 1 | pack + lead | ~$6 |  |
 | [Semitec 103AT-2 10 k NTC thermistor](https://www.digikey.com/en/products/result?keywords=103AT-2) | 1 | pack temperature for the charger | $0.68 | tape it to the pack |
-| [JST PH 2-pin pigtails (pack of 10)](https://www.amazon.com/s?k=JST+PH+2.0+2+pin+pigtail) | 1 | NTC to charger J4 | ~$6 |  |
+| JST PH pigtail | - | - | - | **not a separate part**: from the three pigtail packs under USB and cables |
 | [XT30 connector pairs (20 pairs, with heat shrink)](https://www.amazon.com/dp/B0G3GZK3HJ) | 1 | all power leads | $8.99 |  |
 | [100 W USB-C PD charger (Anker Prime 100 W or UGREEN Nexode 100 W)](https://www.amazon.com/dp/B0963HDMJP) | 1 | charges and runs the box | ~$50-70 | any USB-C PD charger with 20 V; 60 W minimum |
 | [USB-C cable, 5 A e-marked (Anker 100 W)](https://www.amazon.com/dp/B072JYDQ7N) | 1 | charger to box | ~$15-20 | needed for the 100 W setting (JP1 cut) |
@@ -116,7 +116,14 @@ connects: [Custom boards](#custom-boards) below.
 | [18 AWG pigtail, 5.5 x 2.1 mm male barrel (3-pack)](https://www.amazon.com/dp/B0DGQS55NG) | 1 | converter 12 V to the H5 | $6.99 | fit an XT30 male on the free end |
 | [Cat6 UTP punch-down keystone jack](https://www.amazon.com/s?k=cat6+utp+punch+down+keystone+jack) | 1 | Ethernet port in the back wall | ~$5 | standard keystone (14.9 x 19.4 mm opening); unshielded |
 | [Cat6 patch cable, 1 ft](https://www.amazon.com/s?k=cat6+patch+cable+1+ft) | 1 | H5 to the keystone jack | ~$5 | far end cut off and punched down on the jack |
-| [JST PH 4-pin lead, 200 mm](https://www.amazon.com/s?k=jst+ph+2.0+4+pin+cable) | 1 | hub board to the BMS's UART plug (battery readout) | ~$5 | check the BMS's pin order before plugging it in |
+| [JST PH 2-pin pigtails, 300 mm (pack)](https://www.amazon.com/s?k=JST+PH+2.0+2+pin+pigtail+300mm) | 1 pack | charger J4 pack temp, Bluetooth mic in | ~$6 | one pack covers every 2-pin lead in the box |
+| [JST PH 3-pin pigtails, 300 mm (pack)](https://www.amazon.com/s?k=JST+PH+2.0+3+pin+pigtail+300mm) | 1 pack | Bluetooth line out (L / R / GND) | ~$6 | |
+| [JST PH 4-pin pigtails, 300 mm (pack)](https://www.amazon.com/s?k=JST+PH+2.0+4+pin+pigtail+300mm) | 1 pack | hub board to the BMS UART, Bluetooth USB to header P6, GPS USB to P5 | ~$6 | **300 mm, not 150**: the hub-to-BMS run is about 200 mm once routed down the wall and across |
+
+Buy the three sizes as **three separate packs**, not a 2-to-9-pin assortment box: the box only uses 2, 3 and 4-pin,
+and an assortment leaves a few hundred connectors with nothing to go in. Pigtails are pre-crimped, so **no JST crimp
+tool is needed anywhere in this build** - the only crimping is 2.54 mm Dupont at the H5 header.
+
 
 ### Cooling
 
@@ -182,14 +189,14 @@ puck usually gives 1), and a backup cell so it finds its position again in secon
 | GPS board | 1 | u-blox NEO-M9N receiver, 42 x 32 mm | TBD | from the builder; on four standoffs on the back wall (4 inserts, 4 x M3 x 8) |
 | [Futheda MHF4 to SMA female bulkhead pigtails, 30 cm (2-pack)](https://www.amazon.com/dp/B0CTC5BQZK) | 1 | board to the fifth antenna hole | $6.99 | one of the pair is a spare |
 | [Active GPS antenna, L1, 3-5 V, SMA male, magnetic base](https://www.amazon.com/s?k=active+gps+antenna+sma+male+magnetic) | 1 | the GPS antenna | ~$10-20 | the board powers it. It must see the sky: put it in a window or outside, never under metal |
-| [JST PH 2.0 pigtails, 4-pin](https://www.amazon.com/s?k=JST+PH+2.0+4+pin+pigtail) | 1 | the board's USB lead (J1), to header port P5 | ~$6 | P5 is free when the hub board carries the battery readout |
+| JST PH pigtail | - | - | - | **not a separate part**: from the three pigtail packs under USB and cables |
 
 ### Optional: Bluetooth hands-free board
 
 | Part | Qty | For | Price | Notes |
 |---|---|---|---|---|
 | Bluetooth board | 1 | phone calls, phone book and phone music (Feasycom FSC-BT1026C module), as a COM port + a USB sound card on one USB lead | TBD | from the builder |
-| [JST PH 2.0 pigtails, 2 / 3 / 4-pin (assorted)](https://www.amazon.com/s?k=JST+PH+2.0+pigtail+assortment) | 1 set | the board's USB lead (4-pin, to header port P6), mic (2-pin) and line out (3-pin) | ~$8 | |
+| JST PH pigtail | - | - | - | **not a separate part**: from the three pigtail packs under USB and cables |
 | [3.5 mm stereo panel-mount socket, M6 nut](https://www.amazon.com/s?k=3.5mm+panel+mount+stereo+jack+socket) | 2 | mic in + line out on the back wall | ~$6 | 6.5 mm holes as printed; check the thread before printing |
 | [Hands-free car-kit microphone, 3.5 mm plug](https://www.amazon.com/s?k=car+hands+free+microphone+3.5mm) | 1 | the call microphone | ~$8-10 | plugs into the mic socket on the back |
 
