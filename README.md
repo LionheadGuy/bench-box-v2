@@ -116,14 +116,19 @@ connects: [Custom boards](#custom-boards) below.
 | [18 AWG pigtail, 5.5 x 2.1 mm male barrel (3-pack)](https://www.amazon.com/dp/B0DGQS55NG) | 1 | converter 12 V to the H5 | $6.99 | fit an XT30 male on the free end |
 | [Cat6 UTP punch-down keystone jack](https://www.amazon.com/s?k=cat6+utp+punch+down+keystone+jack) | 1 | Ethernet port in the back wall | ~$5 | standard keystone (14.9 x 19.4 mm opening); unshielded |
 | [Cat6 patch cable, 1 ft](https://www.amazon.com/s?k=cat6+patch+cable+1+ft) | 1 | H5 to the keystone jack | ~$5 | far end cut off and punched down on the jack |
-| [JST PH 2-pin pigtails, 300 mm (pack)](https://www.amazon.com/s?k=JST+PH+2.0+2+pin+pigtail+300mm) | 1 pack | charger J4 pack temp, Bluetooth mic in | ~$6 | one pack covers every 2-pin lead in the box |
-| [JST PH 3-pin pigtails, 300 mm (pack)](https://www.amazon.com/s?k=JST+PH+2.0+3+pin+pigtail+300mm) | 1 pack | Bluetooth line out (L / R / GND) | ~$6 | |
-| [JST PH 4-pin pigtails, 300 mm (pack)](https://www.amazon.com/s?k=JST+PH+2.0+4+pin+pigtail+300mm) | 1 pack | hub board to the BMS UART, Bluetooth USB to header P6, GPS USB to P5 | ~$6 | **300 mm, not 150**: the hub-to-BMS run is about 200 mm once routed down the wall and across |
+| [Pololu 5601 - JST PH 2-pin cable, 300 mm](https://www.digikey.com/en/products/result?keywords=2183-5601-ND) | 2 | charger J4 pack temp, Bluetooth mic in | $1.79 ea |  |
+| [Pololu 5611 - JST PH 3-pin cable, 300 mm](https://www.digikey.com/en/products/result?keywords=2183-5611-ND) | 1 | Bluetooth line out (L / R / GND) | $2.42 |  |
+| [Pololu 5621 - JST PH 4-pin cable, 300 mm](https://www.digikey.com/en/products/result?keywords=2183-5621-ND) | 3 | hub board to the BMS UART, Bluetooth USB to header P6, GPS USB to P5 | $3.05 ea |  |
 
-Buy the three sizes as **three separate packs**, not a 2-to-9-pin assortment box: the box only uses 2, 3 and 4-pin,
-and an assortment leaves a few hundred connectors with nothing to go in. Pigtails are pre-crimped, so **no JST crimp
-tool is needed anywhere in this build** - the only crimping is 2.54 mm Dupont at the H5 header.
+These have a JST PH connector on one end and **female crimp pins for 0.1" housings** on the other, which fit the
+H5's 24-pin header directly - so they slide into the 2 x 12 housing and **nothing in this build needs crimping**.
+Where the far end is a solder joint instead (the mic and line-out sockets, the pack thermistor), cut the crimp pins
+off. 24 AWG, rated 2 A / 100 V. They are sold singly, not in packs, so the quantities above are exact.
 
+> **GO BY PIN NUMBER, NOT WIRE COLOUR, ON THESE CABLES.** Pin 1 is the BLACK wire and pin 2 is the RED one, which is
+> the opposite of what the colours suggest: on the USB leads the **black wire carries +5 V and the red wire carries a
+> data line**. Pins 3 and 4 are yellow and blue, and which is which is not published - check the cable in hand. Wiring
+> one of these by colour shorts +5 V to ground.
 
 ### Cooling
 
@@ -318,7 +323,7 @@ multimeter.
    - Optional LTE modem board on its back-wall standoffs above the BMS (M2 x 6), JST end up (its SIM holder faces the wall: fit the SIM first).
    - Optional Bluetooth board on its back-wall standoffs right of the modem (M3 x 8), parts facing the front, the
      module's antenna end UP and the connectors along the bottom. The two panel sockets go in the holes below it: mic in
-     on the left, line out on the right; solder a JST PH pigtail to each (mic: 2-pin, + to pin 1; line out: 3-pin, L / R / GND).
+     on the left, line out on the right; solder a JST PH cable to each (mic: 2-pin, + to pin 1; line out: 3-pin, L / R / GND). Go by PIN: pin 1 is the black wire.
    - Charger board on its **left-wall** standoffs (M3 x 8), standing on edge with its parts facing into the box and
      its USB-C socket in the **back-wall** opening. Fit it before the battery, and leave its three plugs until the
      pack and BMS are in: they face right, across the box.
@@ -376,28 +381,31 @@ housing that covers the whole header, so it goes on and off as one plug.
 | 1 GND | power button LED - | 2 +5 V (on only while running) | the 5 V splice (one crimp) |
 | 3 USB P7 D+ | Stream Deck green | 4 +3.3 V | empty |
 | 5 USB P7 D- | Stream Deck white | 6 GND | Stream Deck black |
-| 7 USB P5 D+ | GPS board green (optional) | 8 UART RXD | empty |
-| 9 USB P5 D- | GPS board white (optional) | 10 UART TXD | empty |
+| 7 USB P5 D+ | GPS board J1 pin 3 (optional) | 8 UART RXD | empty |
+| 9 USB P5 D- | GPS board J1 pin 2 (optional) | 10 UART TXD | empty |
 | 11 GND | GPS board black (optional) | 12 UART CTS# | empty |
 | 13 I2C1 SCL | empty | 14 UART RTS# | empty |
 | 15 I2C1 SDA | empty | 16 GND | power button C |
 | 17 PWR_BTN# | power button NO | 18 I2C0 SCL | empty |
 | 19 GND | Bluetooth board black (optional) | 20 I2C0 SDA | empty |
-| 21 USB P6 D+ | Bluetooth board green (optional) | 22 HDMI CEC | empty |
-| 23 USB P6 D- | Bluetooth board white (optional) | 24 +5 V standby | **empty** (it would drain the pack with the box off) |
+| 21 USB P6 D+ | Bluetooth board J2 pin 3 (optional) | 22 HDMI CEC | empty |
+| 23 USB P6 D- | Bluetooth board J2 pin 2 (optional) | 24 +5 V standby | **empty** (it would drain the pack with the box off) |
 
 - **Stream Deck:** cut the coiled cable's far end; red to the 5 V splice, black 6, green 3, white 5.
 - **Battery readout without the hub board:** a short USB-A extension, cut; its socket takes the isolated USB-serial adapter, whose 3.3 V
   TX/RX/GND go to the BMS's UART plug. Red to the 5 V splice, green 7, white 9, black 11 (P5). With the
   hub board the readout is on the hub board and P5 is free for the GPS board.
-- **GPS board (optional):** a JST PH 4 pigtail into its J1 (1 = +5 V red, 2 = D- white, 3 = D+ green, 4 = GND black);
-  red to the 5 V splice, black 11, green 7, white 9. This takes P5, so the battery readout has to be the hub board's
-  (not a USB-serial dongle on P5).
-- **Bluetooth board (optional):** a JST PH 4 pigtail into its J2 (1 = +5 V red, 2 = D- white, 3 = D+ green, 4 = GND
-  black); red to the 5 V splice, black 19, green 21, white 23.
-- **The 5 V splice:** a short red lead crimped into pin 2; solder the reds of the Stream Deck, the battery readout, the
-  Bluetooth board and the button LED + to its other end and heat-shrink it, a few cm from the housing. Every other pin
-  takes one wire, and each device has its own ground pin. How much current the header's 5 V can supply is not confirmed.
+- **GPS board (optional):** a JST PH 4 cable into its J1 (1 = +5 V, 2 = D-, 3 = D+, 4 = GND). **By pin, not colour:**
+  pin 1 to the 5 V splice, pin 4 to header 11, pin 3 to 7, pin 2 to 9. On the Pololu cables pin 1 is BLACK and pin 2
+  is RED, so wiring this by colour would put +5 V on a ground pin. This takes P5, so the battery readout has to be the
+  hub board's (not a USB-serial dongle on P5).
+- **Bluetooth board (optional):** a JST PH 4 cable into its J2 (1 = +5 V, 2 = D-, 3 = D+, 4 = GND). **By pin, not
+  colour:** pin 1 to the 5 V splice, pin 4 to header 19, pin 3 to 21, pin 2 to 23. Pin 1 is the BLACK wire on these
+  cables, not the red one.
+- **The 5 V splice:** a short red lead crimped into pin 2; solder the +5 V wire of the Stream Deck, the battery readout,
+  the Bluetooth board and the button LED + to its other end. **Mind the colours:** the Stream Deck's is red (it is a cut
+  USB cable), but the Bluetooth board's is the BLACK wire of its JST PH cable. Heat-shrink the splice, a few cm from
+  the housing. Every other pin takes one wire, and each device has its own ground pin. How much current the header's 5 V can supply is not confirmed.
 - **The housing fits either way round** (the header has no shroud): mark pin 1 on the housing and beside the header
   before the first plug-in. Turned round, the 5 V would land on a USB data pin.
 
